@@ -1,38 +1,98 @@
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
 }
 
 .App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+    width: 5vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 8em 5%;
+    text-align: center;
+    border-right: 1px solid #ccc;
 }
 
-.App-link {
-  color: #61dafb;
+.header-element {
+    margin-bottom: 3em;
+    cursor: pointer;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App-body {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 2em 3em;
 }
+
+.Chapter {
+    width: 100%;
+    min-height: 100vh;
+    margin-bottom: 5vh;
+    padding-top: 5vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.Chapter-image {
+    flex: 2;
+    height: 100%;
+}
+
+.Chapter-body {
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+}
+
+.Chapter-body-title-group {
+    width: 90%;
+    align-self: center;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Chapter-body .first-layer {
+    width: 90%;
+    align-self: center;
+    font-size: 1.3em;
+    line-height: 1.6em;
+    letter-spacing: 0.03em;
+    list-style: decimal;
+    margin-top: 0.5em;
+}
+
+.Chapter-body .first-layer > li {
+    margin-bottom: 1em;
+}
+
+.Chapter-body .second-layer {
+    font-size: 0.8em;
+    line-height: 1em;
+    letter-spacing: 0.03em;
+    list-style: lower-alpha;
+    margin-top: 0.5em;
+}
+
+.Chapter-body .second-layer > li {
+    margin-bottom: 1em;
+}
+
+
+.Text-red {
+    color: crimson;
+}
+
+.Text-bold {
+    font-weight: bold;
+}
+
+.Text-underline {
+    text-decoration: underline;
+}
+
