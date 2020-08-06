@@ -7,6 +7,8 @@ import img_login_progress from './images/login-process.png';
 import img_dashboard from './images/dashbaord.png';
 import img_inbox from './images/inbox.png';
 
+import login from './images/login.png';
+
 
 class App extends Component {
 
@@ -33,14 +35,14 @@ class App extends Component {
                 <body className="App-body">
 
                 <Element className="Chapter" name="login-progress">
-                    <div className="Chapter-image"
-                         style={{
-                             background: `url(${img_login_progress})`,
-                             backgroundSize: 'contain',
-                             backgroundRepeat: 'no-repeat'
-                         }}
+                    <div
+                        className="Chapter-image"
+                        style={{
+                            background: `url(${login})`,
+                            backgroundSize: 'contain',
+                            backgroundRepeat: 'no-repeat'
+                        }}
                     />
-
                     <div className="Chapter-body">
 
                         <div className="Chapter-body-title-group">
@@ -49,30 +51,79 @@ class App extends Component {
                         </div>
 
                         <ul className="first-layer">
-                            <li>
-                                ＊使用者在瀏覽器輸入貴公司專屬的好聘網址，即可前往登入畫面，<br/><span className="Text-red">如圖一</span>。建議瀏覽器：Chrome、Firefox、Edge、Safari。<br/>若為
-                                <span className="Text-bold">首次登入，請參考</span>開通郵件所提供的網址。
-                            </li>
+                            {/*<li>*/}
+                            {/*    ＊使用者在瀏覽器輸入貴公司專屬的好聘網址，即可前往登入畫面，<br/><span className="Text-red">如圖一</span>。建議瀏覽器：Chrome、Firefox、Edge、Safari。<br/>若為*/}
+                            {/*    <span className="Text-bold">首次登入，請參考</span>開通郵件所提供的網址。*/}
+                            {/*</li>*/}
+
+                            {/*<li>*/}
+                            {/*    ＊輸入用戶名稱。若為<span className="Text-bold">首次登入，請參考</span>開通郵件所提供的用戶名稱。*/}
+                            {/*</li>*/}
+
+                            {/*<li>*/}
+                            {/*    ＊輸入用戶密碼。若為<span className="Text-bold">首次登入，請參考</span>開通郵件所提供的用戶密碼。*/}
+                            {/*</li>*/}
+
+                            {/*<li>*/}
+                            {/*    保持登錄狀態：使用者『勾選』保持登錄狀態，當再度嘗試登入，不需輸入用戶名稱與密碼，即可自動登入。*/}
+                            {/*</li>*/}
+
+                            {/*<li>*/}
+                            {/*    ＊按下『登入』鍵，系統即進入首頁畫面。<span className="Text-red">如圖二</span>。*/}
+                            {/*</li>*/}
+
+                            {/*<li>*/}
+                            {/*    忘記密碼。請參照<span className="Text-underline">忘記密碼</span>專篇。*/}
+                            {/*</li>*/}
 
                             <li>
-                                ＊輸入用戶名稱。若為<span className="Text-bold">首次登入，請參考</span>開通郵件所提供的用戶名稱。
+                                Google翻譯是一項由Google提供的翻譯文段及網頁的服務。 與其他網站巴別魚、美國線
+                            </li>
+                            <li>
+                                Google翻譯是一項由Google提供的翻譯文段及網頁的服務。 與其他網站巴別魚、美國線
+                            </li>
+                            <li>
+                                Google翻譯是一項由Google提供的翻譯文段及網頁的服務。 與其他網站巴別魚、美國線
+                            </li>
+                            <li>
+                                Google翻譯是一項由Google提供的翻譯文段及網頁的服務。 與其他網站巴別魚、美國線
+                            </li>
+                            <li>
+                                Google翻譯是一項由Google提供的翻譯文段及網頁的服務。 與其他網站巴別魚、美國線
+                            </li>
+                            <li>
+                                Google翻譯是一項由Google提供的翻譯文段及網頁的服務。 與其他網站巴別魚、美國線
+                            </li>
+                            <li>
+                                Google翻譯是一項由Google提供的翻譯文段及網頁的服務。 與其他網站巴別魚、美國線
+                            </li>
+                            <li>
+                                Google翻譯是一項由Google提供的翻譯文段及網頁的服務。 與其他網站巴別魚、美國線
+                            </li>
+                            <li>
+                                Google翻譯是一項由Google提供的翻譯文段及網頁的服務。 與其他網站巴別魚、美國線
+                            </li>
+                            <li>
+                                Google翻譯是一項由Google提供的翻譯文段及網頁的服務。 與其他網站巴別魚、美國線
+                            </li>
+                            <li>
+                                Google翻譯是一項由Google提供的翻譯文段及網頁的服務。 與其他網站巴別魚、美國線
+                            </li>
+                            <li>
+                                Google翻譯是一項由Google提供的翻譯文段及網頁的服務。 與其他網站巴別魚、美國線
+                            </li>
+                            <li>
+                                Google翻譯是一項由Google提供的翻譯文段及網頁的服務。 與其他網站巴別魚、美國線
+                            </li>
+                            <li>
+                                Google翻譯是一項由Google提供的翻譯文段及網頁的服務。 與其他網站巴別魚、美國線
+                            </li>
+                            <li>
+                                Google翻譯是一項由Google提供的翻譯文段及網頁的服務。 與其他網站巴別魚、美國線
                             </li>
 
-                            <li>
-                                ＊輸入用戶密碼。若為<span className="Text-bold">首次登入，請參考</span>開通郵件所提供的用戶密碼。
-                            </li>
 
-                            <li>
-                                保持登錄狀態：使用者『勾選』保持登錄狀態，當再度嘗試登入，不需輸入用戶名稱與密碼，即可自動登入。
-                            </li>
 
-                            <li>
-                                ＊按下『登入』鍵，系統即進入首頁畫面。<span className="Text-red">如圖二</span>。
-                            </li>
-
-                            <li>
-                                忘記密碼。請參照<span className="Text-underline">忘記密碼</span>專篇。
-                            </li>
                         </ul>
                     </div>
                 </Element>
