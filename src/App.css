@@ -40,11 +40,23 @@
     flex-direction: row;
 }
 
-.Chapter-image {
+/** 左邊圖片 **/
+.Chapter-Single-image {
     flex: 2;
     height: 100%;
 }
 
+.Chapter-Multi-image-container {
+     flex: 2;
+     display: flex;
+     flex-direction: column;
+}
+
+.Chapter-Multi-image-image {
+    height: 20em;
+}
+
+/** 右邊文字說明 **/
 .Chapter-body {
     flex: 3;
     display: flex;
@@ -56,6 +68,14 @@
     align-self: center;
     display: flex;
     justify-content: space-between;
+}
+
+.Chapter-body .first-layer-no-list-style {
+    font-size: 1.3em;
+    line-height: 1.6em;
+    letter-spacing: 0.03em;
+    padding-left: 2em;
+    margin-bottom: 0;
 }
 
 .Chapter-body .first-layer {
@@ -70,6 +90,13 @@
 
 .Chapter-body .first-layer > li {
     margin-bottom: 1em;
+}
+
+.Chapter-body .second-layer-no-list-style {
+    font-size: 0.8em;
+    line-height: 1em;
+    letter-spacing: 0.03em;
+    list-style: lower-alpha;
 }
 
 .Chapter-body .second-layer {
