@@ -8,16 +8,17 @@
 
 .App-header {
     width: 5vw;
-    height: 100vh;
+    height: 95vh;
     display: flex;
     flex-direction: column;
-    padding: 8em 5%;
-    text-align: center;
+    /*padding: 8em 5%;*/
+    padding: 5vh 3% 0 5%;
+    text-align: start;
     border-right: 1px solid #ccc;
 }
 
 .header-element {
-    margin-bottom: 3em;
+    margin-bottom: 1em;
     cursor: pointer;
 }
 
