@@ -6,6 +6,7 @@ import {Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, s
 import img_login_progress from './images/login-process.png';
 import img_dashboard from './images/dashbaord.png';
 import img_inbox from './images/inbox.png';
+import img_login from './images/login.png';
 import img_homepage from './images/home-page.png';
 import img_inbox_new from './images/inbox-new.png';
 import img_process1 from './images/process1.png';
@@ -13,7 +14,9 @@ import img_process2 from './images/process2.png';
 import img_process3 from './images/process3.png';
 import img_process4 from './images/process4.png';
 
-import login from './images/login.png';
+import icon_homepage from './images/icon_homepage.png';
+import icon_arrow_down from './images/icon_arrow_down.png';
+
 import video_login from './images/video_login.mp4';
 
 
@@ -55,7 +58,7 @@ class App extends Component {
                         <div
                             className="Chapter-Single-image"
                             style={{
-                                background: `url(${login})`,
+                                background: `url(${img_login})`,
                                 backgroundSize: 'contain',
                                 backgroundRepeat: 'no-repeat'
                             }}
@@ -162,7 +165,17 @@ class App extends Component {
                             <li>
                                 標題列。
                                 <ul className="second-layer">
-                                    <li>好聘識別標誌</li>
+                                    <li>
+                                        <span
+                                            style={{
+                                                background: `url(${icon_homepage}) 0% 0% / contain no-repeat`,
+                                                width: '3em',
+                                                height: '2em',
+                                                display: 'inline-flex'
+                                            }}
+                                        />
+                                        好聘識別標誌
+                                    </li>
                                     <li>好聘：軟體名稱</li>
                                     <li>首頁：目前作業名稱</li>
                                     <li>歡迎：歡迎使用者</li>
@@ -206,12 +219,21 @@ class App extends Component {
                             <h1>收件匣</h1>
                         </div>
 
-                        <p className="first-layer-no-list-style">收件匣首頁收藏使用者所有的待辦事項，<span
-                            className="Text-red">如圖四。</span>工作完成後，代辦事項即自動消失。</p>
+                        <p className="first-layer-no-list-style">收件匣首頁收藏使用者所有的待辦事項，如
+                            <span className="Text-red">圖四。</span>工作完成後，代辦事項即自動消失。</p>
 
                         <ul className="first-layer">
                             <li>
-                                按下『所有代辦事項』右方圖示 可按照『代辦事項分類』進行篩選。代辦事項可分為14類
+                                按下『所有代辦事項』右方
+                                <span
+                                    style={{
+                                        background: `url(${icon_arrow_down}) 0% 0% / contain no-repeat`,
+                                        width: '2em',
+                                        height: '1.5em',
+                                        display: 'inline-flex'
+                                    }}
+                                />
+                                圖示 可按照『代辦事項分類』進行篩選。代辦事項可分為14類
                                 <ul className="second-layer" style={{listStyle: 'decimal'}}>
                                     <li>新進履歷</li>
                                     <li>初選審核</li>
@@ -280,7 +302,18 @@ class App extends Component {
                         <p className="first-layer-no-list-style">進入路徑：首頁->收件匣</p>
 
                         <ul className="first-layer">
-                            <li>按下『所有代辦事項』右方的三角形圖示。如圖一</li>
+                            <li>
+                                按下『所有代辦事項』右方
+                                <span
+                                    style={{
+                                        background: `url(${icon_arrow_down}) 0% 0% / contain no-repeat`,
+                                        width: '2em',
+                                        height: '1.5em',
+                                        display: 'inline-flex'
+                                    }}
+                                />
+                                的三角形圖示。如圖一
+                            </li>
                             <li>選擇『新進履歷』。畫面會篩選出所有『新進履歷』的代辦事項。如圖二。</li>
                             <li>選擇特定代辦事項，按下『處理』圖示, 如畫面三。</li>
                             <li>開始讀取新進履歷。如畫面四。</li>
