@@ -113,8 +113,16 @@
 }
 
 
-.Text-red {
+.Text-danger {
     color: crimson;
+}
+
+.Text-warn {
+    color: coral;
+}
+
+.Text-success {
+    color: forestgreen;
 }
 
 .Text-bold {
