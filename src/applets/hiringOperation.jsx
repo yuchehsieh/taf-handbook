@@ -41,6 +41,10 @@ class HiringOperation extends Component {
             currentLeft: 0,
             currentRight: 0,
             currentBottom: 0,
+            currentMarginTop: null,
+            currentMarginLeft: null,
+            currentMarginBottom: null,
+            currentMarginRight: null,
         }
     }
 
@@ -107,6 +111,10 @@ class HiringOperation extends Component {
             currentLeft: nextMovement.left || null,
             currentRight: nextMovement.right || null,
             currentBottom: nextMovement.bottom || null,
+            currentMarginTop: nextMovement.marginTop || null,
+            currentMarginLeft: nextMovement.marginLeft || null,
+            currentMarginBottom: nextMovement.marginBottom || null,
+            currentMarginRight: nextMovement.marginRight || null,
         });
     }
 
@@ -117,13 +125,15 @@ class HiringOperation extends Component {
                 style={{
                     width: '100vw',
                     height: '100vh',
-                    display: 'block'
+                    display: 'block',
+                    overflowY: 'hidden'
                 }}
             >
                 <div
                     style={{
                         background: `url(${operations[this.state.currentImageIndex]}) 0% 0% / contain no-repeat`,
-                        height: '100%',
+                        height: 0,
+                        paddingTop: '100%',
                         position: 'relative'
                     }}
                 />
@@ -137,6 +147,10 @@ class HiringOperation extends Component {
                         left: this.state.currentLeft,
                         bottom: this.state.currentBottom,
                         right: this.state.currentRight,
+                        marginTop: this.state.currentMarginTop,
+                        marginLeft: this.state.currentMarginLeft,
+                        marginBottom: this.state.currentMarginBottom,
+                        marginRight: this.state.currentMarginRight,
                     }}
                     onClick={this.handleSpotClick}
                 />
@@ -144,6 +158,10 @@ class HiringOperation extends Component {
         )
     }
 
+    // TODO
+    // RESET TO ORIGIN
+    // 0 equals null
+    // "0"
     getMovements() {
         return [
             {
@@ -156,93 +174,93 @@ class HiringOperation extends Component {
                 gotoNextImage: true
             },
             {
-                width: "6em",
-                height: "2em",
-                top: "16em",
-                bottom: 0,
-                left: "8em",
-                right: 0,
+                width: "11%",
+                height: "5%",
+                top: "0",
+                left: "0",
+                marginTop: "32.5%",
+                marginLeft: "16.5%",
                 gotoNextImage: true
             },
             {
-                width: "2em",
-                height: "2em",
-                top: "2em",
-                bottom: 0,
-                left: 0,
-                right: "1.5em",
+                width: "3vw",
+                height: "3vw",
+                top: "0",
+                right: "0",
+                marginTop: "4.5%",
+                marginRight: "3.5%",
                 gotoNextImage: true
             },
             {
-                width: "2em",
-                height: "2em",
-                top: "2.5em",
-                bottom: 0,
-                left: 0,
-                right: ".2em",
+                width: "3vw",
+                height: "3vw",
+                top: "0",
+                right: "0",
+                marginTop: "4.8%",
+                marginRight: "0.8%",
                 gotoNextImage: false
             },
             {
-                width: "3em",
-                height: "3em",
-                top: "12.5em",
-                bottom: 0,
-                left: 0,
-                right: "6.5em",
+                width: "5vw",
+                height: "5vw",
+                top: "0",
+                right: "0",
+                marginTop: "26%",
+                marginRight: "13.5%",
                 gotoNextImage: true
             },
             {
-                width: "1.5em",
-                height: "1.5em",
-                top: "8.5em",
-                bottom: 0,
-                left: "1em",
-                right: 0,
+                width: "3vw",
+                height: "3vw",
+                top: "0",
+                left: "0",
+                marginTop: "17.1%",
+                marginLeft: "1.7%",
                 gotoNextImage: false
             },
             {
-                width: "4.5em",
-                height: "2em",
-                top: "4.8em",
-                bottom: 0,
-                left: 0,
-                right: "3em",
+                width: "7vw",
+                height: "3.5vw",
+                top: "0",
+                right: "0",
+                marginTop: "10%",
+                marginRight: "6.5%",
                 gotoNextImage: true
             },
             {
-                width: "2em",
-                height: "2em",
-                top: "8.5em",
-                bottom: 0,
-                left: 0,
-                right: "3.5em",
+                width: "2.5vw",
+                height: "2.5vw",
+                top: "0",
+                right: "0",
+                marginTop: "17.3%",
+                marginRight: "7.5%",
                 gotoNextImage: true
             },
             {
-                width: "15em",
-                height: "2.5em",
-                top: "27%",
-                bottom: 0,
-                left: 0,
-                right: "35%",
+                width: "28vw",
+                height: "5vw",
+                top: "0",
+                right: "0",
+                marginTop: "23.8%",
+                marginRight: "36%",
                 gotoNextImage: false
             },
             {
-                width: "8em",
-                height: "2.5em",
-                top: "43.5%",
-                bottom: 0,
-                left: 0,
-                right: "49%",
+                width: "14vw",
+                height: "4vw",
+                top: "0",
+                right: "0",
+                marginTop: "38.5%",
+                marginRight: "50%",
                 gotoNextImage: true
             },
             {
-                width: "4em",
-                height: "2.5em",
-                top: "4.5em",
-                bottom: 0,
-                left: 0,
-                right: "7em",
+                width: "7vw",
+                height: "4vw",
+                top: "0",
+                right: "0",
+                marginTop: "10%",
+                marginRight: "14.5%",
                 gotoNextImage: true
             }
         ]
