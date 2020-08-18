@@ -1,4 +1,4 @@
-import React, {Component, Fragment} from 'react';
+import React, {Component} from 'react';
 
 import img_Slide1 from '../images/hiringOperations/Slide1.png';
 import img_Slide2 from '../images/hiringOperations/Slide2.png';
@@ -140,9 +140,11 @@ class HiringOperation extends Component {
                 <div
                     style={{
                         position: 'absolute',
+                        border: '3px solid red',
+                        transition: 'all .3s',
+                        cursor: 'pointer',
                         width: this.state.currentWidth,
                         height: this.state.currentHeight,
-                        border: '1px solid red',
                         top: this.state.currentTop,
                         left: this.state.currentLeft,
                         bottom: this.state.currentBottom,
@@ -158,10 +160,7 @@ class HiringOperation extends Component {
         )
     }
 
-    // TODO
-    // RESET TO ORIGIN
-    // 0 equals null
-    // "0"
+    // 0 equals to null, use "0" instead
     getMovements() {
         return [
             {
@@ -262,66 +261,18 @@ class HiringOperation extends Component {
                 marginTop: "10%",
                 marginRight: "14.5%",
                 gotoNextImage: true
-            }
+            },
+            {
+                width: "100%",
+                height: "100%",
+                top: "0",
+                bottom: "0",
+                left: "0",
+                right: "0",
+                gotoNextImage: true
+            },
         ]
     }
 }
-
-const ImageWithClickSpot = ({
-                                width = '5em',
-                                height = '5em',
-                                imgSrc,
-                                left,
-                                right,
-                                top,
-                                bottom,
-                                onClick
-                            }) => (
-    <Fragment>
-        <div
-            style={{
-                background: `url(${imgSrc}) 0% 0% / contain no-repeat`,
-                height: '100%',
-                position: 'relative'
-            }}
-        />
-        <ClickSpot
-            width={width}
-            height={height}
-            top={top}
-            bottom={bottom}
-            right={right}
-            left={left}
-            onClick={onClick}
-        />
-    </Fragment>
-);
-
-const ClickSpot = ({
-                       width = '5em',
-                       height = '5em',
-                       onClick,
-                       left,
-                       right,
-                       top,
-                       bottom,
-                       color,
-                   }) => (
-    <Fragment>
-        <div
-            style={{
-                position: 'absolute',
-                width: width,
-                height: height,
-                border: '1px solid red',
-                top: top,
-                left: left,
-                bottom: bottom,
-                right: right,
-            }}
-            onClick={onClick}
-        />
-    </Fragment>
-);
 
 export default HiringOperation;
