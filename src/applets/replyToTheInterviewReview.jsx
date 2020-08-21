@@ -1,28 +1,16 @@
 import React, {Component} from 'react';
 
-import img_Slide1 from '../images/hiringOperations/Slide1.png';
-import img_Slide2 from '../images/hiringOperations/Slide2.png';
-import img_Slide3 from '../images/hiringOperations/Slide3.png';
-import img_Slide4 from '../images/hiringOperations/Slide4.png';
-import img_Slide5 from '../images/hiringOperations/Slide5.png';
-import img_Slide6 from '../images/hiringOperations/Slide6.png';
-import img_Slide7 from '../images/hiringOperations/Slide7.png';
-import img_Slide8 from '../images/hiringOperations/Slide8.png';
-import img_Slide9 from '../images/hiringOperations/Slide9.png';
+import img_Slide1 from '../images/replyToTheInterviewReview/Slide1.png';
+import img_Slide2 from '../images/replyToTheInterviewReview/Slide2.png';
+import img_Slide3 from '../images/replyToTheInterviewReview/Slide3.png';
 
 const operations = [
     img_Slide1,
     img_Slide2,
     img_Slide3,
-    img_Slide4,
-    img_Slide5,
-    img_Slide6,
-    img_Slide7,
-    img_Slide8,
-    img_Slide9
 ];
 
-class HiringOperation extends Component {
+class ReplyToTheInterviewReview extends Component {
     constructor(props) {
         super(props);
 
@@ -54,7 +42,7 @@ class HiringOperation extends Component {
         if (index === operations.length - 1) index = 0;
         else index = index + 1;
 
-       return index;
+        return index;
     }
 
     // goPrevImage() {
@@ -174,106 +162,52 @@ class HiringOperation extends Component {
                 gotoNextImage: true
             },
             {
-                width: "11%",
-                height: "5%",
-                top: "0",
-                left: "0",
-                marginTop: "32.5%",
-                marginLeft: "16.5%",
-                gotoNextImage: true
-            },
-            {
                 width: "3vw",
                 height: "3vw",
                 top: "0",
                 right: "0",
-                marginTop: "4.5%",
-                marginRight: "3.5%",
-                gotoNextImage: true
-            },
-            {
-                width: "3vw",
-                height: "3vw",
-                top: "0",
-                right: "0",
-                marginTop: "4.8%",
-                marginRight: "0.8%",
+                marginTop: "14.7%",
+                marginRight: "20.2%",
                 gotoNextImage: false
             },
             {
-                width: "5vw",
-                height: "5vw",
-                top: "0",
-                right: "0",
-                marginTop: "26%",
-                marginRight: "13.5%",
-                gotoNextImage: true
-            },
-            {
                 width: "3vw",
                 height: "3vw",
                 top: "0",
                 left: "0",
-                marginTop: "17.1%",
+                marginTop: "27.2%",
                 marginLeft: "1.7%",
                 gotoNextImage: false
             },
             {
-                width: "7vw",
-                height: "3.5vw",
+                width: "3vw",
+                height: "3vw",
                 top: "0",
                 right: "0",
-                marginTop: "10%",
-                marginRight: "6.5%",
+                marginTop: "20.4%",
+                marginRight: "6.8%",
                 gotoNextImage: true
             },
             {
-                width: "2.5vw",
-                height: "2.5vw",
+                width: "33vw",
+                height: "4.7vw",
                 top: "0",
-                right: "0",
-                marginTop: "17.3%",
-                marginRight: "7.5%",
-                gotoNextImage: true
-            },
-            {
-                width: "28vw",
-                height: "5vw",
-                top: "0",
-                right: "0",
-                marginTop: "23.8%",
-                marginRight: "36%",
+                left: "0",
+                marginTop: "30.7%",
+                marginLeft: "1%",
                 gotoNextImage: false
             },
             {
-                width: "14vw",
-                height: "4vw",
+                width: "7.5vw",
+                height: "4.2vw",
                 top: "0",
                 right: "0",
-                marginTop: "38.5%",
-                marginRight: "50%",
-                gotoNextImage: true
-            },
-            {
-                width: "7vw",
-                height: "4vw",
-                top: "0",
-                right: "0",
-                marginTop: "10%",
-                marginRight: "14.5%",
-                gotoNextImage: true
-            },
-            {
-                width: "100%",
-                height: "100%",
-                top: "0",
-                bottom: "0",
-                left: "0",
-                right: "0",
+                marginTop: "13%",
+                marginRight: "13.9%",
                 gotoNextImage: true
             },
         ]
     }
 }
 
-export default HiringOperation;
+export default ReplyToTheInterviewReview;

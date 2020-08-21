@@ -1,14 +1,13 @@
 import React, {Component} from 'react';
 
-import img_Slide1 from '../images/hiringOperations/Slide1.png';
-import img_Slide2 from '../images/hiringOperations/Slide2.png';
-import img_Slide3 from '../images/hiringOperations/Slide3.png';
-import img_Slide4 from '../images/hiringOperations/Slide4.png';
-import img_Slide5 from '../images/hiringOperations/Slide5.png';
-import img_Slide6 from '../images/hiringOperations/Slide6.png';
-import img_Slide7 from '../images/hiringOperations/Slide7.png';
-import img_Slide8 from '../images/hiringOperations/Slide8.png';
-import img_Slide9 from '../images/hiringOperations/Slide9.png';
+import img_Slide1 from '../images/replyForInterviewAvailableTime/Slide1.png';
+import img_Slide2 from '../images/replyForInterviewAvailableTime/Slide2.png';
+import img_Slide3 from '../images/replyForInterviewAvailableTime/Slide3.png';
+import img_Slide4 from '../images/replyForInterviewAvailableTime/Slide4.png';
+import img_Slide5 from '../images/replyForInterviewAvailableTime/Slide5.png';
+import img_Slide6 from '../images/replyForInterviewAvailableTime/Slide6.png';
+import img_Slide7 from '../images/replyForInterviewAvailableTime/Slide7.png';
+import img_Slide8 from '../images/replyForInterviewAvailableTime/Slide8.png';
 
 const operations = [
     img_Slide1,
@@ -19,10 +18,9 @@ const operations = [
     img_Slide6,
     img_Slide7,
     img_Slide8,
-    img_Slide9
 ];
 
-class HiringOperation extends Component {
+class ReplyForInterviewAvailableTime extends Component {
     constructor(props) {
         super(props);
 
@@ -54,7 +52,7 @@ class HiringOperation extends Component {
         if (index === operations.length - 1) index = 0;
         else index = index + 1;
 
-       return index;
+        return index;
     }
 
     // goPrevImage() {
@@ -174,39 +172,21 @@ class HiringOperation extends Component {
                 gotoNextImage: true
             },
             {
-                width: "11%",
-                height: "5%",
-                top: "0",
-                left: "0",
-                marginTop: "32.5%",
-                marginLeft: "16.5%",
-                gotoNextImage: true
-            },
-            {
                 width: "3vw",
-                height: "3vw",
+                height: "2.5vw",
                 top: "0",
                 right: "0",
-                marginTop: "4.5%",
-                marginRight: "3.5%",
-                gotoNextImage: true
-            },
-            {
-                width: "3vw",
-                height: "3vw",
-                top: "0",
-                right: "0",
-                marginTop: "4.8%",
-                marginRight: "0.8%",
+                marginTop: "8.5%",
+                marginRight: "0.5%",
                 gotoNextImage: false
             },
             {
                 width: "5vw",
-                height: "5vw",
+                height: "6vw",
                 top: "0",
                 right: "0",
-                marginTop: "26%",
-                marginRight: "13.5%",
+                marginTop: "29%",
+                marginRight: "13%",
                 gotoNextImage: true
             },
             {
@@ -214,53 +194,53 @@ class HiringOperation extends Component {
                 height: "3vw",
                 top: "0",
                 left: "0",
-                marginTop: "17.1%",
+                marginTop: "19.6%",
                 marginLeft: "1.7%",
                 gotoNextImage: false
             },
             {
-                width: "7vw",
-                height: "3.5vw",
+                width: "6vw",
+                height: "4.5vw",
                 top: "0",
                 right: "0",
-                marginTop: "10%",
-                marginRight: "6.5%",
+                marginTop: "11.8%",
+                marginRight: "7%",
                 gotoNextImage: true
             },
             {
-                width: "2.5vw",
-                height: "2.5vw",
+                width: "3vw",
+                height: "3vw",
                 top: "0",
                 right: "0",
-                marginTop: "17.3%",
-                marginRight: "7.5%",
+                marginTop: "18.5%",
+                marginRight: "7%",
                 gotoNextImage: true
             },
             {
-                width: "28vw",
+                width: "30vw",
                 height: "5vw",
                 top: "0",
                 right: "0",
-                marginTop: "23.8%",
-                marginRight: "36%",
+                marginTop: "27%",
+                marginRight: "34.5%",
                 gotoNextImage: false
             },
             {
-                width: "14vw",
+                width: "15vw",
                 height: "4vw",
                 top: "0",
                 right: "0",
-                marginTop: "38.5%",
-                marginRight: "50%",
+                marginTop: "42%",
+                marginRight: "49.5%",
                 gotoNextImage: true
             },
             {
-                width: "7vw",
+                width: "8vw",
                 height: "4vw",
                 top: "0",
                 right: "0",
-                marginTop: "10%",
-                marginRight: "14.5%",
+                marginTop: "13.3%",
+                marginRight: "13.5%",
                 gotoNextImage: true
             },
             {
@@ -276,4 +256,4 @@ class HiringOperation extends Component {
     }
 }
 
-export default HiringOperation;
+export default ReplyForInterviewAvailableTime;

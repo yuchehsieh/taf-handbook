@@ -62,6 +62,8 @@ class General extends Component {
                     <div className="header-element">新增組織-範例資料</div>
                     <div className="header-element">新增組織</div>
                     <div className="header-element">前往招聘流程</div>
+                    <div className="header-element">前往回覆面談可用時間</div>
+                    <div className="header-element">前往回覆面談評核</div>
                 </header>
                 <header className="App-header" style={{position: 'fixed'}}>
                     <Link to="login-progress" className="header-element" smooth={true} duration={500}>
@@ -111,6 +113,12 @@ class General extends Component {
                     </Link>
                     <RouteLink to={routePath.hiringOperation}>
                         <p className="header-element">前往招聘流程</p>
+                    </RouteLink>
+                    <RouteLink to={routePath.replyForInterviewAvailableTime}>
+                        <p className="header-element">前往回覆面談可用時間</p>
+                    </RouteLink>
+                    <RouteLink to={routePath.replyToTheInterviewReview}>
+                        <p className="header-element">前往回覆面談評核</p>
                     </RouteLink>
                 </header>
 
