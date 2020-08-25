@@ -15,6 +15,7 @@
     padding: 5vh 3% 0 5%;
     text-align: start;
     border-right: 1px solid #ccc;
+    overflow-y: scroll;
 }
 
 .header-element {

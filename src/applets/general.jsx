@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import '../App.css';
 import {Link, DirectLink, Element, Events, animateScroll as scroll, scrollSpy, scroller} from 'react-scroll'
-import { Link as RouteLink } from 'react-router-dom';
+import {Link as RouteLink} from 'react-router-dom';
 
 import img_login_progress from '../images/login-process.png';
 import img_dashboard from '../images/dashbaord.png';
@@ -28,13 +28,38 @@ import img_add_group2 from '../images/add-group2.png';
 import img_add_group3 from '../images/add-group3.png';
 import img_add_group4 from '../images/add-group4.png';
 import img_add_group5 from '../images/add-group5.png';
-
+import img_lookup_perfect_candidate1 from '../images/lookup-perfect-candidate1.png';
+import img_lookup_perfect_candidate2 from '../images/lookup-perfect-candidate2.png';
+import img_add_perfect_candidate_example from '../images/add-perfect-candidate-example.png';
+import img_add_perfect_candidate1 from '../images/add-perfect-candidate1.png';
+import img_add_perfect_candidate2 from '../images/add-perfect-candidate2.png';
+import img_add_perfect_candidate3 from '../images/add-perfect-candidate3.png';
+import img_add_perfect_candidate4 from '../images/add-perfect-candidate4.png';
+import img_add_perfect_candidate5 from '../images/add-perfect-candidate5.png';
+import img_add_perfect_candidate6 from '../images/add-perfect-candidate6.png';
+import img_add_perfect_candidate_form from '../images/add-perfect-candidate-form.png';
+import img_add_gender1 from '../images/add-gender1.png';
+import img_add_gender2 from '../images/add-gender2.png';
+import img_add_gender3 from '../images/add-gender3.png';
+import img_add_age1 from '../images/add-age1.png';
+import img_add_age2 from '../images/add-age2.png';
+import img_add_age3 from '../images/add-age3.png';
+import img_add_identity_type1 from '../images/add-identity-type1.png';
+import img_add_identity_type2 from '../images/add-identity-type2.png';
+import img_add_identity_type3 from '../images/add-identity-type3.png';
+import img_add_resident_place1 from '../images/add-resident-place1.png';
+import img_add_resident_place2 from '../images/add-resident-place2.png';
+import img_add_resident_place3 from '../images/add-resident-place3.png';
+import img_add_resident_place4 from '../images/add-resident-place4.png';
+import img_add_resident_place5 from '../images/add-resident-place5.png';
 import icon_homepage from '../images/icon_homepage.png';
 import icon_arrow_down from '../images/icon_arrow_down.png';
+import icon_arrow_up from '../images/icon-arrow-up.png';
 import icon_switch_window1 from '../images/icon_switch_window1.png';
 import icon_switch_window2 from '../images/icon_switch_window2.png';
 import icon_switch_window3 from '../images/icon_switch_window3.png';
 import icon_file from '../images/icon_file.png';
+import icon_search from '../images/icon-search.png';
 
 import video_login from '../images/video_login.mp4';
 import {routePath} from "../utils/constants";
@@ -64,6 +89,13 @@ class General extends Component {
                     <div className="header-element">前往招聘流程</div>
                     <div className="header-element">前往回覆面談可用時間</div>
                     <div className="header-element">前往回覆面談評核</div>
+                    <div className="header-element">查詢完美候選人原型</div>
+                    <div className="header-element">新增完美候選人原型-範例資料</div>
+                    <div className="header-element">新增完美候選人原型</div>
+                    <div className="header-element">新增性別</div>
+                    <div className="header-element">新增年齡</div>
+                    <div className="header-element">新增身份類別</div>
+                    <div className="header-element">新增居住地</div>
                 </header>
                 <header className="App-header" style={{position: 'fixed'}}>
                     <Link to="login-progress" className="header-element" smooth={true} duration={500}>
@@ -120,6 +152,27 @@ class General extends Component {
                     <RouteLink to={routePath.replyToTheInterviewReview}>
                         <p className="header-element">前往回覆面談評核</p>
                     </RouteLink>
+                    <Link to="lookup-perfect-candidate" className="header-element" smooth={true} duration={500}>
+                        查詢完美候選人原型
+                    </Link>
+                    <Link to="add-perfect-candidate-example" className="header-element" smooth={true} duration={500}>
+                        新增完美候選人原型-範例資料
+                    </Link>
+                    <Link to="add-perfect-candidate" className="header-element" smooth={true} duration={500}>
+                        新增完美候選人原型
+                    </Link>
+                    <Link to="add-gender" className="header-element" smooth={true} duration={500}>
+                        新增性別
+                    </Link>
+                    <Link to="add-age" className="header-element" smooth={true} duration={500}>
+                        新增年齡
+                    </Link>
+                    <Link to="add-identity-type" className="header-element" smooth={true} duration={500}>
+                        新增身份類別
+                    </Link>
+                    <Link to="add-resident-place" className="header-element" smooth={true} duration={500}>
+                        新增居住地
+                    </Link>
                 </header>
 
                 <body className="App-body">
@@ -826,7 +879,9 @@ class General extends Component {
                                 <p className="second-layer-no-list-style">面試指南</p>
                                 <p className="second-layer-no-list-style">面試評核分為2部分：</p>
                                 <ul className="second-layer">
-                                    <li>雲境面談表：如附件。填寫完畢請以附件形式寄給recruiter@cloud.com。線上教育訓練：tutorial.talentonline.io/interview evaluation form/</li>
+                                    <li>雲境面談表：如附件。填寫完畢請以附件形式寄給recruiter@cloud.com。線上教育訓練：tutorial.talentonline.io/interview
+                                        evaluation form/
+                                    </li>
                                     <li>好聘面談評核：請於面談結束後三天完成線上評核。線上教育訓練：tutorial.talentonline.io/interview scorecard/</li>
                                 </ul>
                             </li>
@@ -848,6 +903,431 @@ class General extends Component {
                                 <span className="Text-underline">刪除全組織的必要測驗項目</span>
                             </li>
                             <li>按下儲存。</li>
+                        </ul>
+                    </div>
+                </Element>
+
+                <Element className="Chapter" name="lookup-perfect-candidate">
+                    <div className="Chapter-Multi-image-container">
+                        <div className="Chapter-Multi-image-image"
+                             style={{
+                                 background: `url(${img_lookup_perfect_candidate1})`,
+                                 backgroundSize: 'contain',
+                                 backgroundRepeat: 'no-repeat'
+                             }}
+                        />
+                        <div className="Chapter-Multi-image-image"
+                             style={{
+                                 background: `url(${img_lookup_perfect_candidate2})`,
+                                 backgroundSize: 'contain',
+                                 backgroundRepeat: 'no-repeat'
+                             }}
+                        />
+                    </div>
+
+                    <div className="Chapter-body">
+
+                        <div className="Chapter-body-title-group">
+                            <h1>查詢完美候選人原型</h1>
+                        </div>
+
+                        <p className="first-layer-no-list-style">展示範例：查詢『售前工程師』的完美候選人原型。</p>
+                        <p className="first-layer-no-list-style">進入路徑：首頁-> 發射台->職缺管理->完美候選人原型。</p>
+
+                        <ul className="first-layer">
+                            <li>輸入完美候選人原型名稱(全名/關鍵字）或是選擇適用範圍（全公司/特定招聘區域）全名/關鍵字）。在名稱欄位輸入範例完美候選人原型名稱『 售前工程師』。
+                            </li>
+                            <li>
+                                按下
+                                <span
+                                    style={{
+                                        background: `url(${icon_search}) 0% 0% / contain no-repeat`,
+                                        width: '2em',
+                                        height: '1.5em',
+                                        display: 'inline-flex'
+                                    }}
+                                />
+                                查詢圖示。
+                            </li>
+                            <li>成果如圖二。</li>
+                        </ul>
+                    </div>
+                </Element>
+
+                <Element className="Chapter" name="add-perfect-candidate-example" style={{flexDirection: 'column'}}>
+                    <div className="Chapter-body-title-group" style={{width: '99%'}}>
+                        <h1>新增完美候選人原型-範例資料</h1>
+                    </div>
+                    <div
+                        style={{
+                            background: `url(${img_add_perfect_candidate_example})`,
+                            height: '54em',
+                            backgroundSize: 'contain',
+                            backgroundRepeat: 'no-repeat',
+                        }}
+                    />
+                </Element>
+
+                <Element className="Chapter" name="add-perfect-candidate">
+                    <div className="Chapter-Multi-image-container">
+                        <div className="Chapter-Multi-image-image"
+                             style={{
+                                 background: `url(${img_add_perfect_candidate1})`,
+                                 backgroundSize: 'contain',
+                                 backgroundRepeat: 'no-repeat'
+                             }}
+                        />
+                        <div className="Chapter-Multi-image-image"
+                             style={{
+                                 background: `url(${img_add_perfect_candidate2})`,
+                                 backgroundSize: 'contain',
+                                 backgroundRepeat: 'no-repeat'
+                             }}
+                        />
+                        <div className="Chapter-Multi-image-image"
+                             style={{
+                                 background: `url(${img_add_perfect_candidate3})`,
+                                 backgroundSize: 'contain',
+                                 backgroundRepeat: 'no-repeat'
+                             }}
+                        />
+                        <div className="Chapter-Multi-image-image"
+                             style={{
+                                 background: `url(${img_add_perfect_candidate4})`,
+                                 backgroundSize: 'contain',
+                                 backgroundRepeat: 'no-repeat'
+                             }}
+                        />
+                        <div className="Chapter-Multi-image-image"
+                             style={{
+                                 background: `url(${img_add_perfect_candidate5})`,
+                                 backgroundSize: 'contain',
+                                 backgroundRepeat: 'no-repeat'
+                             }}
+                        />
+                        <div className="Chapter-Multi-image-image"
+                             style={{
+                                 background: `url(${img_add_perfect_candidate6})`,
+                                 backgroundSize: 'contain',
+                                 backgroundRepeat: 'no-repeat'
+                             }}
+                        />
+                    </div>
+
+                    <div className="Chapter-body">
+
+                        <div className="Chapter-body-title-group">
+                            <h1>新增完美候選人原型</h1>
+                        </div>
+
+                        <p className="first-layer-no-list-style">展示範例：新增『售前工程師』的完美候選人原型。</p>
+                        <p className="first-layer-no-list-style">進入路徑：首頁->發射台->職缺管理->完美候選人原型。</p>
+                        <div className="Chapter-Multi-image-image"
+                             style={{
+                                 background: `url(${img_add_perfect_candidate_form})`,
+                                 backgroundSize: 'contain',
+                                 backgroundRepeat: 'no-repeat',
+                                 backgroundPositionX: '2.5em'
+                             }}
+                        />
+
+                        <ul className="first-layer">
+                            <li>
+                                <span className="Text-danger">
+                                參照
+                                    <span className="Text-underline">
+                                        <span style={{fontWeight: 'bold'}}>
+                                        查詢
+                                        </span>
+                                        完美候選人原型
+                                    </span>
+                                </span>
+                            </li>
+                            <li>按下右上方『新增』按鈕。</li>
+                            <li>進入新增完美候選人原型畫面，如『圖二』。可從4個面向定義完美候選人原型。</li>
+                            <li>名稱：輸入『售前工程師』。</li>
+                            <li>
+                                適用範圍：按下
+                                <span
+                                    style={{
+                                        background: `url(${icon_arrow_down}) 0% 0% / contain no-repeat`,
+                                        width: '2em',
+                                        height: '1.5em',
+                                        display: 'inline-flex'
+                                    }}
+                                />
+                                ，出現全公司以及所有的招聘區域，按照範例選擇『雲敬台灣』。雲境公司內部僅有雲境台灣招聘區域的招聘人員可以被授權使用『售前工程師』的完美候選人原型。若選擇全公司，所有的招聘人員都可以被授權使用此一完美後選人原型。
+                            </li>
+                            <li>
+                                圖像：按下
+                                <span
+                                    style={{
+                                        background: `url(${icon_file}) 0% 0% / contain no-repeat`,
+                                        width: '2em',
+                                        height: '1.5em',
+                                        display: 'inline-flex'
+                                    }}
+                                />
+                                『插入檔案』圖示，選擇『售前工程師』的識別圖檔。
+                            </li>
+                            <li>如圖三，選擇圖檔，按下開啟。</li>
+                            <li>成果如圖四。</li>
+                            <li>敘述：按照範例輸入『適用於各事業群的售前工程師』。</li>
+                            <li>設定與個人簡歷相關的條件：性別、年齡、身份類型、居住地、人格特質、薪資。</li>
+                        </ul>
+                    </div>
+                </Element>
+
+                <Element className="Chapter" name="add-gender">
+                    <div className="Chapter-Multi-image-container">
+                        <div className="Chapter-Multi-image-image"
+                             style={{
+                                 background: `url(${img_add_gender1})`,
+                                 backgroundSize: 'contain',
+                                 backgroundRepeat: 'no-repeat'
+                             }}
+                        />
+                        <div className="Chapter-Multi-image-image"
+                             style={{
+                                 background: `url(${img_add_gender2})`,
+                                 backgroundSize: 'contain',
+                                 backgroundRepeat: 'no-repeat'
+                             }}
+                        />
+                        <div className="Chapter-Multi-image-image"
+                             style={{
+                                 background: `url(${img_add_gender3})`,
+                                 backgroundSize: 'contain',
+                                 backgroundRepeat: 'no-repeat'
+                             }}
+                        />
+                    </div>
+
+                    <div className="Chapter-body">
+
+                        <div className="Chapter-body-title-group">
+                            <h1>新增性別</h1>
+                        </div>
+
+                        <p className="first-layer-no-list-style">範例：將男性設定為偏好性別。</p>
+
+                        <ul className="first-layer">
+                            <li>
+                                按下
+                                <span
+                                    style={{
+                                        background: `url(${icon_arrow_up}) 0% 0% / contain no-repeat`,
+                                        width: '2em',
+                                        height: '1.5em',
+                                        display: 'inline-flex'
+                                    }}
+                                />
+                                如圖ㄧ。
+                            </li>
+                            <li>表格會向下展開。UI設計是採取選單模式。每個條件都有3個選才標準：</li>
+                            <ul className="second-layer" style={{listStyle: 'none'}}>
+                                <li>必要：候選人未達必要條件，會被淘汰。搭配履歷評分，如果候選人達到必要條件，會被給予基本分數。</li>
+                                <li>偏好：搭配履歷評分，如果候選人達到偏好條件，會被給予較高分數。</li>
+                                <li>完美：搭配履歷評分，如果候選人達到完美條件，會被給予最高分數。</li>
+                            </ul>
+                            <li>將游標移到偏好欄位，點擊欄位空白處或是右方下三角形。</li>
+                            <li>選單會展開如圖二，選定範例中指定性別『男性』。選單內容不足，請參照新增性別。</li>
+                            <li>成果。如圖四。若要多選，可重複步驟3-4。</li>
+                        </ul>
+                    </div>
+                </Element>
+
+                <Element className="Chapter" name="add-age">
+                    <div className="Chapter-Multi-image-container">
+                        <div className="Chapter-Multi-image-image"
+                             style={{
+                                 background: `url(${img_add_age1})`,
+                                 backgroundSize: 'contain',
+                                 backgroundRepeat: 'no-repeat'
+                             }}
+                        />
+                        <div className="Chapter-Multi-image-image"
+                             style={{
+                                 background: `url(${img_add_age2})`,
+                                 backgroundSize: 'contain',
+                                 backgroundRepeat: 'no-repeat'
+                             }}
+                        />
+                        <div className="Chapter-Multi-image-image"
+                             style={{
+                                 background: `url(${img_add_age3})`,
+                                 backgroundSize: 'contain',
+                                 backgroundRepeat: 'no-repeat'
+                             }}
+                        />
+                    </div>
+
+                    <div className="Chapter-body">
+
+                        <div className="Chapter-body-title-group">
+                            <h1>新增年齡</h1>
+                        </div>
+
+                        <p className="first-layer-no-list-style">範例：將偏好性別設定為20-30歲。</p>
+
+                        <ul className="first-layer">
+                            <li>
+                                按下
+                                <span
+                                    style={{
+                                        background: `url(${icon_arrow_up}) 0% 0% / contain no-repeat`,
+                                        width: '2em',
+                                        height: '1.5em',
+                                        display: 'inline-flex'
+                                    }}
+                                />
+                                如圖ㄧ。
+                            </li>
+                            <li>表格會向下展開。UI設計是採取選單模式。每個條件都有3個選才標準：</li>
+                            <ul className="second-layer" style={{listStyle: 'none'}}>
+                                <li>必要：候選人未達必要條件，會被淘汰。搭配履歷評分，如果候選人達到必要條件，會被給予基本分數。</li>
+                                <li>偏好：搭配履歷評分，如果候選人達到偏好條件，會被給予較高分數。 </li>
+                                <li>完美：搭配履歷評分，如果候選人達到完美條件，會被給予最高分數。</li>
+                            </ul>
+                            <li>根據範例，勾選偏好年齡。</li>
+                            <li>尺標圖示會浮現。如圖二。</li>
+                            <li>移動右尺標到30，如圖三。</li>
+                            <li>移動左尺標到20。</li>
+                        </ul>
+                    </div>
+                </Element>
+
+                <Element className="Chapter" name="add-identity-type">
+                    <div className="Chapter-Multi-image-container">
+                        <div className="Chapter-Multi-image-image"
+                             style={{
+                                 background: `url(${img_add_identity_type1})`,
+                                 backgroundSize: 'contain',
+                                 backgroundRepeat: 'no-repeat'
+                             }}
+                        />
+                        <div className="Chapter-Multi-image-image"
+                             style={{
+                                 background: `url(${img_add_identity_type2})`,
+                                 backgroundSize: 'contain',
+                                 backgroundRepeat: 'no-repeat'
+                             }}
+                        />
+                        <div className="Chapter-Multi-image-image"
+                             style={{
+                                 background: `url(${img_add_identity_type3})`,
+                                 backgroundSize: 'contain',
+                                 backgroundRepeat: 'no-repeat'
+                             }}
+                        />
+                    </div>
+
+                    <div className="Chapter-body">
+
+                        <div className="Chapter-body-title-group">
+                            <h1>新增年齡</h1>
+                        </div>
+
+                        <p className="first-layer-no-list-style">範例：將上班族設定為偏好身份。</p>
+
+                        <ul className="first-layer">
+                            <li>
+                                按下
+                                <span
+                                    style={{
+                                        background: `url(${icon_arrow_up}) 0% 0% / contain no-repeat`,
+                                        width: '2em',
+                                        height: '1.5em',
+                                        display: 'inline-flex'
+                                    }}
+                                />
+                                如圖ㄧ。
+                            </li>
+                            <li>表格會向下展開。UI設計是採取選單模式。每個條件都有3個選才標準：</li>
+                            <ul className="second-layer" style={{listStyle: 'none'}}>
+                                <li>必要：候選人未達必要條件，會被淘汰。搭配履歷評分，如果候選人達到必要條件，會被給予基本分數。</li>
+                                <li>偏好：搭配履歷評分，如果候選人達到偏好條件，會被給予較高分數。 </li>
+                                <li>完美：搭配履歷評分，如果候選人達到完美條件，會被給予最高分數。</li>
+                            </ul>
+                            <li>將游標移到偏好欄位，點擊欄位空白處或是右方下三角形。</li>
+                            <li>選單會展開如圖二，選定範例中指定身份『上班族』。選單內容不足，請電郵好聘support@talentonline.io。</li>
+                            <li>成果。如圖四。若要多選，可重複步驟3-4。</li>
+                        </ul>
+                    </div>
+                </Element>
+
+                <Element className="Chapter" name="add-resident-place">
+                    <div className="Chapter-Multi-image-container">
+                        <div className="Chapter-Multi-image-image"
+                             style={{
+                                 background: `url(${img_add_resident_place1})`,
+                                 backgroundSize: 'contain',
+                                 backgroundRepeat: 'no-repeat'
+                             }}
+                        />
+                        <div className="Chapter-Multi-image-image"
+                             style={{
+                                 background: `url(${img_add_resident_place2})`,
+                                 backgroundSize: 'contain',
+                                 backgroundRepeat: 'no-repeat'
+                             }}
+                        />
+                        <div className="Chapter-Multi-image-image"
+                             style={{
+                                 background: `url(${img_add_resident_place3})`,
+                                 backgroundSize: 'contain',
+                                 backgroundRepeat: 'no-repeat'
+                             }}
+                        />
+                        <div className="Chapter-Multi-image-image"
+                             style={{
+                                 background: `url(${img_add_resident_place4})`,
+                                 backgroundSize: 'contain',
+                                 backgroundRepeat: 'no-repeat'
+                             }}
+                        />
+                        <div className="Chapter-Multi-image-image"
+                             style={{
+                                 background: `url(${img_add_resident_place5})`,
+                                 backgroundSize: 'contain',
+                                 backgroundRepeat: 'no-repeat'
+                             }}
+                        />
+                    </div>
+
+                    <div className="Chapter-body">
+
+                        <div className="Chapter-body-title-group">
+                            <h1>新增年齡</h1>
+                        </div>
+
+                        <p className="first-layer-no-list-style">範例：將台灣設定為必要居住地。將桃竹苗設定為完美居住地。</p>
+
+                        <ul className="first-layer">
+                            <li>
+                                按下
+                                <span
+                                    style={{
+                                        background: `url(${icon_arrow_up}) 0% 0% / contain no-repeat`,
+                                        width: '2em',
+                                        height: '1.5em',
+                                        display: 'inline-flex'
+                                    }}
+                                />
+                                如圖ㄧ。
+                            </li>
+                            <li>表格會向下展開。UI設計是採取選單模式。每個條件都有3個選才標準：</li>
+                            <ul className="second-layer" style={{listStyle: 'none'}}>
+                                <li>必要：候選人未達必要條件，會被淘汰。搭配履歷評分，如果候選人達到必要條件，會被給予基本分數。</li>
+                                <li>偏好：搭配履歷評分，如果候選人達到偏好條件，會被給予較高分數。 </li>
+                                <li>完美：搭配履歷評分，如果候選人達到完美條件，會被給予最高分數。</li>
+                            </ul>
+                            <li>將游標移到偏好欄位，點擊欄位空白處或是右方下三角形。</li>
+                            <li>選單會展開如圖二，可輸入『台灣』或是部分關鍵字進行搜尋(好聘支持異體字，不論輸入『台灣』或是『臺灣』，都會搜尋到。)或是滑動選單選定範例中指定國家『台灣』。選單內容不足，請電郵好聘support@talentonline.io。</li>
+                            <li>將游標移到完美居住地的國家欄，重複步驟3-4，選擇台灣，如圖三。</li>
+                            <li>將游標移到完美居住地的城市欄，點擊欄位空白處或是右方下三角形。</li>
+                            <li>選單會展開如圖四，滑動選單選定範例中指定國家『台北市』。重複步驟6-7，選擇『新北市』與『基隆市』。選單內容不足，請電郵好聘support@talentonline.io。</li>
+                            <li>成果。如圖五。</li>
                         </ul>
                     </div>
                 </Element>
