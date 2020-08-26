@@ -77,6 +77,35 @@ import img_set_workExp_related from '../images/set-workExp-related.png';
 import img_set_seniority1 from '../images/set-seniority1.png';
 import img_set_seniority2 from '../images/set-seniority2.png';
 import img_set_seniority3 from '../images/set-seniority3.png';
+import img_set_target_company1 from '../images/set-target-company1.png';
+import img_set_target_company2 from '../images/set-target-company2.png';
+import img_set_target_company3 from '../images/set-target-company3.png';
+import img_set_exclude_company1 from '../images/set-exclude-company1.png';
+import img_set_exclude_company2 from '../images/set-exclude-company2.png';
+import img_set_exclude_company3 from '../images/set-exclude-company3.png';
+import img_set_skills_related from '../images/set-skills-related.png';
+import img_set_license1 from '../images/set-license1.png';
+import img_set_license2 from '../images/set-license2.png';
+import img_set_license3 from '../images/set-license3.png';
+import img_set_expertise_and_computer_skills from '../images/set-expertise-and-computer-skills.png';
+import img_set_language_skills1 from '../images/set-language-skills1.png';
+import img_set_language_skills2 from '../images/set-language-skills2.png';
+import img_set_language_skills3 from '../images/set-language-skills3.png';
+import img_set_language_skills4 from '../images/set-language-skills4.png';
+import img_set_language_skills5 from '../images/set-language-skills5.png';
+import img_set_language_skills6 from '../images/set-language-skills6.png';
+import img_set_language_skills_form from '../images/set-language-skills-form.png';
+import img_lookup_job1 from '../images/lookup-job1.png';
+import img_lookup_job2 from '../images/lookup-job2.png';
+import img_lookup_job3 from '../images/lookup-job3.png';
+import img_add_job_example from '../images/add-job-example.png';
+import img_add_job1 from '../images/add-job1.png';
+import img_add_job2 from '../images/add-job2.png';
+import img_add_job3 from '../images/add-job3.png';
+import img_lookup_req1 from '../images/lookup-req1.png';
+import img_lookup_req2 from '../images/lookup-req2.png';
+import img_lookup_req3 from '../images/lookup-req3.png';
+import img_add_req_example from '../images/add-req-example.png';
 
 import icon_homepage from '../images/icon_homepage.png';
 import icon_arrow_down from '../images/icon_arrow_down.png';
@@ -131,6 +160,20 @@ class General extends Component {
                     <div className="header-element">設定科系</div>
                     <div className="header-element">設定成績</div>
                     <div className="header-element">設定與工作經驗相關的條件：年資、目標公司、排除公司</div>
+                    <div className="header-element">設定年資</div>
+                    <div className="header-element">設定目標公司</div>
+                    <div className="header-element">設定排除公司</div>
+                    <div className="header-element">設定與技能相關的條件：證照、專長、電腦技能、語言能力、駕照</div>
+                    <div className="header-element">設定證照</div>
+                    <div className="header-element">設定專長</div>
+                    <div className="header-element">設定電腦技能</div>
+                    <div className="header-element">設定語言能力</div>
+                    <div className="header-element">設定駕照</div>
+                    <div className="header-element">查詢職務</div>
+                    <div className="header-element">新增職務-範例資料</div>
+                    <div className="header-element">新增職務</div>
+                    <div className="header-element">查詢職缺</div>
+                    <div className="header-element">新增職缺-範例資料</div>
                 </header>
                 <header className="App-header" style={{position: 'fixed'}}>
                     <Link to="login-progress" className="header-element" smooth={true} duration={500}>
@@ -231,6 +274,48 @@ class General extends Component {
                     </Link>
                     <Link to="set-workExp-related" className="header-element" smooth={true} duration={500}>
                         設定與工作經驗相關的條件：年資、目標公司、排除公司
+                    </Link>
+                    <Link to="set-seniority" className="header-element" smooth={true} duration={500}>
+                        設定年資
+                    </Link>
+                    <Link to="set-target-company" className="header-element" smooth={true} duration={500}>
+                        設定目標公司
+                    </Link>
+                    <Link to="set-exclude-company" className="header-element" smooth={true} duration={500}>
+                        設定排除公司
+                    </Link>
+                    <Link to="set-skills-related" className="header-element" smooth={true} duration={500}>
+                        設定與技能相關的條件：證照、專長、電腦技能、語言能力、駕照
+                    </Link>
+                    <Link to="set-license" className="header-element" smooth={true} duration={500}>
+                        設定證照
+                    </Link>
+                    <Link to="set-expertise" className="header-element" smooth={true} duration={500}>
+                        設定專長
+                    </Link>
+                    <Link to="set-computer-skills" className="header-element" smooth={true} duration={500}>
+                        設定電腦技能
+                    </Link>
+                    <Link to="set-language-skills" className="header-element" smooth={true} duration={500}>
+                        設定語言能力
+                    </Link>
+                    <Link to="set-driving-license" className="header-element" smooth={true} duration={500}>
+                        設定駕照
+                    </Link>
+                    <Link to="lookup-job" className="header-element" smooth={true} duration={500}>
+                        查詢職務
+                    </Link>
+                    <Link to="add-job-example" className="header-element" smooth={true} duration={500}>
+                        新增職務-範例資料
+                    </Link>
+                    <Link to="add-job" className="header-element" smooth={true} duration={500}>
+                        新增職務
+                    </Link>
+                    <Link to="lookup-req" className="header-element" smooth={true} duration={500}>
+                        查詢職缺
+                    </Link>
+                    <Link to="add-req-example" className="header-element" smooth={true} duration={500}>
+                        新增職缺-範例資料
                     </Link>
                 </header>
 
@@ -1510,22 +1595,22 @@ class General extends Component {
                     <div className="Chapter-body-title-group" style={{width: '99%'}}>
                         <h1>設定與教育相關的條件：
                             <span className="Text-underline">
-                                <Link to="set-academic-degree">
+                                <Link to="set-academic-degree" smooth={true} duration={500}>
                                 學位
                                 </Link>
                             </span>、
                             <span className="Text-underline">
-                                <Link to="set-school">
+                                <Link to="set-school" smooth={true} duration={500}>
                                 學校
                                 </Link>
                             </span>、
                             <span className="Text-underline">
-                                <Link to="set-department">
+                                <Link to="set-department" smooth={true} duration={500}>
                                 科系
                                 </Link>
                             </span>、
                             <span className="Text-underline">
-                                <Link to="set-grade">
+                                <Link to="set-grade" smooth={true} duration={500}>
                                 成績
                                 </Link>
                             </span>
@@ -1813,17 +1898,17 @@ class General extends Component {
                     <div className="Chapter-body-title-group" style={{width: '99%'}}>
                         <h1>設定與工作經驗相關的條件：
                             <span className="Text-underline">
-                                <Link to="set-academic-degree">
+                                <Link to="set-seniority" smooth={true} duration={500}>
                                 年資
                                 </Link>
                             </span>、
                             <span className="Text-underline">
-                                <Link to="set-school">
+                                <Link to="set-target-company" smooth={true} duration={500}>
                                 目標公司
                                 </Link>
                             </span>、
                             <span className="Text-underline">
-                                <Link to="set-department">
+                                <Link to="set-exclude-company" smooth={true} duration={500}>
                                 排除公司
                                 </Link>
                             </span>
@@ -1839,7 +1924,664 @@ class General extends Component {
                     />
                 </Element>
 
+                <Element className="Chapter" name="set-seniority">
+                    <div className="Chapter-Multi-image-container">
+                        <div className="Chapter-Multi-image-image"
+                             style={{
+                                 background: `url(${img_set_seniority1})`,
+                                 backgroundSize: 'contain',
+                                 backgroundRepeat: 'no-repeat'
+                             }}
+                        />
+                        <div className="Chapter-Multi-image-image"
+                             style={{
+                                 background: `url(${img_set_seniority2})`,
+                                 backgroundSize: 'contain',
+                                 backgroundRepeat: 'no-repeat'
+                             }}
+                        />
+                        <div className="Chapter-Multi-image-image"
+                             style={{
+                                 background: `url(${img_set_seniority3})`,
+                                 backgroundSize: 'contain',
+                                 backgroundRepeat: 'no-repeat'
+                             }}
+                        />
+                    </div>
 
+                    <div className="Chapter-body">
+
+                        <div className="Chapter-body-title-group">
+                            <h1>設定年資</h1>
+                        </div>
+
+                        <p className="first-layer-no-list-style">範例：將『小於2年工作經驗』設定為必要年資。</p>
+
+                        <ul className="first-layer">
+                            <li>
+                                按下
+                                <span
+                                    style={{
+                                        background: `url(${icon_arrow_up}) 0% 0% / contain no-repeat`,
+                                        width: '2em',
+                                        height: '1.5em',
+                                        display: 'inline-flex'
+                                    }}
+                                />
+                                如圖ㄧ。
+                            </li>
+                            <li>表格會向下展開。UI設計是採取選單模式。每個條件都有3個選才標準：</li>
+                            <ul className="second-layer" style={{listStyle: 'none'}}>
+                                <li>必要（候選人未達必要條件，會被淘汰。搭配履歷評分，如果候選人達到必要條件，會被給予基本分數。 ）</li>
+                                <li>偏好（搭配履歷評分，如果候選人達到偏好條件，會被給予較高分數。）</li>
+                                <li>完美（搭配履歷評分，如果候選人達到完美條件，會被給予最高分數。）。請依照真實情況酌情填寫。</li>
+                            </ul>
+                            <li>將游標移到必要欄位，點擊欄位空白處或是右方下三角形。</li>
+                            <li>選單會展開如圖二，選定範例中指定的年資『小於2年工作經驗』。選單內容不足，請電郵好聘support@talentonline.io。</li>
+                            <li>成果。如圖三。</li>
+                        </ul>
+                    </div>
+                </Element>
+
+                <Element className="Chapter" name="set-target-company">
+                    <div className="Chapter-Multi-image-container">
+                        <div className="Chapter-Multi-image-image"
+                             style={{
+                                 background: `url(${img_set_target_company1})`,
+                                 backgroundSize: 'contain',
+                                 backgroundRepeat: 'no-repeat'
+                             }}
+                        />
+                        <div className="Chapter-Multi-image-image"
+                             style={{
+                                 background: `url(${img_set_target_company2})`,
+                                 backgroundSize: 'contain',
+                                 backgroundRepeat: 'no-repeat'
+                             }}
+                        />
+                        <div className="Chapter-Multi-image-image"
+                             style={{
+                                 background: `url(${img_set_target_company3})`,
+                                 backgroundSize: 'contain',
+                                 backgroundRepeat: 'no-repeat'
+                             }}
+                        />
+                    </div>
+
+                    <div className="Chapter-body">
+
+                        <div className="Chapter-body-title-group">
+                            <h1>設定目標公司</h1>
+                        </div>
+
+                        <p className="first-layer-no-list-style">範例：將『台灣積體電路製造股份有限公司』設定為完美公司。</p>
+
+                        <ul className="first-layer">
+                            <li>
+                                按下
+                                <span
+                                    style={{
+                                        background: `url(${icon_arrow_up}) 0% 0% / contain no-repeat`,
+                                        width: '2em',
+                                        height: '1.5em',
+                                        display: 'inline-flex'
+                                    }}
+                                />
+                                如圖ㄧ。
+                            </li>
+                            <li>表格會向下展開。將游標移向新增按鈕。</li>
+                            <li>
+                                將游標移向
+                                <span
+                                    style={{
+                                        background: `url(${icon_circle_add}) 0% 0% / contain no-repeat`,
+                                        width: '2em',
+                                        height: '1.5em',
+                                        display: 'inline-flex'
+                                    }}
+                                />
+                                按鈕，公司選單會顯示出來，如圖二。選單內容不足，請參照
+                                <span className="Text-underline">設定公司、同義字</span>
+                                。
+                            </li>
+                            <li>點擊搜尋鍵，輸入名稱/產業類別進行搜尋。</li>
+                            <li>或是點選特定公司。按shift鍵，可連續多選。按Command/CTRL可不連續多選。按新增鍵。</li>
+                            <li>成果。如圖三。若要多選，可重複步驟3-5。</li>
+                        </ul>
+                    </div>
+                </Element>
+
+                <Element className="Chapter" name="set-exclude-company">
+                    <div className="Chapter-Multi-image-container">
+                        <div className="Chapter-Multi-image-image"
+                             style={{
+                                 background: `url(${img_set_exclude_company1})`,
+                                 backgroundSize: 'contain',
+                                 backgroundRepeat: 'no-repeat'
+                             }}
+                        />
+                        <div className="Chapter-Multi-image-image"
+                             style={{
+                                 background: `url(${img_set_exclude_company2})`,
+                                 backgroundSize: 'contain',
+                                 backgroundRepeat: 'no-repeat'
+                             }}
+                        />
+                        <div className="Chapter-Multi-image-image"
+                             style={{
+                                 background: `url(${img_set_exclude_company3})`,
+                                 backgroundSize: 'contain',
+                                 backgroundRepeat: 'no-repeat'
+                             }}
+                        />
+                    </div>
+
+                    <div className="Chapter-body">
+
+                        <div className="Chapter-body-title-group">
+                            <h1>設定排除公司</h1>
+                        </div>
+
+                        <p className="first-layer-no-list-style">範例：將關係企業『雲敬銀行』設定為排除公司。</p>
+
+                        <ul className="first-layer">
+                            <li>
+                                按下
+                                <span
+                                    style={{
+                                        background: `url(${icon_arrow_up}) 0% 0% / contain no-repeat`,
+                                        width: '2em',
+                                        height: '1.5em',
+                                        display: 'inline-flex'
+                                    }}
+                                />
+                                如圖ㄧ。
+                            </li>
+                            <li>表格會向下展開。將游標移排除公司欄位，點擊欄位空白處或是右方下三角形。</li>
+                            <li>
+                                選單會展開如圖二，選定範例中指定的公司『雲敬銀行股份有限公司』。選單內容不足，請參照
+                                <span className="Text-underline">設定公司、同義字</span>
+                                。
+                            </li>
+                            <li>成果。如圖三。若要多選，可重複步驟3。</li>
+                        </ul>
+                    </div>
+                </Element>
+
+                <Element className="Chapter" name="set-skills-related" style={{flexDirection: 'column'}}>
+                    <div className="Chapter-body-title-group" style={{width: '99%'}}>
+                        <h1>設定與技能相關的條件：
+                            <span className="Text-underline">
+                                <Link to="set-license" smooth={true} duration={500}>
+                                證照
+                                </Link>
+                            </span>、
+                            <span className="Text-underline">
+                                <Link to="set-expertise" smooth={true} duration={500}>
+                                專長
+                                </Link>
+                            </span>、
+                            <span className="Text-underline">
+                                <Link to="set-computer-skills" smooth={true} duration={500}>
+                                電腦技能
+                                </Link>
+                            </span>、
+                            <span className="Text-underline">
+                                <Link to="set-language-skills" smooth={true} duration={500}>
+                                語言能力
+                                </Link>
+                            </span>、
+                            <span className="Text-underline">
+                                <Link to="set-driving-license" smooth={true} duration={500}>
+                                駕照
+                                </Link>
+                            </span>
+                        </h1>
+                    </div>
+                    <div
+                        style={{
+                            background: `url(${img_set_skills_related})`,
+                            height: '25em',
+                            backgroundSize: 'contain',
+                            backgroundRepeat: 'no-repeat',
+                        }}
+                    />
+                </Element>
+
+                <Element className="Chapter" name="set-license">
+                    <div className="Chapter-Multi-image-container">
+                        <div className="Chapter-Multi-image-image"
+                             style={{
+                                 background: `url(${img_set_license1})`,
+                                 backgroundSize: 'contain',
+                                 backgroundRepeat: 'no-repeat'
+                             }}
+                        />
+                        <div className="Chapter-Multi-image-image"
+                             style={{
+                                 background: `url(${img_set_license2})`,
+                                 backgroundSize: 'contain',
+                                 backgroundRepeat: 'no-repeat'
+                             }}
+                        />
+                        <div className="Chapter-Multi-image-image"
+                             style={{
+                                 background: `url(${img_set_license3})`,
+                                 backgroundSize: 'contain',
+                                 backgroundRepeat: 'no-repeat'
+                             }}
+                        />
+                    </div>
+
+                    <div className="Chapter-body">
+
+                        <div className="Chapter-body-title-group">
+                            <h1>設定證照</h1>
+                        </div>
+
+                        <p className="first-layer-no-list-style">範例：將TOEIC設定為必要證照。</p>
+
+                        <ul className="first-layer">
+                            <li>
+                                按下
+                                <span
+                                    style={{
+                                        background: `url(${icon_arrow_up}) 0% 0% / contain no-repeat`,
+                                        width: '2em',
+                                        height: '1.5em',
+                                        display: 'inline-flex'
+                                    }}
+                                />
+                                如圖ㄧ。
+                            </li>
+                            <li>表格會向下展開。UI設計是採取選單模式。如圖二。</li>
+                            <li>將游標移到必要欄位，點擊欄位空白處或是右方下三角形。</li>
+                            <li>選單會展開如圖二，選定範例中指定的證照『TOEIC』。選單內容不足，請電郵好聘support@talentonline.io。</li>
+                            <li>成果。如圖三。若要多選，可重複步驟3-4。</li>
+                        </ul>
+                    </div>
+                </Element>
+
+                <Element className="Chapter" name="set-expertise">
+                    <div className="Chapter-Multi-image-container">
+                        <div className="Chapter-Multi-image-image"
+                             style={{
+                                 background: `url(${img_set_expertise_and_computer_skills})`,
+                                 backgroundSize: 'contain',
+                                 backgroundRepeat: 'no-repeat'
+                             }}
+                        />
+                    </div>
+
+                    <div className="Chapter-body">
+
+                        <div className="Chapter-body-title-group">
+                            <h1>設定專長</h1>
+                        </div>
+
+                        <p className="first-layer-no-list-style">範例：將TOEIC設定為必要證照。</p>
+
+                        <div
+                            style={{
+                                backgroundColor: '#3ab2a6',
+                                width: '70%',
+                                height: '10em',
+                                marginLeft: '2em',
+                                marginTop: '2em',
+                                display: 'flex',
+                                justifyContent: 'center',
+                                alignItems: 'center'
+                            }}
+                        >
+                            video
+                        </div>
+                    </div>
+                </Element>
+
+                <Element className="Chapter" name="set-computer-skills">
+                    <div className="Chapter-Multi-image-container">
+                        <div className="Chapter-Multi-image-image"
+                             style={{
+                                 background: `url(${img_set_expertise_and_computer_skills})`,
+                                 backgroundSize: 'contain',
+                                 backgroundRepeat: 'no-repeat'
+                             }}
+                        />
+                    </div>
+
+                    <div className="Chapter-body">
+
+                        <div className="Chapter-body-title-group">
+                            <h1>設定電腦技能</h1>
+                        </div>
+
+                        <p className="first-layer-no-list-style">範例：將TOEIC設定為必要證照。</p>
+
+                        <div
+                            style={{
+                                backgroundColor: '#3ab2a6',
+                                width: '70%',
+                                height: '10em',
+                                marginLeft: '2em',
+                                marginTop: '2em',
+                                display: 'flex',
+                                justifyContent: 'center',
+                                alignItems: 'center'
+                            }}
+                        >
+                            video
+                        </div>
+                    </div>
+                </Element>
+
+                <Element className="Chapter" name="set-language-skills">
+                    <div className="Chapter-Multi-image-container">
+                        <div className="Chapter-Multi-image-image"
+                             style={{
+                                 background: `url(${img_set_language_skills1})`,
+                                 backgroundSize: 'contain',
+                                 backgroundRepeat: 'no-repeat'
+                             }}
+                        />
+                        <div className="Chapter-Multi-image-image"
+                             style={{
+                                 background: `url(${img_set_language_skills2})`,
+                                 backgroundSize: 'contain',
+                                 backgroundRepeat: 'no-repeat'
+                             }}
+                        />
+                        <div className="Chapter-Multi-image-image"
+                             style={{
+                                 background: `url(${img_set_language_skills3})`,
+                                 backgroundSize: 'contain',
+                                 backgroundRepeat: 'no-repeat'
+                             }}
+                        />
+                        <div className="Chapter-Multi-image-image"
+                             style={{
+                                 background: `url(${img_set_language_skills4})`,
+                                 backgroundSize: 'contain',
+                                 backgroundRepeat: 'no-repeat'
+                             }}
+                        />
+                        <div className="Chapter-Multi-image-image"
+                             style={{
+                                 background: `url(${img_set_language_skills5})`,
+                                 backgroundSize: 'contain',
+                                 backgroundRepeat: 'no-repeat'
+                             }}
+                        />
+                        <div className="Chapter-Multi-image-image"
+                             style={{
+                                 background: `url(${img_set_language_skills6})`,
+                                 backgroundSize: 'contain',
+                                 backgroundRepeat: 'no-repeat'
+                             }}
+                        />
+                    </div>
+
+                    <div className="Chapter-body">
+
+                        <div className="Chapter-body-title-group">
+                            <h1>設定語言能力</h1>
+                        </div>
+
+                        <p className="first-layer-no-list-style">範例：將日文設定為必要語文能力，如下。</p>
+
+                        <div
+                            style={{
+                                background: `url(${img_set_language_skills_form}) 0% 0% / contain no-repeat`,
+                                height: '5em',
+                                marginLeft: '2em',
+                            }}
+                        />
+
+                        <ul className="first-layer">
+                            <li>
+                                按下
+                                <span
+                                    style={{
+                                        background: `url(${icon_arrow_up}) 0% 0% / contain no-repeat`,
+                                        width: '2em',
+                                        height: '1.5em',
+                                        display: 'inline-flex'
+                                    }}
+                                />
+                                如圖ㄧ。UI設計是採取表格模式。
+                            </li>
+                            <li>
+                                按下
+                                <span
+                                    style={{
+                                        background: `url(${icon_circle_add}) 0% 0% / contain no-repeat`,
+                                        width: '2em',
+                                        height: '1.5em',
+                                        display: 'inline-flex'
+                                    }}
+                                />
+                                按鈕。
+                            </li>
+                            <li>
+                                新增：外語能力視窗會自動談跳出來，如圖二。將游標移到『語系』欄，按下
+                                <span
+                                    style={{
+                                        background: `url(${icon_arrow_down}) 0% 0% / contain no-repeat`,
+                                        width: '2em',
+                                        height: '1.5em',
+                                        display: 'inline-flex'
+                                    }}
+                                />
+                                按鈕。
+                            </li>
+                            <li>選定範例指定語系『日文』，如圖三。選單內容不足，請電郵好聘support@talentonline.io。</li>
+                            <li>
+                                將游標移到『聽』欄，如圖四，按下
+                                <span
+                                    style={{
+                                        background: `url(${icon_arrow_down}) 0% 0% / contain no-repeat`,
+                                        width: '2em',
+                                        height: '1.5em',
+                                        display: 'inline-flex'
+                                    }}
+                                />
+                                按鈕。
+                            </li>
+                            <li>選定範例指定程度『精通』。</li>
+                            <li>重複步驟5-6，完成『說』『讀』『寫』。如圖五，按確定鍵。</li>
+                            <li>成果如圖六。</li>
+                            <li>如要選多個語系，請重複步驟2-7，完成新增其他語系。</li>
+                        </ul>
+                    </div>
+                </Element>
+
+                <Element className="Chapter" name="set-driving-license" style={{flexDirection: 'column'}}>
+                    <div className="Chapter-body-title-group" style={{width: '99%'}}>
+                        <h1>駕照：按照語言的template，修改成駕照</h1>
+                    </div>
+                </Element>
+
+                <Element className="Chapter" name="lookup-job">
+                    <div className="Chapter-Multi-image-container">
+                        <div className="Chapter-Multi-image-image"
+                             style={{
+                                 background: `url(${img_lookup_job1})`,
+                                 backgroundSize: 'contain',
+                                 backgroundRepeat: 'no-repeat'
+                             }}
+                        />
+                        <div className="Chapter-Multi-image-image"
+                             style={{
+                                 background: `url(${img_lookup_job2})`,
+                                 backgroundSize: 'contain',
+                                 backgroundRepeat: 'no-repeat'
+                             }}
+                        />
+                        <div className="Chapter-Multi-image-image"
+                             style={{
+                                 background: `url(${img_lookup_job3})`,
+                                 backgroundSize: 'contain',
+                                 backgroundRepeat: 'no-repeat'
+                             }}
+                        />
+                    </div>
+
+                    <div className="Chapter-body">
+
+                        <div className="Chapter-body-title-group">
+                            <h1>查詢職務</h1>
+                        </div>
+
+                        <p className="first-layer-no-list-style">
+                            範例：依照職類『營運企劃』查詢職務
+                        </p>
+                        <p className="first-layer-no-list-style">
+                            進入路徑：首頁->發射台->職缺管理-> 職務。如圖一。
+                        </p>
+
+                        <ul className="first-layer">
+                            <li>
+                                輸入職務名稱或是選擇職類，依照範例點選職類欄，選擇營運企劃，按下
+                                <span
+                                    style={{
+                                        background: `url(${icon_search}) 0% 0% / contain no-repeat`,
+                                        width: '2em',
+                                        height: '1.5em',
+                                        display: 'inline-flex'
+                                    }}
+                                />
+                                進行篩選。如圖一。
+                            </li>
+                            <li>可以選擇資歷、員工類型、進行篩選。依照範例，在類別選擇『我的職缺』，按下『使用』鍵，即可顯示篩選結果。</li>
+                            <li>成果如圖三</li>
+                        </ul>
+                    </div>
+                </Element>
+
+                <Element className="Chapter" name="add-job-example" style={{flexDirection: 'column'}}>
+                    <div className="Chapter-body-title-group" style={{width: '99%'}}>
+                        <h1>新增職務-範例資料</h1>
+                    </div>
+                    <div
+                        style={{
+                            background: `url(${img_add_job_example})`,
+                            height: '54em',
+                            backgroundSize: 'contain',
+                            backgroundRepeat: 'no-repeat',
+                        }}
+                    />
+                </Element>
+
+                <Element className="Chapter" name="add-job">
+                    <div className="Chapter-Multi-image-container">
+                        <div className="Chapter-Multi-image-image"
+                             style={{
+                                 background: `url(${img_add_job1})`,
+                                 backgroundSize: 'contain',
+                                 backgroundRepeat: 'no-repeat'
+                             }}
+                        />
+                        <div className="Chapter-Multi-image-image"
+                             style={{
+                                 background: `url(${img_add_job2})`,
+                                 backgroundSize: 'contain',
+                                 backgroundRepeat: 'no-repeat'
+                             }}
+                        />
+                        <div className="Chapter-Multi-image-image"
+                             style={{
+                                 background: `url(${img_add_job3})`,
+                                 backgroundSize: 'contain',
+                                 backgroundRepeat: 'no-repeat'
+                             }}
+                        />
+                    </div>
+
+                    <div className="Chapter-body">
+
+                        <div className="Chapter-body-title-group">
+                            <h1>新增職務</h1>
+                        </div>
+
+                        <p className="first-layer-no-list-style">
+                            展示範例：新增售前工程師的職務。
+                        </p>
+                        <p className="first-layer-no-list-style">
+                            進入路徑：首頁->發射台->職缺管理-> 職務。如圖一。
+                        </p>
+
+                        <ul className="first-layer">
+                            <li>參照查詢職務</li>
+                            <li>按下右上方『新增』按鈕。</li>
+                            <li>進入『新增職務』畫面，如『圖二』。</li>
+                            <li>職務名稱：依範例輸入『售前工程師』。</li>
+                            <li>完美候選人原型：選擇『售前工程師』，如果選項不足，請參照新增完美候選人原型。</li>
+                            <li>職類：選擇『職類』依範例選擇『工程技術』。若職類不足，參照新增內部職類。</li>
+                            <li>資歷：選擇『資歷』，依範例選擇『基層人員』。若資歷不足，參照新增資歷。</li>
+                            <li>員工類型：依範例選擇『全職』。若員工類型不足，參照新增員工類型。</li>
+                            <li>建議職等：依範例輸入職等『7』</li>
+                            <li>輸入雇用薪資預算。選擇幣別：『台幣』、輸入年薪薪資範圍-最低薪資：450000、輸入年薪薪資範圍-最低薪資：600000。</li>
+                            <li>將『工作內容』與『擔當責任』輸入職務內容。</li>
+                            <li>按下『儲存』鍵。</li>
+                            <li>成果如圖三。</li>
+                        </ul>
+                    </div>
+                </Element>
+
+                <Element className="Chapter" name="lookup-req">
+                    <div className="Chapter-Multi-image-container">
+                        <div className="Chapter-Multi-image-image"
+                             style={{
+                                 background: `url(${img_lookup_req1})`,
+                                 backgroundSize: 'contain',
+                                 backgroundRepeat: 'no-repeat'
+                             }}
+                        />
+                        <div className="Chapter-Multi-image-image"
+                             style={{
+                                 background: `url(${img_lookup_req2})`,
+                                 backgroundSize: 'contain',
+                                 backgroundRepeat: 'no-repeat'
+                             }}
+                        />
+                        <div className="Chapter-Multi-image-image"
+                             style={{
+                                 background: `url(${img_lookup_req3})`,
+                                 backgroundSize: 'contain',
+                                 backgroundRepeat: 'no-repeat'
+                             }}
+                        />
+                    </div>
+
+                    <div className="Chapter-body">
+
+                        <div className="Chapter-body-title-group">
+                            <h1>查詢職缺</h1>
+                        </div>
+
+                        <p className="first-layer-no-list-style">
+                            範例：查詢我的職缺
+                        </p>
+
+                        <ul className="first-layer">
+                            <li>可以依照類別、招聘區域、工作據點、職類，或是輸入職缺名稱進行篩選。依照範例，在類別選擇『我的職缺』，按下『使用』鍵，即可顯示篩選結果。 </li>
+                            <li>成果如圖三</li>
+                        </ul>
+                    </div>
+                </Element>
+
+                <Element className="Chapter" name="add-perfect-candidate-example" style={{flexDirection: 'column'}}>
+                    <div className="Chapter-body-title-group" style={{width: '99%'}}>
+                        <h1>新增職缺-範例資料</h1>
+                    </div>
+                    <div
+                        style={{
+                            background: `url(${img_add_req_example})`,
+                            height: '70em',
+                            backgroundSize: 'contain',
+                            backgroundRepeat: 'no-repeat',
+                        }}
+                    />
+                </Element>
 
                 </body>
             </div>
