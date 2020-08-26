@@ -52,6 +52,32 @@ import img_add_resident_place2 from '../images/add-resident-place2.png';
 import img_add_resident_place3 from '../images/add-resident-place3.png';
 import img_add_resident_place4 from '../images/add-resident-place4.png';
 import img_add_resident_place5 from '../images/add-resident-place5.png';
+import img_add_personality1 from '../images/add-personality1.png';
+import img_add_personality2 from '../images/add-personality2.png';
+import img_add_personality3 from '../images/add-personality3.png';
+import img_set_salary1 from '../images/set-salary1.png';
+import img_set_salary2 from '../images/set-salary2.png';
+import img_set_salary3 from '../images/set-salary3.png';
+import img_set_education_related from '../images/set-educatation-related.png';
+import img_set_academic_degree1 from '../images/set-academic-degree1.png';
+import img_set_academic_degree2 from '../images/set-academic-degree2.png';
+import img_set_academic_degree3 from '../images/set-academic-degree3.png';
+import img_set_school1 from '../images/set-school1.png';
+import img_set_school2 from '../images/set-school2.png';
+import img_set_school3 from '../images/set-school3.png';
+import img_set_department1 from '../images/set-department1.png';
+import img_set_department2 from '../images/set-department2.png';
+import img_set_department3 from '../images/set-department3.png';
+import img_set_department4 from '../images/set-department4.png';
+import img_set_department5 from '../images/set-department5.png';
+import img_set_grade1 from '../images/set-grade1.png';
+import img_set_grade2 from '../images/set-grade2.png';
+import img_set_grade3 from '../images/set-grade3.png';
+import img_set_workExp_related from '../images/set-workExp-related.png';
+import img_set_seniority1 from '../images/set-seniority1.png';
+import img_set_seniority2 from '../images/set-seniority2.png';
+import img_set_seniority3 from '../images/set-seniority3.png';
+
 import icon_homepage from '../images/icon_homepage.png';
 import icon_arrow_down from '../images/icon_arrow_down.png';
 import icon_arrow_up from '../images/icon-arrow-up.png';
@@ -60,6 +86,7 @@ import icon_switch_window2 from '../images/icon_switch_window2.png';
 import icon_switch_window3 from '../images/icon_switch_window3.png';
 import icon_file from '../images/icon_file.png';
 import icon_search from '../images/icon-search.png';
+import icon_circle_add from '../images/icon-circle-add.png';
 
 import video_login from '../images/video_login.mp4';
 import {routePath} from "../utils/constants";
@@ -96,6 +123,14 @@ class General extends Component {
                     <div className="header-element">新增年齡</div>
                     <div className="header-element">新增身份類別</div>
                     <div className="header-element">新增居住地</div>
+                    <div className="header-element">新增人格特質</div>
+                    <div className="header-element">設定薪資</div>
+                    <div className="header-element">設定與教育相關的條件：學位、學校、科系、成績</div>
+                    <div className="header-element">設定學位</div>
+                    <div className="header-element">設定學校</div>
+                    <div className="header-element">設定科系</div>
+                    <div className="header-element">設定成績</div>
+                    <div className="header-element">設定與工作經驗相關的條件：年資、目標公司、排除公司</div>
                 </header>
                 <header className="App-header" style={{position: 'fixed'}}>
                     <Link to="login-progress" className="header-element" smooth={true} duration={500}>
@@ -172,6 +207,30 @@ class General extends Component {
                     </Link>
                     <Link to="add-resident-place" className="header-element" smooth={true} duration={500}>
                         新增居住地
+                    </Link>
+                    <Link to="add-personality" className="header-element" smooth={true} duration={500}>
+                        新增人格特質
+                    </Link>
+                    <Link to="set-salary" className="header-element" smooth={true} duration={500}>
+                        設定薪資
+                    </Link>
+                    <Link to="set-education-related" className="header-element" smooth={true} duration={500}>
+                        設定與教育相關的條件：學位、學校、科系、成績
+                    </Link>
+                    <Link to="set-academic-degree" className="header-element" smooth={true} duration={500}>
+                        設定學位
+                    </Link>
+                    <Link to="set-school" className="header-element" smooth={true} duration={500}>
+                        設定學校
+                    </Link>
+                    <Link to="set-department" className="header-element" smooth={true} duration={500}>
+                        設定科系
+                    </Link>
+                    <Link to="set-grade" className="header-element" smooth={true} duration={500}>
+                        設定成績
+                    </Link>
+                    <Link to="set-workExp-related" className="header-element" smooth={true} duration={500}>
+                        設定與工作經驗相關的條件：年資、目標公司、排除公司
                     </Link>
                 </header>
 
@@ -1331,6 +1390,456 @@ class General extends Component {
                         </ul>
                     </div>
                 </Element>
+
+                <Element className="Chapter" name="add-personality">
+                    <div className="Chapter-Multi-image-container">
+                        <div className="Chapter-Multi-image-image"
+                             style={{
+                                 background: `url(${img_add_personality1})`,
+                                 backgroundSize: 'contain',
+                                 backgroundRepeat: 'no-repeat'
+                             }}
+                        />
+                        <div className="Chapter-Multi-image-image"
+                             style={{
+                                 background: `url(${img_add_personality2})`,
+                                 backgroundSize: 'contain',
+                                 backgroundRepeat: 'no-repeat'
+                             }}
+                        />
+                        <div className="Chapter-Multi-image-image"
+                             style={{
+                                 background: `url(${img_add_personality3})`,
+                                 backgroundSize: 'contain',
+                                 backgroundRepeat: 'no-repeat'
+                             }}
+                        />
+                    </div>
+
+                    <div className="Chapter-body">
+
+                        <div className="Chapter-body-title-group">
+                            <h1>新增人格特質</h1>
+                        </div>
+
+                        <p className="first-layer-no-list-style">範例：將『外向』設定為偏好身份。</p>
+
+                        <ul className="first-layer">
+                            <li>
+                                按下
+                                <span
+                                    style={{
+                                        background: `url(${icon_arrow_up}) 0% 0% / contain no-repeat`,
+                                        width: '2em',
+                                        height: '1.5em',
+                                        display: 'inline-flex'
+                                    }}
+                                />
+                                如圖ㄧ。
+                            </li>
+                            <li>表格會向下展開。UI設計是採取選單模式。每個條件都有3個選才標準：</li>
+                            <ul className="second-layer" style={{listStyle: 'none'}}>
+                                <li>必要：候選人未達必要條件，會被淘汰。搭配履歷評分，如果候選人達到必要條件，會被給予基本分數。</li>
+                                <li>偏好：搭配履歷評分，如果候選人達到偏好條件，會被給予較高分數。 </li>
+                                <li>完美：搭配履歷評分，如果候選人達到完美條件，會被給予最高分數。</li>
+                            </ul>
+                            <li>將游標移到偏好欄位，點擊欄位空白處或是右方下三角形。</li>
+                            <li>
+                                選單會展開如圖二，選定範例中指定的人格特質『外向』。選單內容不足，請參照
+                                <span className="Text-underline">新增人格特質。</span>
+                            </li>
+                            <li>成果。如圖三。若要多選，可重複步驟3-4。</li>
+                        </ul>
+                    </div>
+                </Element>
+
+                <Element className="Chapter" name="set-salary">
+                    <div className="Chapter-Multi-image-container">
+                        <div className="Chapter-Multi-image-image"
+                             style={{
+                                 background: `url(${img_set_salary1})`,
+                                 backgroundSize: 'contain',
+                                 backgroundRepeat: 'no-repeat'
+                             }}
+                        />
+                        <div className="Chapter-Multi-image-image"
+                             style={{
+                                 background: `url(${img_set_salary2})`,
+                                 backgroundSize: 'contain',
+                                 backgroundRepeat: 'no-repeat'
+                             }}
+                        />
+                        <div className="Chapter-Multi-image-image"
+                             style={{
+                                 background: `url(${img_set_salary3})`,
+                                 backgroundSize: 'contain',
+                                 backgroundRepeat: 'no-repeat'
+                             }}
+                        />
+                    </div>
+
+                    <div className="Chapter-body">
+
+                        <div className="Chapter-body-title-group">
+                            <h1>新增人格特質</h1>
+                        </div>
+
+                        <p className="first-layer-no-list-style">範例：將目前年薪設定為60萬（以下）。</p>
+
+                        <ul className="first-layer">
+                            <li>
+                                按下
+                                <span
+                                    style={{
+                                        background: `url(${icon_arrow_up}) 0% 0% / contain no-repeat`,
+                                        width: '2em',
+                                        height: '1.5em',
+                                        display: 'inline-flex'
+                                    }}
+                                />
+                                如圖ㄧ。
+                            </li>
+                            <li>表格會向下展開。將游標移年薪欄位，依照範例輸入600000。</li>
+                            <li>將游標移向幣別欄位，按下欄位空白處，選單會展開如圖二，選定範例中指定的『台幣』。選單內容不足，請電郵好聘support@talentonline.io。</li>
+                            <li>成果。如圖三。若要多選，可重複步驟3。</li>
+                        </ul>
+                    </div>
+                </Element>
+
+                <Element className="Chapter" name="set-education-related" style={{flexDirection: 'column'}}>
+                    <div className="Chapter-body-title-group" style={{width: '99%'}}>
+                        <h1>設定與教育相關的條件：
+                            <span className="Text-underline">
+                                <Link to="set-academic-degree">
+                                學位
+                                </Link>
+                            </span>、
+                            <span className="Text-underline">
+                                <Link to="set-school">
+                                學校
+                                </Link>
+                            </span>、
+                            <span className="Text-underline">
+                                <Link to="set-department">
+                                科系
+                                </Link>
+                            </span>、
+                            <span className="Text-underline">
+                                <Link to="set-grade">
+                                成績
+                                </Link>
+                            </span>
+                        </h1>
+                    </div>
+                    <div
+                        style={{
+                            background: `url(${img_set_education_related})`,
+                            height: '25em',
+                            backgroundSize: 'contain',
+                            backgroundRepeat: 'no-repeat',
+                        }}
+                    />
+                </Element>
+
+                <Element className="Chapter" name="set-academic-degree">
+                    <div className="Chapter-Multi-image-container">
+                        <div className="Chapter-Multi-image-image"
+                             style={{
+                                 background: `url(${img_set_academic_degree1})`,
+                                 backgroundSize: 'contain',
+                                 backgroundRepeat: 'no-repeat'
+                             }}
+                        />
+                        <div className="Chapter-Multi-image-image"
+                             style={{
+                                 background: `url(${img_set_academic_degree2})`,
+                                 backgroundSize: 'contain',
+                                 backgroundRepeat: 'no-repeat'
+                             }}
+                        />
+                        <div className="Chapter-Multi-image-image"
+                             style={{
+                                 background: `url(${img_set_academic_degree3})`,
+                                 backgroundSize: 'contain',
+                                 backgroundRepeat: 'no-repeat'
+                             }}
+                        />
+                    </div>
+
+                    <div className="Chapter-body">
+
+                        <div className="Chapter-body-title-group">
+                            <h1>設定學位</h1>
+                        </div>
+
+                        <p className="first-layer-no-list-style">範例：將碩士設定為必要學位。</p>
+
+                        <ul className="first-layer">
+                            <li>
+                                按下
+                                <span
+                                    style={{
+                                        background: `url(${icon_arrow_up}) 0% 0% / contain no-repeat`,
+                                        width: '2em',
+                                        height: '1.5em',
+                                        display: 'inline-flex'
+                                    }}
+                                />
+                                如圖ㄧ。
+                            </li>
+                            <li>表格會向下展開。UI設計是採取選單模式。如圖二。每個條件都有3個選才標準：</li>
+                            <ul className="second-layer" style={{listStyle: 'none'}}>
+                                <li>必要學位最低要求：一旦選擇特定學位，比特定學位高的學位都會自動被加入。（候選人未達必要學位最低要求，會被淘汰。候選人學歷等於或是高於設定學位，會通過初選。搭配履歷評分，如果候選人達到必要條件，會被給予基本分數。如果候選人學歷高於必要條件，且偏好與必要學位沒有輸入，也會被給予基本分數。 ）</li>
+                                <li>偏好學位（搭配履歷評分，如果候選人達到偏好條件，會被給予較高分數。）</li>
+                                <li>完美學位（搭配履歷評分，如果候選人達到完美條件，會被給予最高分數。） 。請依照真實情況酌情填寫。</li>
+                            </ul>
+                            <li>將游標移到必要學位最低要求欄位，點擊欄位空白處或是右方下三角形。</li>
+                            <li>
+                                選單會展開如圖二，選定範例中指定學位『碩士』。，具備碩士、博士等學位會通過篩選。選單內容不足，
+                                <span className="Text-underline Text-danger">請電郵好聘support@talentonline.io。</span>
+                            </li>
+                            <li>成果。如圖三。</li>
+                        </ul>
+                    </div>
+                </Element>
+
+                <Element className="Chapter" name="set-school">
+                    <div className="Chapter-Multi-image-container">
+                        <div className="Chapter-Multi-image-image"
+                             style={{
+                                 background: `url(${img_set_school1})`,
+                                 backgroundSize: 'contain',
+                                 backgroundRepeat: 'no-repeat'
+                             }}
+                        />
+                        <div className="Chapter-Multi-image-image"
+                             style={{
+                                 background: `url(${img_set_school2})`,
+                                 backgroundSize: 'contain',
+                                 backgroundRepeat: 'no-repeat'
+                             }}
+                        />
+                        <div className="Chapter-Multi-image-image"
+                             style={{
+                                 background: `url(${img_set_school3})`,
+                                 backgroundSize: 'contain',
+                                 backgroundRepeat: 'no-repeat'
+                             }}
+                        />
+                    </div>
+
+                    <div className="Chapter-body">
+
+                        <div className="Chapter-body-title-group">
+                            <h1>設定學校</h1>
+                        </div>
+
+                        <p className="first-layer-no-list-style">範例：將台清交設定為完美學校。</p>
+
+                        <ul className="first-layer">
+                            <li>
+                                按下
+                                <span
+                                    style={{
+                                        background: `url(${icon_arrow_up}) 0% 0% / contain no-repeat`,
+                                        width: '2em',
+                                        height: '1.5em',
+                                        display: 'inline-flex'
+                                    }}
+                                />
+                                如圖ㄧ。表格會向下展開。
+                            </li>
+                            <li>
+                                將游標移向
+                                <span
+                                    style={{
+                                        background: `url(${icon_circle_add}) 0% 0% / contain no-repeat`,
+                                        width: '2em',
+                                        height: '1.5em',
+                                        display: 'inline-flex'
+                                    }}
+                                />
+                                按鈕。
+                            </li>
+                            <li>新增：學校選單會顯示出來，如圖二。選單內容不足，
+                                <span className="Text-danger Text-underline">請電郵好聘support@talentonline.io。</span>
+                            </li>
+                            <li>可點擊搜尋鍵，輸入名稱/國家進行搜尋。</li>
+                            <li>或是點選特定學校。按shift鍵，可連續多選。按Command/CTRL可不連續多選。按新增鍵。</li>
+                            <li>成果。如圖三。若要多選，可重複步驟2-5。</li>
+                        </ul>
+                    </div>
+                </Element>
+
+                <Element className="Chapter" name="set-department">
+                    <div className="Chapter-Multi-image-container">
+                        <div className="Chapter-Multi-image-image"
+                             style={{
+                                 background: `url(${img_set_department1})`,
+                                 backgroundSize: 'contain',
+                                 backgroundRepeat: 'no-repeat'
+                             }}
+                        />
+                        <div className="Chapter-Multi-image-image"
+                             style={{
+                                 background: `url(${img_set_department2})`,
+                                 backgroundSize: 'contain',
+                                 backgroundRepeat: 'no-repeat'
+                             }}
+                        />
+                        <div className="Chapter-Multi-image-image"
+                             style={{
+                                 background: `url(${img_set_department3})`,
+                                 backgroundSize: 'contain',
+                                 backgroundRepeat: 'no-repeat'
+                             }}
+                        />
+                        <div className="Chapter-Multi-image-image"
+                             style={{
+                                 background: `url(${img_set_department4})`,
+                                 backgroundSize: 'contain',
+                                 backgroundRepeat: 'no-repeat'
+                             }}
+                        />
+                        <div className="Chapter-Multi-image-image"
+                             style={{
+                                 background: `url(${img_set_department5})`,
+                                 backgroundSize: 'contain',
+                                 backgroundRepeat: 'no-repeat'
+                             }}
+                        />
+                    </div>
+
+                    <div className="Chapter-body">
+
+                        <div className="Chapter-body-title-group">
+                            <h1>設定科系</h1>
+                        </div>
+
+                        <p className="first-layer-no-list-style">範例：</p>
+                        <p className="first-layer-no-list-style">將電算機學門設定為必要科系。</p>
+                        <p className="first-layer-no-list-style">將軟體相關科系設定為完美科系。</p>
+
+                        <ul className="first-layer">
+                            <li>
+                                按下
+                                <span
+                                    style={{
+                                        background: `url(${icon_arrow_up}) 0% 0% / contain no-repeat`,
+                                        width: '2em',
+                                        height: '1.5em',
+                                        display: 'inline-flex'
+                                    }}
+                                />
+                                如圖ㄧ。
+                            </li>
+                            <li>表格會向下展開。UI設計是採取選單模式。每個條件都有3個選才標準：</li>
+                            <ul className="second-layer" style={{listStyle: 'none'}}>
+                                <li>必要（候選人未達必要條件，會被淘汰。搭配履歷評分，如果候選人達到必要條件，會被給予基本分數。 ）</li>
+                                <li>偏好（搭配履歷評分，如果候選人達到偏好條件，會被給予較高分數。）</li>
+                                <li>完美（搭配履歷評分，如果候選人達到完美條件，會被給予最高分數。）。請依照真實情況酌情填寫。</li>
+                            </ul>
+                            <li>科系可從學門、學類、科系來選擇。點選某一個學門或是學類，該學門或是學類的所有科系都會被選入。將游標移到必要科系，點擊學門欄位，從選單中選擇『商業及管理學門』。成果如圖</li>
+                            <li>將游標移到必要科系的學門欄，點擊欄位空白處或是右方下三角形。</li>
+                            <li>選單會展開如圖二，輸入『電算學門』部分或是全部關鍵字或是滑動選單選定範例中指定學門『電算學門』。選單內容不足，請電郵好聘support@talentonline.io。</li>
+                            <li>將游標移到完美科系的科系欄。</li>
+                            <li>在科系欄位輸入『軟體』，選單會顯示所有具備『軟體』關鍵字的科系。</li>
+                            <li>酌情點選選項。選單內容不足，請電郵好聘support@talentonline.io。</li>
+                            <li>成果。如圖五。若要多選，再度點擊欄位空白處，即可再度選擇。</li>
+                        </ul>
+                    </div>
+                </Element>
+
+                <Element className="Chapter" name="set-grade">
+                    <div className="Chapter-Multi-image-container">
+                        <div className="Chapter-Multi-image-image"
+                             style={{
+                                 background: `url(${img_set_grade1})`,
+                                 backgroundSize: 'contain',
+                                 backgroundRepeat: 'no-repeat'
+                             }}
+                        />
+                        <div className="Chapter-Multi-image-image"
+                             style={{
+                                 background: `url(${img_set_grade2})`,
+                                 backgroundSize: 'contain',
+                                 backgroundRepeat: 'no-repeat'
+                             }}
+                        />
+                        <div className="Chapter-Multi-image-image"
+                             style={{
+                                 background: `url(${img_set_grade3})`,
+                                 backgroundSize: 'contain',
+                                 backgroundRepeat: 'no-repeat'
+                             }}
+                        />
+                    </div>
+
+                    <div className="Chapter-body">
+
+                        <div className="Chapter-body-title-group">
+                            <h1>設定成績</h1>
+                        </div>
+
+                        <p className="first-layer-no-list-style">範例：將『C』設定為必要成績。</p>
+
+                        <ul className="first-layer">
+                            <li>
+                                按下
+                                <span
+                                    style={{
+                                        background: `url(${icon_arrow_up}) 0% 0% / contain no-repeat`,
+                                        width: '2em',
+                                        height: '1.5em',
+                                        display: 'inline-flex'
+                                    }}
+                                />
+                                如圖ㄧ。
+                            </li>
+                            <li>表格會向下展開。UI設計是採取選單模式。每個條件都有3個選才標準：</li>
+                            <ul className="second-layer" style={{listStyle: 'none'}}>
+                                <li>必要（候選人未達必要條件，會被淘汰。搭配履歷評分，如果候選人達到必要條件，會被給予基本分數。 ）</li>
+                                <li>偏好（搭配履歷評分，如果候選人達到偏好條件，會被給予較高分數。）</li>
+                                <li>完美（搭配履歷評分，如果候選人達到完美條件，會被給予最高分數。）。請依照真實情況酌情填寫。</li>
+                            </ul>
+                            <li>將游標移到必要欄位，點擊欄位空白處或是右方下三角形。</li>
+                            <li>選單會展開如圖二，選定範例中指定的成績『C 60-69分 3點』。選單內容不足，請電郵好聘support@talentonline.io。</li>
+                            <li>成果。如圖三。</li>
+                        </ul>
+                    </div>
+                </Element>
+
+                <Element className="Chapter" name="set-workExp-related" style={{flexDirection: 'column'}}>
+                    <div className="Chapter-body-title-group" style={{width: '99%'}}>
+                        <h1>設定與工作經驗相關的條件：
+                            <span className="Text-underline">
+                                <Link to="set-academic-degree">
+                                年資
+                                </Link>
+                            </span>、
+                            <span className="Text-underline">
+                                <Link to="set-school">
+                                目標公司
+                                </Link>
+                            </span>、
+                            <span className="Text-underline">
+                                <Link to="set-department">
+                                排除公司
+                                </Link>
+                            </span>
+                        </h1>
+                    </div>
+                    <div
+                        style={{
+                            background: `url(${img_set_workExp_related})`,
+                            height: '25em',
+                            backgroundSize: 'contain',
+                            backgroundRepeat: 'no-repeat',
+                        }}
+                    />
+                </Element>
+
+
 
                 </body>
             </div>
