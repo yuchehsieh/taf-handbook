@@ -106,6 +106,36 @@ import img_lookup_req1 from '../images/lookup-req1.png';
 import img_lookup_req2 from '../images/lookup-req2.png';
 import img_lookup_req3 from '../images/lookup-req3.png';
 import img_add_req_example from '../images/add-req-example.png';
+import img_add_req1 from '../images/add-req1.png';
+import img_add_req2 from '../images/add-req2.png';
+import img_add_req3 from '../images/add-req3.png';
+import img_add_req4 from '../images/add-req4.png';
+import img_add_req5 from '../images/add-req5.png';
+import img_add_req6 from '../images/add-req6.png';
+import img_add_req7 from '../images/add-req7.png';
+import img_add_req8 from '../images/add-req8.png';
+import img_add_req9 from '../images/add-req9.png';
+import img_add_req10 from '../images/add-req10.png';
+import img_add_req11 from '../images/add-req11.png';
+import img_add_req12 from '../images/add-req12.png';
+import img_add_req13 from '../images/add-req13.png';
+import img_add_req14 from '../images/add-req14.png';
+import img_add_req15 from '../images/add-req15.png';
+import img_add_req16 from '../images/add-req16.png';
+import img_add_req17 from '../images/add-req17.png';
+import img_add_req18 from '../images/add-req18.png';
+import img_add_req19 from '../images/add-req19.png';
+import img_req_activation1 from '../images/req-activation1.png';
+import img_req_activation2 from '../images/req-activation2.png';
+import img_req_activation3 from '../images/req-activation3.png';
+import img_add_req_ad1 from '../images/add-req-ad-new1.png';
+import img_add_req_ad2 from '../images/add-req-ad-new2.png';
+import img_end_receive1 from '../images/end-receive1.png';
+import img_end_receive2 from '../images/end-receive2.png';
+import img_update_req1 from '../images/update-req1.png';
+import img_update_req2 from '../images/update-req2.png';
+import img_end_req1 from '../images/end-req1.png';
+import img_end_req2 from '../images/end-req2.png';
 
 import icon_homepage from '../images/icon_homepage.png';
 import icon_arrow_down from '../images/icon_arrow_down.png';
@@ -116,6 +146,15 @@ import icon_switch_window3 from '../images/icon_switch_window3.png';
 import icon_file from '../images/icon_file.png';
 import icon_search from '../images/icon-search.png';
 import icon_circle_add from '../images/icon-circle-add.png';
+import icon_radio_box from '../images/icon_radio_box.png';
+import icon_cross from '../images/icon-cross.png';
+import icon_start_activation from '../images/icon-start-activation.png';
+import icon_one_click_publish from '../images/icon-one-click-publish.png';
+import icon_end_receive from '../images/icon-end-receive.png';
+import icon_save_activate from '../images/icon-save-activate.png';
+import icon_update_req1 from '../images/icon-update-req1.png';
+import icon_update_req2 from '../images/icon-update-req2.png';
+import icon_end_req from '../images/icon-end-req.png';
 
 import video_login from '../images/video_login.mp4';
 import {routePath} from "../utils/constants";
@@ -174,6 +213,12 @@ class General extends Component {
                     <div className="header-element">新增職務</div>
                     <div className="header-element">查詢職缺</div>
                     <div className="header-element">新增職缺-範例資料</div>
+                    <div className="header-element">新增職缺</div>
+                    <div className="header-element">職缺生效</div>
+                    <div className="header-element">刊登職缺廣告</div>
+                    <div className="header-element">截止收件</div>
+                    <div className="header-element">更新刊登</div>
+                    <div className="header-element">結束招聘</div>
                 </header>
                 <header className="App-header" style={{position: 'fixed'}}>
                     <Link to="login-progress" className="header-element" smooth={true} duration={500}>
@@ -316,6 +361,24 @@ class General extends Component {
                     </Link>
                     <Link to="add-req-example" className="header-element" smooth={true} duration={500}>
                         新增職缺-範例資料
+                    </Link>
+                    <Link to="add-req" className="header-element" smooth={true} duration={500}>
+                        新增職缺
+                    </Link>
+                    <Link to="req-activation" className="header-element" smooth={true} duration={500}>
+                        職缺生效
+                    </Link>
+                    <Link to="add-req-ad" className="header-element" smooth={true} duration={500}>
+                        刊登職缺廣告
+                    </Link>
+                    <Link to="end-receive" className="header-element" smooth={true} duration={500}>
+                        截止收件
+                    </Link>
+                    <Link to="update-req" className="header-element" smooth={true} duration={500}>
+                        更新刊登
+                    </Link>
+                    <Link to="end-req" className="header-element" smooth={true} duration={500}>
+                        結束招聘
                     </Link>
                 </header>
 
@@ -1330,7 +1393,7 @@ class General extends Component {
                             <li>表格會向下展開。UI設計是採取選單模式。每個條件都有3個選才標準：</li>
                             <ul className="second-layer" style={{listStyle: 'none'}}>
                                 <li>必要：候選人未達必要條件，會被淘汰。搭配履歷評分，如果候選人達到必要條件，會被給予基本分數。</li>
-                                <li>偏好：搭配履歷評分，如果候選人達到偏好條件，會被給予較高分數。 </li>
+                                <li>偏好：搭配履歷評分，如果候選人達到偏好條件，會被給予較高分數。</li>
                                 <li>完美：搭配履歷評分，如果候選人達到完美條件，會被給予最高分數。</li>
                             </ul>
                             <li>根據範例，勾選偏好年齡。</li>
@@ -1390,7 +1453,7 @@ class General extends Component {
                             <li>表格會向下展開。UI設計是採取選單模式。每個條件都有3個選才標準：</li>
                             <ul className="second-layer" style={{listStyle: 'none'}}>
                                 <li>必要：候選人未達必要條件，會被淘汰。搭配履歷評分，如果候選人達到必要條件，會被給予基本分數。</li>
-                                <li>偏好：搭配履歷評分，如果候選人達到偏好條件，會被給予較高分數。 </li>
+                                <li>偏好：搭配履歷評分，如果候選人達到偏好條件，會被給予較高分數。</li>
                                 <li>完美：搭配履歷評分，如果候選人達到完美條件，會被給予最高分數。</li>
                             </ul>
                             <li>將游標移到偏好欄位，點擊欄位空白處或是右方下三角形。</li>
@@ -1463,7 +1526,7 @@ class General extends Component {
                             <li>表格會向下展開。UI設計是採取選單模式。每個條件都有3個選才標準：</li>
                             <ul className="second-layer" style={{listStyle: 'none'}}>
                                 <li>必要：候選人未達必要條件，會被淘汰。搭配履歷評分，如果候選人達到必要條件，會被給予基本分數。</li>
-                                <li>偏好：搭配履歷評分，如果候選人達到偏好條件，會被給予較高分數。 </li>
+                                <li>偏好：搭配履歷評分，如果候選人達到偏好條件，會被給予較高分數。</li>
                                 <li>完美：搭配履歷評分，如果候選人達到完美條件，會被給予最高分數。</li>
                             </ul>
                             <li>將游標移到偏好欄位，點擊欄位空白處或是右方下三角形。</li>
@@ -1525,7 +1588,7 @@ class General extends Component {
                             <li>表格會向下展開。UI設計是採取選單模式。每個條件都有3個選才標準：</li>
                             <ul className="second-layer" style={{listStyle: 'none'}}>
                                 <li>必要：候選人未達必要條件，會被淘汰。搭配履歷評分，如果候選人達到必要條件，會被給予基本分數。</li>
-                                <li>偏好：搭配履歷評分，如果候選人達到偏好條件，會被給予較高分數。 </li>
+                                <li>偏好：搭配履歷評分，如果候選人達到偏好條件，會被給予較高分數。</li>
                                 <li>完美：搭配履歷評分，如果候選人達到完美條件，會被給予最高分數。</li>
                             </ul>
                             <li>將游標移到偏好欄位，點擊欄位空白處或是右方下三角形。</li>
@@ -1674,7 +1737,9 @@ class General extends Component {
                             </li>
                             <li>表格會向下展開。UI設計是採取選單模式。如圖二。每個條件都有3個選才標準：</li>
                             <ul className="second-layer" style={{listStyle: 'none'}}>
-                                <li>必要學位最低要求：一旦選擇特定學位，比特定學位高的學位都會自動被加入。（候選人未達必要學位最低要求，會被淘汰。候選人學歷等於或是高於設定學位，會通過初選。搭配履歷評分，如果候選人達到必要條件，會被給予基本分數。如果候選人學歷高於必要條件，且偏好與必要學位沒有輸入，也會被給予基本分數。 ）</li>
+                                <li>必要學位最低要求：一旦選擇特定學位，比特定學位高的學位都會自動被加入。（候選人未達必要學位最低要求，會被淘汰。候選人學歷等於或是高於設定學位，會通過初選。搭配履歷評分，如果候選人達到必要條件，會被給予基本分數。如果候選人學歷高於必要條件，且偏好與必要學位沒有輸入，也會被給予基本分數。
+                                    ）
+                                </li>
                                 <li>偏好學位（搭配履歷評分，如果候選人達到偏好條件，會被給予較高分數。）</li>
                                 <li>完美學位（搭配履歷評分，如果候選人達到完美條件，會被給予最高分數。） 。請依照真實情況酌情填寫。</li>
                             </ul>
@@ -2563,7 +2628,7 @@ class General extends Component {
                         </p>
 
                         <ul className="first-layer">
-                            <li>可以依照類別、招聘區域、工作據點、職類，或是輸入職缺名稱進行篩選。依照範例，在類別選擇『我的職缺』，按下『使用』鍵，即可顯示篩選結果。 </li>
+                            <li>可以依照類別、招聘區域、工作據點、職類，或是輸入職缺名稱進行篩選。依照範例，在類別選擇『我的職缺』，按下『使用』鍵，即可顯示篩選結果。</li>
                             <li>成果如圖三</li>
                         </ul>
                     </div>
@@ -2581,6 +2646,555 @@ class General extends Component {
                             backgroundRepeat: 'no-repeat',
                         }}
                     />
+                </Element>
+
+                <Element className="Chapter" name="add-req">
+                    <div className="Chapter-Multi-image-container">
+                        <div className="Chapter-Multi-image-image"
+                             style={{
+                                 background: `url(${img_add_req1})`,
+                                 backgroundSize: 'contain',
+                                 backgroundRepeat: 'no-repeat'
+                             }}
+                        />
+                        <div className="Chapter-Multi-image-image"
+                             style={{
+                                 background: `url(${img_add_req2})`,
+                                 backgroundSize: 'contain',
+                                 backgroundRepeat: 'no-repeat'
+                             }}
+                        />
+                        <div className="Chapter-Multi-image-image"
+                             style={{
+                                 background: `url(${img_add_req3})`,
+                                 backgroundSize: 'contain',
+                                 backgroundRepeat: 'no-repeat'
+                             }}
+                        />
+                        <div className="Chapter-Multi-image-image"
+                             style={{
+                                 background: `url(${img_add_req4})`,
+                                 backgroundSize: 'contain',
+                                 backgroundRepeat: 'no-repeat'
+                             }}
+                        />
+                        <div className="Chapter-Multi-image-image"
+                             style={{
+                                 background: `url(${img_add_req5})`,
+                                 backgroundSize: 'contain',
+                                 backgroundRepeat: 'no-repeat'
+                             }}
+                        />
+                        <div className="Chapter-Multi-image-image"
+                             style={{
+                                 background: `url(${img_add_req6})`,
+                                 backgroundSize: 'contain',
+                                 backgroundRepeat: 'no-repeat'
+                             }}
+                        />
+                        <div className="Chapter-Multi-image-image"
+                             style={{
+                                 background: `url(${img_add_req7})`,
+                                 backgroundSize: 'contain',
+                                 backgroundRepeat: 'no-repeat'
+                             }}
+                        />
+                        <div className="Chapter-Multi-image-image"
+                             style={{
+                                 background: `url(${img_add_req8})`,
+                                 backgroundSize: 'contain',
+                                 backgroundRepeat: 'no-repeat'
+                             }}
+                        />
+                        <div className="Chapter-Multi-image-image"
+                             style={{
+                                 background: `url(${img_add_req9})`,
+                                 backgroundSize: 'contain',
+                                 backgroundRepeat: 'no-repeat'
+                             }}
+                        />
+                        <div className="Chapter-Multi-image-image"
+                             style={{
+                                 background: `url(${img_add_req10})`,
+                                 backgroundSize: 'contain',
+                                 backgroundRepeat: 'no-repeat'
+                             }}
+                        />
+                        <div className="Chapter-Multi-image-image"
+                             style={{
+                                 background: `url(${img_add_req11})`,
+                                 backgroundSize: 'contain',
+                                 backgroundRepeat: 'no-repeat'
+                             }}
+                        />
+                        <div className="Chapter-Multi-image-image"
+                             style={{
+                                 background: `url(${img_add_req12})`,
+                                 backgroundSize: 'contain',
+                                 backgroundRepeat: 'no-repeat'
+                             }}
+                        />
+                        <div className="Chapter-Multi-image-image"
+                             style={{
+                                 background: `url(${img_add_req13})`,
+                                 backgroundSize: 'contain',
+                                 backgroundRepeat: 'no-repeat'
+                             }}
+                        />
+                        <div className="Chapter-Multi-image-image"
+                             style={{
+                                 background: `url(${img_add_req14})`,
+                                 backgroundSize: 'contain',
+                                 backgroundRepeat: 'no-repeat'
+                             }}
+                        />
+                        <div className="Chapter-Multi-image-image"
+                             style={{
+                                 background: `url(${img_add_req15})`,
+                                 backgroundSize: 'contain',
+                                 backgroundRepeat: 'no-repeat'
+                             }}
+                        />
+                        <div className="Chapter-Multi-image-image"
+                             style={{
+                                 background: `url(${img_add_req16})`,
+                                 backgroundSize: 'contain',
+                                 backgroundRepeat: 'no-repeat'
+                             }}
+                        />
+                        <div className="Chapter-Multi-image-image"
+                             style={{
+                                 background: `url(${img_add_req17})`,
+                                 backgroundSize: 'contain',
+                                 backgroundRepeat: 'no-repeat'
+                             }}
+                        />
+                        <div className="Chapter-Multi-image-image"
+                             style={{
+                                 background: `url(${img_add_req18})`,
+                                 backgroundSize: 'contain',
+                                 backgroundRepeat: 'no-repeat'
+                             }}
+                        />
+                        <div className="Chapter-Multi-image-image"
+                             style={{
+                                 background: `url(${img_add_req19})`,
+                                 backgroundSize: 'contain',
+                                 backgroundRepeat: 'no-repeat'
+                             }}
+                        />
+                    </div>
+
+                    <div className="Chapter-body">
+
+                        <div className="Chapter-body-title-group">
+                            <h1>新增職缺</h1>
+                        </div>
+
+                        <ul className="first-layer">
+                            <li>按下右上方『新增』按鈕，如圖三。</li>
+                            <li>進入新增職缺畫面，如圖四。</li>
+                            <li>招聘區域：選單會提供招聘人員隸屬的所有招聘區域，選擇該職缺隸屬的招聘區域：『雲敬台灣』。如果招聘區域不足，請參照新增招聘區域。</li>
+                            <li>工作據點：選單會提供全公司的工作據點，供招聘人員選擇。選擇『雲敬總公司』。如果工作據點不足，請參照新增工作據點。</li>
+                            <li>職務：選擇要招聘的職務名稱『售前工程師』。如果選項不足，請參照新增職務。系統會自動帶出職務與完美候選人原型的預設資料。</li>
+                            <li>用人部門：選擇該職缺的部門『營業部』。</li>
+                            <li>機密職缺：招聘全程保密，職缺、履歷、甄試等資訊除了招聘團隊之外，其他人都無法取得。勾選即為機密職缺。</li>
+                            <li>外部職缺名稱：徵才廣告上顯示的職缺名稱</li>
+                            <li>需求人數：預計雇用人數</li>
+                            <li>聘僱形式：招聘合約的形式。如果聘僱形式不足，請參照新增雇用類別。</li>
+                            <li>高階：如為高階職類，請勾選。</li>
+                            <li>是否出差或外派：職務如需出差或外派，請選擇。如果都不需要，請保持空白。</li>
+                            <li>出差頻率：前一選項如果選擇出差，請填寫出差頻率（出差頻率＝出差日數/全年日數）</li>
+                            <li>班別：酌情選擇班別</li>
+                            <li>要輪班：若要輪班，請勾選。</li>
+                            <li>休假制度：酌情選擇</li>
+                            <li>可上班日：酌情選擇</li>
+                            <li>點選職缺要求，系統已經自動帶出完美候選人原型的預設資料，可酌情修改。</li>
+                            <li>
+                                點擊
+                                <span
+                                    style={{
+                                        background: `url(${icon_circle_add}) 0% 0% / contain no-repeat`,
+                                        width: '2em',
+                                        height: '1.5em',
+                                        display: 'inline-flex'
+                                    }}
+                                />
+                                按鈕
+                            </li>
+                            <li>新增：身障類別視窗會彈跳出來，如圖七。</li>
+                            <li>將游標移到身障類別欄位，點擊欄位空白處或是右方下三角形。</li>
+                            <li>選單會展開如圖八，選定範例中指定的身障類別『顏面損傷』。選單內容不足，選單內容不足，請電郵好聘support@talentonline.io。</li>
+                            <li>將游標移到身障等級欄位如圖九，點擊欄位空白處或是右方下三角形。</li>
+                            <li>選單會展開如圖九，選定範例中指定的身障等級『輕度』，如圖十。選單內容不足，選單內容不足，請電郵好聘support@talentonline.io。</li>
+                            <li>需要殘障手冊：如果需要殘障手冊佐證，請勾選。</li>
+                            <li>按確定鍵。</li>
+                            <li>請在此輸入其他要求：如果有其他職缺要求無法透過選單載明，請在此一欄位表達。</li>
+                            <li>測驗項目與面談指南資料是由組織帶入。可酌情微調。</li>
+                            <li>招聘人員：將游標移到招聘人員欄位如圖十一，點擊欄位空白處或是右方下三角形。</li>
+                            <li>招聘人員：將游標移到招聘人員欄位如圖十一，點擊欄位空白處或是右方下三角形。</li>
+                            <li>選單會展開如圖十二，選定範例中指定的招聘人員『盧比』。選單內容不足，請參照<span className="Text-underline">新增帳號</span>。</li>
+                            <li>雇用主管：重複步驟31-32，選擇雇用主管。選單內容不足，請參照<span className="Text-underline">新增帳號</span>。</li>
+                            <li>職務連絡人：重複步驟31-32，選擇職務連絡人。選單內容不足，請參照<span className="Text-underline">新增帳號</span>。</li>
+                            <li>面談人員：如圖十三，重複步驟31-32，選擇面談人員。選單內容不足，請參照<span className="Text-underline">新增帳號</span>。</li>
+                            <li>職缺發佈管道：如圖十三，重複步驟31-32，選擇徵才管道。選單內容不足，請電郵好聘support@talentonline.io。</li>
+                            <li>按右上方『儲存』鍵，如圖十三。</li>
+                            <li>如要生效職缺，參照<span className="Text-underline">生效職缺</span>。</li>
+                            <li>如要刊登職缺，請參照<span className="Text-underline">刊登職缺，如圖十五</span>。</li>
+                            <li>設定與自動化相關的條件：履歷評分、履歷篩選，如圖十七。</li>
+                            <li>
+                                按下
+                                <span
+                                    style={{
+                                        background: `url(${icon_arrow_up}) 0% 0% / contain no-repeat`,
+                                        width: '2em',
+                                        height: '1.5em',
+                                        display: 'inline-flex'
+                                    }}
+                                />
+                                按鈕。表格會向下展開。如圖十八。
+                            </li>
+                            <li>
+                                履歷評分：若要啟動履歷評分，請將
+                                <span
+                                    style={{
+                                        background: `url(${icon_radio_box}) 0% 0% / contain no-repeat`,
+                                        width: '2em',
+                                        height: '1.5em',
+                                        display: 'inline-flex'
+                                    }}
+                                />
+                                開關撥至右方。
+                            </li>
+                            <li>
+                                若要啟動特定項目，請將
+                                <span
+                                    style={{
+                                        background: `url(${icon_radio_box}) 0% 0% / contain no-repeat`,
+                                        width: '2em',
+                                        height: '1.5em',
+                                        display: 'inline-flex'
+                                    }}
+                                />
+                                開關撥至右方。項目的狀態若為
+                                <span
+                                    style={{
+                                        background: `url(${icon_cross}) 0% 0% / contain no-repeat`,
+                                        width: '2em',
+                                        height: '1.5em',
+                                        display: 'inline-flex'
+                                    }}
+                                />
+                                ，代表該職缺條件未設定。若要啟動，請到職缺要求的頁面進行設定。選單內容不足，請電郵好聘support@talentonline.io。
+                            </li>
+                            <li>好聘履歷評分可支援星級加權，直覺式地輸入該項目是幾顆星，系統會自動計算出該項目佔整體的比重。</li>
+                            <li>成果如圖十七。</li>
+                            <li>
+                                設定履歷篩選。按下
+                                <span
+                                    style={{
+                                        background: `url(${icon_arrow_up}) 0% 0% / contain no-repeat`,
+                                        width: '2em',
+                                        height: '1.5em',
+                                        display: 'inline-flex'
+                                    }}
+                                />
+                                按鈕。表格會向下展開。如圖十八。
+                            </li>
+                            <li>
+                                履歷篩選：若要啟動履歷篩選，請將
+                                <span
+                                    style={{
+                                        background: `url(${icon_radio_box}) 0% 0% / contain no-repeat`,
+                                        width: '2em',
+                                        height: '1.5em',
+                                        display: 'inline-flex'
+                                    }}
+                                />
+                                開關撥至右方。
+                            </li>
+                            <li>畫面會出現自動分派、自動拒絕的選項，如圖十九，請酌情選擇。若啟動自動分派，通過履歷篩選的履歷會自動分派給用人主管，進入決選階段。若不啟動，招聘人員可自行分派，請參照裁示-分派。若啟動自動拒絕，未能通過履歷篩選的履歷會自動進入給拒絕管理。若不啟動，招聘人員可自行拒絕，請參照裁示-拒絕。倘若履歷篩選、自動分派、自動拒絕都啟動即為全自動初選。</li>
+                            <li>
+                                若要啟動特定項目，請將
+                                <span
+                                    style={{
+                                        background: `url(${icon_radio_box}) 0% 0% / contain no-repeat`,
+                                        width: '2em',
+                                        height: '1.5em',
+                                        display: 'inline-flex'
+                                    }}
+                                />
+                                開關撥至右方。項目的狀態若為
+                                <span
+                                    style={{
+                                        background: `url(${icon_cross}) 0% 0% / contain no-repeat`,
+                                        width: '2em',
+                                        height: '1.5em',
+                                        display: 'inline-flex'
+                                    }}
+                                />
+                                ，代表該職缺要求的必要條件未設定。若要啟動，請到職缺要求的頁面進行設定。選單內容不足，請電郵好聘support@talentonline.io。
+                            </li>
+                            <li>按右上方『儲存』鍵，如圖二十。</li>
+                            <li>如要生效職缺，參照<span className="Text-underline">生效職缺</span>。如要接續刊登職缺，請參照<span
+                                className="Text-underline">刊登職缺，如圖十五</span>。
+                            </li>
+                        </ul>
+                    </div>
+                </Element>
+
+                <Element className="Chapter" name="req-activation">
+                    <div className="Chapter-Multi-image-container">
+                        <div className="Chapter-Multi-image-image"
+                             style={{
+                                 background: `url(${img_req_activation1})`,
+                                 backgroundSize: 'contain',
+                                 backgroundRepeat: 'no-repeat'
+                             }}
+                        />
+                        <div className="Chapter-Multi-image-image"
+                             style={{
+                                 background: `url(${img_req_activation2})`,
+                                 backgroundSize: 'contain',
+                                 backgroundRepeat: 'no-repeat'
+                             }}
+                        />
+                        <div className="Chapter-Multi-image-image"
+                             style={{
+                                 background: `url(${img_req_activation3})`,
+                                 backgroundSize: 'contain',
+                                 backgroundRepeat: 'no-repeat'
+                             }}
+                        />
+                    </div>
+
+                    <div className="Chapter-body">
+
+                        <div className="Chapter-body-title-group">
+                            <h1>職缺生效</h1>
+                        </div>
+
+                        <ul className="first-layer">
+                            <li>
+                                按下
+                                <span
+                                    style={{
+                                        background: `url(${icon_start_activation}) 0% 0% / contain no-repeat`,
+                                        width: '4em',
+                                        height: '1em',
+                                        display: 'inline-flex'
+                                    }}
+                                />
+                                按鈕。
+                            </li>
+                            <li>出現『確定要生效？』畫面，按下確定鍵，職缺即刻生效，如圖二。</li>
+                            <li>如有任何修正，請按下儲存/生效按鈕，再行生效職缺。</li>
+                            <li>如要刊登職缺，請參照<span className="Text-underline">刊登職缺</span>。</li>
+                        </ul>
+                    </div>
+                </Element>
+
+                <Element className="Chapter" name="add-req-ad">
+                    <div className="Chapter-Multi-image-container">
+                        <div className="Chapter-Multi-image-image"
+                             style={{
+                                 background: `url(${img_add_req_ad1})`,
+                                 backgroundSize: 'contain',
+                                 backgroundRepeat: 'no-repeat'
+                             }}
+                        />
+                        <div className="Chapter-Multi-image-image"
+                             style={{
+                                 background: `url(${img_add_req_ad2})`,
+                                 backgroundSize: 'contain',
+                                 backgroundRepeat: 'no-repeat'
+                             }}
+                        />
+                    </div>
+
+                    <div className="Chapter-body">
+
+                        <div className="Chapter-body-title-group">
+                            <h1>刊登職缺廣告</h1>
+                        </div>
+
+
+                        <ul className="first-layer">
+                            <li>
+                                請確認職缺發布管道已選擇，按下
+                                <span
+                                    style={{
+                                        background: `url(${icon_one_click_publish}) 0% 0% / contain no-repeat`,
+                                        width: '4em',
+                                        height: '1.4em',
+                                        display: 'inline-flex'
+                                    }}
+                                />
+                                一鍵刊登按鈕。
+                            </li>
+                            <li>
+                                出現模擬徵才管道版面的職缺廣告，如圖十七，確定內容後。請按右上角
+                                <span
+                                    style={{
+                                        background: `url(${icon_one_click_publish}) 0% 0% / contain no-repeat`,
+                                        width: '4em',
+                                        height: '1.4em',
+                                        display: 'inline-flex'
+                                    }}
+                                />
+                                一鍵刊登按鈕。職缺即刻送往職缺管道，按其規定程序刊登。
+                            </li>
+                        </ul>
+                    </div>
+                </Element>
+
+                <Element className="Chapter" name="end-receive">
+                    <div className="Chapter-Multi-image-container">
+                        <div className="Chapter-Multi-image-image"
+                             style={{
+                                 background: `url(${img_end_receive1})`,
+                                 backgroundSize: 'contain',
+                                 backgroundRepeat: 'no-repeat'
+                             }}
+                        />
+                        <div className="Chapter-Multi-image-image"
+                             style={{
+                                 background: `url(${img_end_receive2})`,
+                                 backgroundSize: 'contain',
+                                 backgroundRepeat: 'no-repeat'
+                             }}
+                        />
+                    </div>
+
+                    <div className="Chapter-body">
+
+                        <div className="Chapter-body-title-group">
+                            <h1>截止收件</h1>
+                        </div>
+
+                        <ul className="first-layer">
+                            <li>
+                                如果履歷已經足夠，可按下
+                                <span
+                                    style={{
+                                        background: `url(${icon_end_receive}) 0% 0% / contain no-repeat`,
+                                        width: '4em',
+                                        height: '1em',
+                                        display: 'inline-flex'
+                                    }}
+                                />
+                                按鈕。
+                            </li>
+                            <li>會出現確定要截止收件？的畫面。按『確定』鍵。徵才廣告會提前下架，生效的職缺也無法再執行增加職缺功能。</li>
+                        </ul>
+                    </div>
+                </Element>
+
+                <Element className="Chapter" name="update-req">
+                    <div className="Chapter-Multi-image-container">
+                        <div className="Chapter-Multi-image-image"
+                             style={{
+                                 background: `url(${img_update_req1})`,
+                                 backgroundSize: 'contain',
+                                 backgroundRepeat: 'no-repeat'
+                             }}
+                        />
+                        <div className="Chapter-Multi-image-image"
+                             style={{
+                                 background: `url(${img_update_req2})`,
+                                 backgroundSize: 'contain',
+                                 backgroundRepeat: 'no-repeat'
+                             }}
+                        />
+                    </div>
+
+                    <div className="Chapter-body">
+
+                        <div className="Chapter-body-title-group">
+                            <h1>更新刊登</h1>
+                        </div>
+
+                        <ul className="first-layer">
+                            <li>
+                                請修改職缺內容，按下
+                                <span
+                                    style={{
+                                        background: `url(${icon_save_activate}) 0% 0% / contain no-repeat`,
+                                        width: '3em',
+                                        height: '1.4em',
+                                        display: 'inline-flex'
+                                    }}
+                                />
+                                儲存/生肖按鈕，如圖一。
+                            </li>
+                            <li>
+                                按下
+                                <span
+                                    style={{
+                                        background: `url(${icon_update_req1}) 0% 0% / contain no-repeat`,
+                                        width: '4em',
+                                        height: '1em',
+                                        display: 'inline-flex'
+                                    }}
+                                />
+                                更新刊登按鈕。
+                            </li>
+                            <li>
+                                出現模擬徵才管道版面的職缺廣告，如圖二，確定內容後。請按右上角
+                                <span
+                                    style={{
+                                        background: `url(${icon_update_req2}) 0% 0% / contain no-repeat`,
+                                        width: '4em',
+                                        height: '1.4em',
+                                        display: 'inline-flex'
+                                    }}
+                                />
+                                更新刊登按鈕。更新職缺即刻送往職缺管道，按其規定程序再行刊登。
+                            </li>
+                        </ul>
+                    </div>
+                </Element>
+
+                <Element className="Chapter" name="end-req">
+                    <div className="Chapter-Multi-image-container">
+                        <div className="Chapter-Multi-image-image"
+                             style={{
+                                 background: `url(${img_end_req1})`,
+                                 backgroundSize: 'contain',
+                                 backgroundRepeat: 'no-repeat'
+                             }}
+                        />
+                        <div className="Chapter-Multi-image-image"
+                             style={{
+                                 background: `url(${img_end_req2})`,
+                                 backgroundSize: 'contain',
+                                 backgroundRepeat: 'no-repeat'
+                             }}
+                        />
+                    </div>
+
+                    <div className="Chapter-body">
+
+                        <div className="Chapter-body-title-group">
+                            <h1>結束招聘</h1>
+                        </div>
+
+                        <ul className="first-layer">
+                            <li>
+                                按下
+                                <span
+                                    style={{
+                                        background: `url(${icon_end_req}) 0% 0% / contain no-repeat`,
+                                        width: '4em',
+                                        height: '1em',
+                                        display: 'inline-flex'
+                                    }}
+                                />
+                                按鈕，如圖一。
+                            </li>
+                            <li>出現確定招聘結束？畫面。如圖二，按下確定鍵。</li>
+                        </ul>
+                    </div>
                 </Element>
 
                 </body>
