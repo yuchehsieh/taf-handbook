@@ -2634,7 +2634,7 @@ class General extends Component {
                     </div>
                 </Element>
 
-                <Element className="Chapter" name="add-perfect-candidate-example" style={{flexDirection: 'column'}}>
+                <Element className="Chapter" name="add-req-example" style={{flexDirection: 'column'}}>
                     <div className="Chapter-body-title-group" style={{width: '99%'}}>
                         <h1>新增職缺-範例資料</h1>
                     </div>
