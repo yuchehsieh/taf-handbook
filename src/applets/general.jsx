@@ -136,6 +136,19 @@ import img_update_req1 from '../images/update-req1.png';
 import img_update_req2 from '../images/update-req2.png';
 import img_end_req1 from '../images/end-req1.png';
 import img_end_req2 from '../images/end-req2.png';
+import hired_onhold_notification_onhold_cover from '../images/hired-onhlold-notification-onhold-cover.png';
+import hired_onhold_notification_onhold1 from '../images/hired-onhlold-notification-onhold1.png';
+import hired_onhold_notification_onhold2 from '../images/hired-onhlold-notification-onhold2.png';
+import hired_onhold_notification_hired_cover from '../images/hired-onhlold-notification-hired-cover.png';
+import hired_onhold_notification_hired1 from '../images/hired-onhlold-notification-hired1.png';
+import hired_onhold_notification_hired2 from '../images/hired-onhlold-notification-hired2.png';
+import hired_onhold_notification_hired3 from '../images/hired-onhlold-notification-hired3.png';
+import hired_onhold_notification_hired4 from '../images/hired-onhlold-notification-hired4.png';
+import hired_onhold_notification_hired5 from '../images/hired-onhlold-notification-hired5.png';
+import hired_onhold_notification_hired6 from '../images/hired-onhlold-notification-hired6.png';
+import img_to_report_list_cover from '../images/to-report-list-cover.png';
+import img_to_report_list1 from '../images/to-report-list1.png';
+import img_to_report_list2 from '../images/to-report-list2.png';
 
 import icon_homepage from '../images/icon_homepage.png';
 import icon_arrow_down from '../images/icon_arrow_down.png';
@@ -158,6 +171,14 @@ import icon_end_req from '../images/icon-end-req.png';
 
 import video_login from '../images/video_login.mp4';
 import {routePath} from "../utils/constants";
+import {
+    ChapterBody,
+    ChapterCoverImage,
+    ChapterFirstLayerNoListStyle,
+    ChapterTitleGroup,
+    MultiImage,
+    MultiImageContainer
+} from "./Components/ChapterComponents";
 
 
 class General extends Component {
@@ -219,6 +240,9 @@ class General extends Component {
                     <div className="header-element">截止收件</div>
                     <div className="header-element">更新刊登</div>
                     <div className="header-element">結束招聘</div>
+                    <div className="header-element">錄取/備取通知-備取</div>
+                    <div className="header-element">錄取/備取通知-錄取</div>
+                    <div className="header-element">待報到清單</div>
                 </header>
                 <header className="App-header" style={{position: 'fixed'}}>
                     <Link to="login-progress" className="header-element" smooth={true} duration={500}>
@@ -380,6 +404,15 @@ class General extends Component {
                     <Link to="end-req" className="header-element" smooth={true} duration={500}>
                         結束招聘
                     </Link>
+                    <Link to="hired-onhold-notification-onhold" className="header-element" smooth={true} duration={500}>
+                        錄取/備取通知-備取
+                    </Link>
+                    <Link to="hired-onhold-notification-hired" className="header-element" smooth={true} duration={500}>
+                        錄取/備取通知-錄取
+                    </Link>
+                    <Link to="to-report-list" className="header-element" smooth={true} duration={500}>
+                        待報到清單
+                    </Link>
                 </header>
 
                 <body className="App-body">
@@ -399,12 +432,12 @@ class General extends Component {
                                 backgroundRepeat: 'no-repeat'
                             }}
                         />
-                        <div className="Chapter-body">
+                        <ChapterBody>
 
-                            <div className="Chapter-body-title-group">
+                            <ChapterTitleGroup>
                                 <h1>登入步驟</h1>
                                 {/*<h4>＊必要步驟</h4>*/}
-                            </div>
+                            </ChapterTitleGroup>
 
                             <ul className="first-layer">
                                 <li>
@@ -474,7 +507,7 @@ class General extends Component {
                                 {/*</li>*/}
 
                             </ul>
-                        </div>
+                        </ChapterBody>
 
                     </div>
                 </Element>
@@ -488,14 +521,16 @@ class General extends Component {
                          }}
                     />
 
-                    <div className="Chapter-body">
+                    <ChapterBody>
 
-                        <div className="Chapter-body-title-group">
+                        <ChapterTitleGroup>
                             <h1>首頁</h1>
-                        </div>
+                        </ChapterTitleGroup>
 
                         {/* 單一的標列無 li 樣式 */}
-                        <p className="first-layer-no-list-style">首頁如圖一，由三大部分組成。</p>
+                        <ChapterFirstLayerNoListStyle>
+                            首頁如圖一，由三大部分組成。
+                        </ChapterFirstLayerNoListStyle>
 
                         <ul className="first-layer">
                             <li>
@@ -538,7 +573,7 @@ class General extends Component {
                                 <p className="second-layer-no-list-style">顯示使用者的所有甄試行程、今日測驗行程、今日面談行程。</p>
                             </li>
                         </ul>
-                    </div>
+                    </ChapterBody>
                 </Element>
 
                 <Element className="Chapter" name="inbox">
@@ -550,13 +585,15 @@ class General extends Component {
                          }}
                     />
 
-                    <div className="Chapter-body">
-                        <div className="Chapter-body-title-group">
+                    <ChapterBody>
+                        <ChapterTitleGroup>
                             <h1>收件匣</h1>
-                        </div>
+                        </ChapterTitleGroup>
 
-                        <p className="first-layer-no-list-style">收件匣首頁收藏使用者所有的待辦事項，如
-                            <span className="Text-danger">圖四。</span>工作完成後，代辦事項即自動消失。</p>
+                        <ChapterFirstLayerNoListStyle>
+                            收件匣首頁收藏使用者所有的待辦事項，如
+                            <span className="Text-danger">圖四。</span>工作完成後，代辦事項即自動消失。
+                        </ChapterFirstLayerNoListStyle>
 
                         <ul className="first-layer">
                             <li>
@@ -593,49 +630,33 @@ class General extends Component {
                             <li>回前畫面：系統回到前一個畫面。</li>
                             <li>檔案總管：系統回到該作業的首頁。</li>
                         </ul>
-                    </div>
+                    </ChapterBody>
                 </Element>
 
                 <Element className="Chapter" name="process">
-                    <div className="Chapter-Multi-image-container">
-                        <div className="Chapter-Multi-image-image"
-                             style={{
-                                 background: `url(${img_process1})`,
-                                 backgroundSize: 'contain',
-                                 backgroundRepeat: 'no-repeat'
-                             }}
+                    <MultiImageContainer>
+                        <MultiImage
+                            srcArray={[
+                                img_process1,
+                                img_process2,
+                                img_process3,
+                                img_process4
+                            ]}
                         />
-                        <div className="Chapter-Multi-image-image"
-                             style={{
-                                 background: `url(${img_process2})`,
-                                 backgroundSize: 'contain',
-                                 backgroundRepeat: 'no-repeat'
-                             }}
-                        />
-                        <div className="Chapter-Multi-image-image"
-                             style={{
-                                 background: `url(${img_process3})`,
-                                 backgroundSize: 'contain',
-                                 backgroundRepeat: 'no-repeat'
-                             }}
-                        />
-                        <div className="Chapter-Multi-image-image"
-                             style={{
-                                 background: `url(${img_process4})`,
-                                 backgroundSize: 'contain',
-                                 backgroundRepeat: 'no-repeat'
-                             }}
-                        />
-                    </div>
+                    </MultiImageContainer>
 
-                    <div className="Chapter-body">
+                    <ChapterBody>
 
-                        <div className="Chapter-body-title-group">
+                        <ChapterTitleGroup>
                             <h1>處理</h1>
-                        </div>
+                        </ChapterTitleGroup>
 
-                        <p className="first-layer-no-list-style">範例：處理『新進履歷』代辦事項。</p>
-                        <p className="first-layer-no-list-style">進入路徑：首頁->收件匣</p>
+                        <ChapterFirstLayerNoListStyle>
+                            範例：處理『新進履歷』代辦事項。
+                        </ChapterFirstLayerNoListStyle>
+                        <ChapterFirstLayerNoListStyle>
+                            進入路徑：首頁->收件匣
+                        </ChapterFirstLayerNoListStyle>
 
                         <ul className="first-layer">
                             <li>
@@ -654,7 +675,7 @@ class General extends Component {
                             <li>選擇特定代辦事項，按下『處理』圖示, 如畫面三。</li>
                             <li>開始讀取新進履歷。如畫面四。</li>
                         </ul>
-                    </div>
+                    </ChapterBody>
                 </Element>
 
                 <Element className="Chapter" name="switch-window">
@@ -997,55 +1018,31 @@ class General extends Component {
                 </Element>
 
                 <Element className="Chapter" name="add-group">
-                    <div className="Chapter-Multi-image-container">
-                        <div className="Chapter-Multi-image-image"
-                             style={{
-                                 background: `url(${img_add_group1})`,
-                                 backgroundSize: 'contain',
-                                 backgroundRepeat: 'no-repeat'
-                             }}
+                    <MultiImageContainer>
+                        <MultiImage
+                            srcArray={[
+                                img_add_group1,
+                                img_add_group2,
+                                img_add_group3,
+                                img_add_group4,
+                                img_add_group5,
+                            ]}
                         />
-                        <div className="Chapter-Multi-image-image"
-                             style={{
-                                 background: `url(${img_add_group2})`,
-                                 backgroundSize: 'contain',
-                                 backgroundRepeat: 'no-repeat'
-                             }}
-                        />
-                        <div className="Chapter-Multi-image-image"
-                             style={{
-                                 background: `url(${img_add_group3})`,
-                                 backgroundSize: 'contain',
-                                 backgroundRepeat: 'no-repeat'
-                             }}
-                        />
-                        <div className="Chapter-Multi-image-image"
-                             style={{
-                                 background: `url(${img_add_group4})`,
-                                 backgroundSize: 'contain',
-                                 backgroundRepeat: 'no-repeat'
-                             }}
-                        />
-                        <div className="Chapter-Multi-image-image"
-                             style={{
-                                 background: `url(${img_add_group5})`,
-                                 backgroundSize: 'contain',
-                                 backgroundRepeat: 'no-repeat'
-                             }}
-                        />
-                    </div>
+                    </MultiImageContainer>
 
-                    <div className="Chapter-body">
+                    <ChapterBody>
 
-                        <div className="Chapter-body-title-group">
+                        <ChapterTitleGroup>
                             <h1>新增組織</h1>
-                        </div>
+                        </ChapterTitleGroup>
 
-                        <p className="first-layer-no-list-style">展示範例：新增雲境股份有限公司。</p>
-                        <p className="first-layer-no-list-style">
+                        <ChapterFirstLayerNoListStyle>
+                            展示範例：新增雲境股份有限公司。
+                        </ChapterFirstLayerNoListStyle>
+                        <ChapterFirstLayerNoListStyle>
                             進入路徑：首頁 -> 發射台 -> 系統管理 -> 組織。
                             <span className="Text-danger">如圖一</span>
-                        </p>
+                        </ChapterFirstLayerNoListStyle>
 
                         <ul className="first-layer">
                             <li>
@@ -1111,35 +1108,31 @@ class General extends Component {
                             </li>
                             <li>按下儲存。</li>
                         </ul>
-                    </div>
+                    </ChapterBody>
                 </Element>
 
                 <Element className="Chapter" name="lookup-perfect-candidate">
-                    <div className="Chapter-Multi-image-container">
-                        <div className="Chapter-Multi-image-image"
-                             style={{
-                                 background: `url(${img_lookup_perfect_candidate1})`,
-                                 backgroundSize: 'contain',
-                                 backgroundRepeat: 'no-repeat'
-                             }}
+                    <MultiImageContainer>
+                        <MultiImage
+                            srcArray={[
+                                img_lookup_perfect_candidate1,
+                                img_lookup_perfect_candidate2,
+                            ]}
                         />
-                        <div className="Chapter-Multi-image-image"
-                             style={{
-                                 background: `url(${img_lookup_perfect_candidate2})`,
-                                 backgroundSize: 'contain',
-                                 backgroundRepeat: 'no-repeat'
-                             }}
-                        />
-                    </div>
+                    </MultiImageContainer>
 
-                    <div className="Chapter-body">
+                    <ChapterBody>
 
-                        <div className="Chapter-body-title-group">
+                        <ChapterTitleGroup>
                             <h1>查詢完美候選人原型</h1>
-                        </div>
+                        </ChapterTitleGroup>
 
-                        <p className="first-layer-no-list-style">展示範例：查詢『售前工程師』的完美候選人原型。</p>
-                        <p className="first-layer-no-list-style">進入路徑：首頁-> 發射台->職缺管理->完美候選人原型。</p>
+                        <ChapterFirstLayerNoListStyle>
+                            展示範例：查詢『售前工程師』的完美候選人原型。
+                        </ChapterFirstLayerNoListStyle>
+                        <ChapterFirstLayerNoListStyle>
+                            進入路徑：首頁-> 發射台->職缺管理->完美候選人原型。
+                        </ChapterFirstLayerNoListStyle>
 
                         <ul className="first-layer">
                             <li>輸入完美候選人原型名稱(全名/關鍵字）或是選擇適用範圍（全公司/特定招聘區域）全名/關鍵字）。在名稱欄位輸入範例完美候選人原型名稱『 售前工程師』。
@@ -1158,7 +1151,7 @@ class General extends Component {
                             </li>
                             <li>成果如圖二。</li>
                         </ul>
-                    </div>
+                    </ChapterBody>
                 </Element>
 
                 <Element className="Chapter" name="add-perfect-candidate-example" style={{flexDirection: 'column'}}>
@@ -1176,59 +1169,31 @@ class General extends Component {
                 </Element>
 
                 <Element className="Chapter" name="add-perfect-candidate">
-                    <div className="Chapter-Multi-image-container">
-                        <div className="Chapter-Multi-image-image"
-                             style={{
-                                 background: `url(${img_add_perfect_candidate1})`,
-                                 backgroundSize: 'contain',
-                                 backgroundRepeat: 'no-repeat'
-                             }}
+                    <MultiImageContainer>
+                        <MultiImage
+                            srcArray={[
+                                img_add_perfect_candidate1,
+                                img_add_perfect_candidate2,
+                                img_add_perfect_candidate3,
+                                img_add_perfect_candidate4,
+                                img_add_perfect_candidate5,
+                                img_add_perfect_candidate6
+                            ]}
                         />
-                        <div className="Chapter-Multi-image-image"
-                             style={{
-                                 background: `url(${img_add_perfect_candidate2})`,
-                                 backgroundSize: 'contain',
-                                 backgroundRepeat: 'no-repeat'
-                             }}
-                        />
-                        <div className="Chapter-Multi-image-image"
-                             style={{
-                                 background: `url(${img_add_perfect_candidate3})`,
-                                 backgroundSize: 'contain',
-                                 backgroundRepeat: 'no-repeat'
-                             }}
-                        />
-                        <div className="Chapter-Multi-image-image"
-                             style={{
-                                 background: `url(${img_add_perfect_candidate4})`,
-                                 backgroundSize: 'contain',
-                                 backgroundRepeat: 'no-repeat'
-                             }}
-                        />
-                        <div className="Chapter-Multi-image-image"
-                             style={{
-                                 background: `url(${img_add_perfect_candidate5})`,
-                                 backgroundSize: 'contain',
-                                 backgroundRepeat: 'no-repeat'
-                             }}
-                        />
-                        <div className="Chapter-Multi-image-image"
-                             style={{
-                                 background: `url(${img_add_perfect_candidate6})`,
-                                 backgroundSize: 'contain',
-                                 backgroundRepeat: 'no-repeat'
-                             }}
-                        />
-                    </div>
+                    </MultiImageContainer>
 
-                    <div className="Chapter-body">
+                    <ChapterBody>
 
-                        <div className="Chapter-body-title-group">
+                        <ChapterTitleGroup>
                             <h1>新增完美候選人原型</h1>
-                        </div>
+                        </ChapterTitleGroup>
 
-                        <p className="first-layer-no-list-style">展示範例：新增『售前工程師』的完美候選人原型。</p>
-                        <p className="first-layer-no-list-style">進入路徑：首頁->發射台->職缺管理->完美候選人原型。</p>
+                        <ChapterFirstLayerNoListStyle>
+                            展示範例：新增『售前工程師』的完美候選人原型。
+                        </ChapterFirstLayerNoListStyle>
+                        <ChapterFirstLayerNoListStyle>
+                            進入路徑：首頁->發射台->職缺管理->完美候選人原型。
+                        </ChapterFirstLayerNoListStyle>
                         <div className="Chapter-Multi-image-image"
                              style={{
                                  background: `url(${img_add_perfect_candidate_form})`,
@@ -1282,41 +1247,29 @@ class General extends Component {
                             <li>敘述：按照範例輸入『適用於各事業群的售前工程師』。</li>
                             <li>設定與個人簡歷相關的條件：性別、年齡、身份類型、居住地、人格特質、薪資。</li>
                         </ul>
-                    </div>
+                    </ChapterBody>
                 </Element>
 
                 <Element className="Chapter" name="add-gender">
-                    <div className="Chapter-Multi-image-container">
-                        <div className="Chapter-Multi-image-image"
-                             style={{
-                                 background: `url(${img_add_gender1})`,
-                                 backgroundSize: 'contain',
-                                 backgroundRepeat: 'no-repeat'
-                             }}
+                    <MultiImageContainer>
+                        <MultiImage
+                            srcArray={[
+                                img_add_gender1,
+                                img_add_gender2,
+                                img_add_gender3
+                            ]}
                         />
-                        <div className="Chapter-Multi-image-image"
-                             style={{
-                                 background: `url(${img_add_gender2})`,
-                                 backgroundSize: 'contain',
-                                 backgroundRepeat: 'no-repeat'
-                             }}
-                        />
-                        <div className="Chapter-Multi-image-image"
-                             style={{
-                                 background: `url(${img_add_gender3})`,
-                                 backgroundSize: 'contain',
-                                 backgroundRepeat: 'no-repeat'
-                             }}
-                        />
-                    </div>
+                    </MultiImageContainer>
 
-                    <div className="Chapter-body">
+                    <ChapterBody>
 
-                        <div className="Chapter-body-title-group">
+                        <ChapterTitleGroup>
                             <h1>新增性別</h1>
-                        </div>
+                        </ChapterTitleGroup>
 
-                        <p className="first-layer-no-list-style">範例：將男性設定為偏好性別。</p>
+                        <ChapterFirstLayerNoListStyle>
+                            範例：將男性設定為偏好性別。
+                        </ChapterFirstLayerNoListStyle>
 
                         <ul className="first-layer">
                             <li>
@@ -1341,41 +1294,29 @@ class General extends Component {
                             <li>選單會展開如圖二，選定範例中指定性別『男性』。選單內容不足，請參照新增性別。</li>
                             <li>成果。如圖四。若要多選，可重複步驟3-4。</li>
                         </ul>
-                    </div>
+                    </ChapterBody>
                 </Element>
 
                 <Element className="Chapter" name="add-age">
-                    <div className="Chapter-Multi-image-container">
-                        <div className="Chapter-Multi-image-image"
-                             style={{
-                                 background: `url(${img_add_age1})`,
-                                 backgroundSize: 'contain',
-                                 backgroundRepeat: 'no-repeat'
-                             }}
+                    <MultiImageContainer>
+                        <MultiImage
+                            srcArray={[
+                                img_add_age1,
+                                img_add_age2,
+                                img_add_age3
+                            ]}
                         />
-                        <div className="Chapter-Multi-image-image"
-                             style={{
-                                 background: `url(${img_add_age2})`,
-                                 backgroundSize: 'contain',
-                                 backgroundRepeat: 'no-repeat'
-                             }}
-                        />
-                        <div className="Chapter-Multi-image-image"
-                             style={{
-                                 background: `url(${img_add_age3})`,
-                                 backgroundSize: 'contain',
-                                 backgroundRepeat: 'no-repeat'
-                             }}
-                        />
-                    </div>
+                    </MultiImageContainer>
 
-                    <div className="Chapter-body">
+                    <ChapterBody>
 
-                        <div className="Chapter-body-title-group">
+                        <ChapterTitleGroup>
                             <h1>新增年齡</h1>
-                        </div>
+                        </ChapterTitleGroup>
 
-                        <p className="first-layer-no-list-style">範例：將偏好性別設定為20-30歲。</p>
+                        <ChapterFirstLayerNoListStyle>
+                            範例：將偏好性別設定為20-30歲。
+                        </ChapterFirstLayerNoListStyle>
 
                         <ul className="first-layer">
                             <li>
@@ -1401,41 +1342,29 @@ class General extends Component {
                             <li>移動右尺標到30，如圖三。</li>
                             <li>移動左尺標到20。</li>
                         </ul>
-                    </div>
+                    </ChapterBody>
                 </Element>
 
                 <Element className="Chapter" name="add-identity-type">
-                    <div className="Chapter-Multi-image-container">
-                        <div className="Chapter-Multi-image-image"
-                             style={{
-                                 background: `url(${img_add_identity_type1})`,
-                                 backgroundSize: 'contain',
-                                 backgroundRepeat: 'no-repeat'
-                             }}
+                    <MultiImageContainer>
+                        <MultiImage
+                            srcArray={[
+                                img_add_identity_type1,
+                                img_add_identity_type2,
+                                img_add_identity_type3
+                            ]}
                         />
-                        <div className="Chapter-Multi-image-image"
-                             style={{
-                                 background: `url(${img_add_identity_type2})`,
-                                 backgroundSize: 'contain',
-                                 backgroundRepeat: 'no-repeat'
-                             }}
-                        />
-                        <div className="Chapter-Multi-image-image"
-                             style={{
-                                 background: `url(${img_add_identity_type3})`,
-                                 backgroundSize: 'contain',
-                                 backgroundRepeat: 'no-repeat'
-                             }}
-                        />
-                    </div>
+                    </MultiImageContainer>
 
-                    <div className="Chapter-body">
+                    <ChapterBody>
 
-                        <div className="Chapter-body-title-group">
+                        <ChapterTitleGroup>
                             <h1>新增年齡</h1>
-                        </div>
+                        </ChapterTitleGroup>
 
-                        <p className="first-layer-no-list-style">範例：將上班族設定為偏好身份。</p>
+                        <ChapterFirstLayerNoListStyle>
+                            範例：將上班族設定為偏好身份。
+                        </ChapterFirstLayerNoListStyle>
 
                         <ul className="first-layer">
                             <li>
@@ -1460,55 +1389,31 @@ class General extends Component {
                             <li>選單會展開如圖二，選定範例中指定身份『上班族』。選單內容不足，請電郵好聘support@talentonline.io。</li>
                             <li>成果。如圖四。若要多選，可重複步驟3-4。</li>
                         </ul>
-                    </div>
+                    </ChapterBody>
                 </Element>
 
                 <Element className="Chapter" name="add-resident-place">
-                    <div className="Chapter-Multi-image-container">
-                        <div className="Chapter-Multi-image-image"
-                             style={{
-                                 background: `url(${img_add_resident_place1})`,
-                                 backgroundSize: 'contain',
-                                 backgroundRepeat: 'no-repeat'
-                             }}
+                    <MultiImageContainer>
+                        <MultiImage
+                            srcArray={[
+                                img_add_resident_place1,
+                                img_add_resident_place2,
+                                img_add_resident_place3,
+                                img_add_resident_place4,
+                                img_add_resident_place5
+                            ]}
                         />
-                        <div className="Chapter-Multi-image-image"
-                             style={{
-                                 background: `url(${img_add_resident_place2})`,
-                                 backgroundSize: 'contain',
-                                 backgroundRepeat: 'no-repeat'
-                             }}
-                        />
-                        <div className="Chapter-Multi-image-image"
-                             style={{
-                                 background: `url(${img_add_resident_place3})`,
-                                 backgroundSize: 'contain',
-                                 backgroundRepeat: 'no-repeat'
-                             }}
-                        />
-                        <div className="Chapter-Multi-image-image"
-                             style={{
-                                 background: `url(${img_add_resident_place4})`,
-                                 backgroundSize: 'contain',
-                                 backgroundRepeat: 'no-repeat'
-                             }}
-                        />
-                        <div className="Chapter-Multi-image-image"
-                             style={{
-                                 background: `url(${img_add_resident_place5})`,
-                                 backgroundSize: 'contain',
-                                 backgroundRepeat: 'no-repeat'
-                             }}
-                        />
-                    </div>
+                    </MultiImageContainer>
 
-                    <div className="Chapter-body">
+                    <ChapterBody>
 
-                        <div className="Chapter-body-title-group">
+                        <ChapterTitleGroup>
                             <h1>新增年齡</h1>
-                        </div>
+                        </ChapterTitleGroup>
 
-                        <p className="first-layer-no-list-style">範例：將台灣設定為必要居住地。將桃竹苗設定為完美居住地。</p>
+                        <ChapterFirstLayerNoListStyle>
+                            範例：將台灣設定為必要居住地。將桃竹苗設定為完美居住地。
+                        </ChapterFirstLayerNoListStyle>
 
                         <ul className="first-layer">
                             <li>
@@ -1536,41 +1441,29 @@ class General extends Component {
                             <li>選單會展開如圖四，滑動選單選定範例中指定國家『台北市』。重複步驟6-7，選擇『新北市』與『基隆市』。選單內容不足，請電郵好聘support@talentonline.io。</li>
                             <li>成果。如圖五。</li>
                         </ul>
-                    </div>
+                    </ChapterBody>
                 </Element>
 
                 <Element className="Chapter" name="add-personality">
-                    <div className="Chapter-Multi-image-container">
-                        <div className="Chapter-Multi-image-image"
-                             style={{
-                                 background: `url(${img_add_personality1})`,
-                                 backgroundSize: 'contain',
-                                 backgroundRepeat: 'no-repeat'
-                             }}
+                    <MultiImageContainer>
+                        <MultiImage
+                            srcArray={[
+                                img_add_personality1,
+                                img_add_personality2,
+                                img_add_personality3
+                            ]}
                         />
-                        <div className="Chapter-Multi-image-image"
-                             style={{
-                                 background: `url(${img_add_personality2})`,
-                                 backgroundSize: 'contain',
-                                 backgroundRepeat: 'no-repeat'
-                             }}
-                        />
-                        <div className="Chapter-Multi-image-image"
-                             style={{
-                                 background: `url(${img_add_personality3})`,
-                                 backgroundSize: 'contain',
-                                 backgroundRepeat: 'no-repeat'
-                             }}
-                        />
-                    </div>
+                    </MultiImageContainer>
 
-                    <div className="Chapter-body">
+                    <ChapterBody>
 
-                        <div className="Chapter-body-title-group">
+                        <ChapterTitleGroup>
                             <h1>新增人格特質</h1>
-                        </div>
+                        </ChapterTitleGroup>
 
-                        <p className="first-layer-no-list-style">範例：將『外向』設定為偏好身份。</p>
+                        <ChapterFirstLayerNoListStyle>
+                            範例：將『外向』設定為偏好身份。
+                        </ChapterFirstLayerNoListStyle>
 
                         <ul className="first-layer">
                             <li>
@@ -1598,41 +1491,29 @@ class General extends Component {
                             </li>
                             <li>成果。如圖三。若要多選，可重複步驟3-4。</li>
                         </ul>
-                    </div>
+                    </ChapterBody>
                 </Element>
 
                 <Element className="Chapter" name="set-salary">
-                    <div className="Chapter-Multi-image-container">
-                        <div className="Chapter-Multi-image-image"
-                             style={{
-                                 background: `url(${img_set_salary1})`,
-                                 backgroundSize: 'contain',
-                                 backgroundRepeat: 'no-repeat'
-                             }}
+                    <MultiImageContainer>
+                        <MultiImage
+                            srcArray={[
+                                img_set_salary1,
+                                img_set_salary2,
+                                img_set_salary3
+                            ]}
                         />
-                        <div className="Chapter-Multi-image-image"
-                             style={{
-                                 background: `url(${img_set_salary2})`,
-                                 backgroundSize: 'contain',
-                                 backgroundRepeat: 'no-repeat'
-                             }}
-                        />
-                        <div className="Chapter-Multi-image-image"
-                             style={{
-                                 background: `url(${img_set_salary3})`,
-                                 backgroundSize: 'contain',
-                                 backgroundRepeat: 'no-repeat'
-                             }}
-                        />
-                    </div>
+                    </MultiImageContainer>
 
-                    <div className="Chapter-body">
+                    <ChapterBody>
 
-                        <div className="Chapter-body-title-group">
+                        <ChapterTitleGroup>
                             <h1>新增人格特質</h1>
-                        </div>
+                        </ChapterTitleGroup>
 
-                        <p className="first-layer-no-list-style">範例：將目前年薪設定為60萬（以下）。</p>
+                        <ChapterFirstLayerNoListStyle>
+                            範例：將目前年薪設定為60萬（以下）。
+                        </ChapterFirstLayerNoListStyle>
 
                         <ul className="first-layer">
                             <li>
@@ -1651,7 +1532,7 @@ class General extends Component {
                             <li>將游標移向幣別欄位，按下欄位空白處，選單會展開如圖二，選定範例中指定的『台幣』。選單內容不足，請電郵好聘support@talentonline.io。</li>
                             <li>成果。如圖三。若要多選，可重複步驟3。</li>
                         </ul>
-                    </div>
+                    </ChapterBody>
                 </Element>
 
                 <Element className="Chapter" name="set-education-related" style={{flexDirection: 'column'}}>
@@ -1690,37 +1571,25 @@ class General extends Component {
                 </Element>
 
                 <Element className="Chapter" name="set-academic-degree">
-                    <div className="Chapter-Multi-image-container">
-                        <div className="Chapter-Multi-image-image"
-                             style={{
-                                 background: `url(${img_set_academic_degree1})`,
-                                 backgroundSize: 'contain',
-                                 backgroundRepeat: 'no-repeat'
-                             }}
+                    <MultiImageContainer>
+                        <MultiImage
+                            srcArray={[
+                                img_set_academic_degree1,
+                                img_set_academic_degree2,
+                                img_set_academic_degree3
+                            ]}
                         />
-                        <div className="Chapter-Multi-image-image"
-                             style={{
-                                 background: `url(${img_set_academic_degree2})`,
-                                 backgroundSize: 'contain',
-                                 backgroundRepeat: 'no-repeat'
-                             }}
-                        />
-                        <div className="Chapter-Multi-image-image"
-                             style={{
-                                 background: `url(${img_set_academic_degree3})`,
-                                 backgroundSize: 'contain',
-                                 backgroundRepeat: 'no-repeat'
-                             }}
-                        />
-                    </div>
+                    </MultiImageContainer>
 
-                    <div className="Chapter-body">
+                    <ChapterBody>
 
-                        <div className="Chapter-body-title-group">
+                        <ChapterTitleGroup>
                             <h1>設定學位</h1>
-                        </div>
+                        </ChapterTitleGroup>
 
-                        <p className="first-layer-no-list-style">範例：將碩士設定為必要學位。</p>
+                        <ChapterFirstLayerNoListStyle>
+                            範例：將碩士設定為必要學位。
+                        </ChapterFirstLayerNoListStyle>
 
                         <ul className="first-layer">
                             <li>
@@ -1750,41 +1619,28 @@ class General extends Component {
                             </li>
                             <li>成果。如圖三。</li>
                         </ul>
-                    </div>
+                    </ChapterBody>
                 </Element>
 
                 <Element className="Chapter" name="set-school">
-                    <div className="Chapter-Multi-image-container">
-                        <div className="Chapter-Multi-image-image"
-                             style={{
-                                 background: `url(${img_set_school1})`,
-                                 backgroundSize: 'contain',
-                                 backgroundRepeat: 'no-repeat'
-                             }}
+                    <MultiImageContainer>
+                        <MultiImage
+                            srcArray={[
+                                img_set_school1,
+                                img_set_school2,
+                                img_set_school3
+                            ]}
                         />
-                        <div className="Chapter-Multi-image-image"
-                             style={{
-                                 background: `url(${img_set_school2})`,
-                                 backgroundSize: 'contain',
-                                 backgroundRepeat: 'no-repeat'
-                             }}
-                        />
-                        <div className="Chapter-Multi-image-image"
-                             style={{
-                                 background: `url(${img_set_school3})`,
-                                 backgroundSize: 'contain',
-                                 backgroundRepeat: 'no-repeat'
-                             }}
-                        />
-                    </div>
+                    </MultiImageContainer>
 
-                    <div className="Chapter-body">
-
-                        <div className="Chapter-body-title-group">
+                    <ChapterBody>
+                        <ChapterTitleGroup>
                             <h1>設定學校</h1>
-                        </div>
+                        </ChapterTitleGroup>
 
-                        <p className="first-layer-no-list-style">範例：將台清交設定為完美學校。</p>
+                        <ChapterFirstLayerNoListStyle>
+                            範例：將台清交設定為完美學校。
+                        </ChapterFirstLayerNoListStyle>
 
                         <ul className="first-layer">
                             <li>
@@ -1818,57 +1674,37 @@ class General extends Component {
                             <li>或是點選特定學校。按shift鍵，可連續多選。按Command/CTRL可不連續多選。按新增鍵。</li>
                             <li>成果。如圖三。若要多選，可重複步驟2-5。</li>
                         </ul>
-                    </div>
+                    </ChapterBody>
                 </Element>
 
                 <Element className="Chapter" name="set-department">
-                    <div className="Chapter-Multi-image-container">
-                        <div className="Chapter-Multi-image-image"
-                             style={{
-                                 background: `url(${img_set_department1})`,
-                                 backgroundSize: 'contain',
-                                 backgroundRepeat: 'no-repeat'
-                             }}
+                    <MultiImageContainer>
+                        <MultiImage
+                            srcArray={[
+                                img_set_department1,
+                                img_set_department2,
+                                img_set_department3,
+                                img_set_department4,
+                                img_set_department5,
+                            ]}
                         />
-                        <div className="Chapter-Multi-image-image"
-                             style={{
-                                 background: `url(${img_set_department2})`,
-                                 backgroundSize: 'contain',
-                                 backgroundRepeat: 'no-repeat'
-                             }}
-                        />
-                        <div className="Chapter-Multi-image-image"
-                             style={{
-                                 background: `url(${img_set_department3})`,
-                                 backgroundSize: 'contain',
-                                 backgroundRepeat: 'no-repeat'
-                             }}
-                        />
-                        <div className="Chapter-Multi-image-image"
-                             style={{
-                                 background: `url(${img_set_department4})`,
-                                 backgroundSize: 'contain',
-                                 backgroundRepeat: 'no-repeat'
-                             }}
-                        />
-                        <div className="Chapter-Multi-image-image"
-                             style={{
-                                 background: `url(${img_set_department5})`,
-                                 backgroundSize: 'contain',
-                                 backgroundRepeat: 'no-repeat'
-                             }}
-                        />
-                    </div>
+                    </MultiImageContainer>
 
-                    <div className="Chapter-body">
+                    <ChapterBody>
 
-                        <div className="Chapter-body-title-group">
+                        <ChapterTitleGroup>
                             <h1>設定科系</h1>
-                        </div>
+                        </ChapterTitleGroup>
 
-                        <p className="first-layer-no-list-style">範例：</p>
-                        <p className="first-layer-no-list-style">將電算機學門設定為必要科系。</p>
-                        <p className="first-layer-no-list-style">將軟體相關科系設定為完美科系。</p>
+                        <ChapterFirstLayerNoListStyle>
+                            範例：
+                        </ChapterFirstLayerNoListStyle>
+                        <ChapterFirstLayerNoListStyle>
+                            將電算機學門設定為必要科系。
+                        </ChapterFirstLayerNoListStyle>
+                        <ChapterFirstLayerNoListStyle>
+                            將軟體相關科系設定為完美科系。
+                        </ChapterFirstLayerNoListStyle>
 
                         <ul className="first-layer">
                             <li>
@@ -1897,41 +1733,29 @@ class General extends Component {
                             <li>酌情點選選項。選單內容不足，請電郵好聘support@talentonline.io。</li>
                             <li>成果。如圖五。若要多選，再度點擊欄位空白處，即可再度選擇。</li>
                         </ul>
-                    </div>
+                    </ChapterBody>
                 </Element>
 
                 <Element className="Chapter" name="set-grade">
-                    <div className="Chapter-Multi-image-container">
-                        <div className="Chapter-Multi-image-image"
-                             style={{
-                                 background: `url(${img_set_grade1})`,
-                                 backgroundSize: 'contain',
-                                 backgroundRepeat: 'no-repeat'
-                             }}
+                    <MultiImageContainer>
+                        <MultiImage
+                            srcArray={[
+                                img_set_grade1,
+                                img_set_grade2,
+                                img_set_grade3
+                            ]}
                         />
-                        <div className="Chapter-Multi-image-image"
-                             style={{
-                                 background: `url(${img_set_grade2})`,
-                                 backgroundSize: 'contain',
-                                 backgroundRepeat: 'no-repeat'
-                             }}
-                        />
-                        <div className="Chapter-Multi-image-image"
-                             style={{
-                                 background: `url(${img_set_grade3})`,
-                                 backgroundSize: 'contain',
-                                 backgroundRepeat: 'no-repeat'
-                             }}
-                        />
-                    </div>
+                    </MultiImageContainer>
 
-                    <div className="Chapter-body">
+                    <ChapterBody>
 
-                        <div className="Chapter-body-title-group">
+                        <ChapterTitleGroup>
                             <h1>設定成績</h1>
-                        </div>
+                        </ChapterTitleGroup>
 
-                        <p className="first-layer-no-list-style">範例：將『C』設定為必要成績。</p>
+                        <ChapterFirstLayerNoListStyle>
+                            範例：將『C』設定為必要成績。
+                        </ChapterFirstLayerNoListStyle>
 
                         <ul className="first-layer">
                             <li>
@@ -1956,7 +1780,7 @@ class General extends Component {
                             <li>選單會展開如圖二，選定範例中指定的成績『C 60-69分 3點』。選單內容不足，請電郵好聘support@talentonline.io。</li>
                             <li>成果。如圖三。</li>
                         </ul>
-                    </div>
+                    </ChapterBody>
                 </Element>
 
                 <Element className="Chapter" name="set-workExp-related" style={{flexDirection: 'column'}}>
@@ -1990,37 +1814,25 @@ class General extends Component {
                 </Element>
 
                 <Element className="Chapter" name="set-seniority">
-                    <div className="Chapter-Multi-image-container">
-                        <div className="Chapter-Multi-image-image"
-                             style={{
-                                 background: `url(${img_set_seniority1})`,
-                                 backgroundSize: 'contain',
-                                 backgroundRepeat: 'no-repeat'
-                             }}
+                    <MultiImageContainer>
+                        <MultiImage
+                            srcArray={[
+                                img_set_seniority1,
+                                img_set_seniority2,
+                                img_set_seniority3
+                            ]}
                         />
-                        <div className="Chapter-Multi-image-image"
-                             style={{
-                                 background: `url(${img_set_seniority2})`,
-                                 backgroundSize: 'contain',
-                                 backgroundRepeat: 'no-repeat'
-                             }}
-                        />
-                        <div className="Chapter-Multi-image-image"
-                             style={{
-                                 background: `url(${img_set_seniority3})`,
-                                 backgroundSize: 'contain',
-                                 backgroundRepeat: 'no-repeat'
-                             }}
-                        />
-                    </div>
+                    </MultiImageContainer>
 
-                    <div className="Chapter-body">
+                    <ChapterBody>
 
-                        <div className="Chapter-body-title-group">
+                        <ChapterTitleGroup>
                             <h1>設定年資</h1>
-                        </div>
+                        </ChapterTitleGroup>
 
-                        <p className="first-layer-no-list-style">範例：將『小於2年工作經驗』設定為必要年資。</p>
+                        <ChapterFirstLayerNoListStyle>
+                            範例：將『小於2年工作經驗』設定為必要年資。
+                        </ChapterFirstLayerNoListStyle>
 
                         <ul className="first-layer">
                             <li>
@@ -2045,41 +1857,29 @@ class General extends Component {
                             <li>選單會展開如圖二，選定範例中指定的年資『小於2年工作經驗』。選單內容不足，請電郵好聘support@talentonline.io。</li>
                             <li>成果。如圖三。</li>
                         </ul>
-                    </div>
+                    </ChapterBody>
                 </Element>
 
                 <Element className="Chapter" name="set-target-company">
-                    <div className="Chapter-Multi-image-container">
-                        <div className="Chapter-Multi-image-image"
-                             style={{
-                                 background: `url(${img_set_target_company1})`,
-                                 backgroundSize: 'contain',
-                                 backgroundRepeat: 'no-repeat'
-                             }}
+                    <MultiImageContainer>
+                        <MultiImage
+                            srcArray={[
+                                img_set_target_company1,
+                                img_set_target_company2,
+                                img_set_target_company3
+                            ]}
                         />
-                        <div className="Chapter-Multi-image-image"
-                             style={{
-                                 background: `url(${img_set_target_company2})`,
-                                 backgroundSize: 'contain',
-                                 backgroundRepeat: 'no-repeat'
-                             }}
-                        />
-                        <div className="Chapter-Multi-image-image"
-                             style={{
-                                 background: `url(${img_set_target_company3})`,
-                                 backgroundSize: 'contain',
-                                 backgroundRepeat: 'no-repeat'
-                             }}
-                        />
-                    </div>
+                    </MultiImageContainer>
 
-                    <div className="Chapter-body">
+                    <ChapterBody>
 
-                        <div className="Chapter-body-title-group">
+                        <ChapterTitleGroup>
                             <h1>設定目標公司</h1>
-                        </div>
+                        </ChapterTitleGroup>
 
-                        <p className="first-layer-no-list-style">範例：將『台灣積體電路製造股份有限公司』設定為完美公司。</p>
+                        <ChapterFirstLayerNoListStyle>
+                            範例：將『台灣積體電路製造股份有限公司』設定為完美公司。
+                        </ChapterFirstLayerNoListStyle>
 
                         <ul className="first-layer">
                             <li>
@@ -2113,41 +1913,29 @@ class General extends Component {
                             <li>或是點選特定公司。按shift鍵，可連續多選。按Command/CTRL可不連續多選。按新增鍵。</li>
                             <li>成果。如圖三。若要多選，可重複步驟3-5。</li>
                         </ul>
-                    </div>
+                    </ChapterBody>
                 </Element>
 
                 <Element className="Chapter" name="set-exclude-company">
-                    <div className="Chapter-Multi-image-container">
-                        <div className="Chapter-Multi-image-image"
-                             style={{
-                                 background: `url(${img_set_exclude_company1})`,
-                                 backgroundSize: 'contain',
-                                 backgroundRepeat: 'no-repeat'
-                             }}
+                    <MultiImageContainer>
+                        <MultiImage
+                            srcArray={[
+                                img_set_exclude_company1,
+                                img_set_exclude_company2,
+                                img_set_exclude_company3
+                            ]}
                         />
-                        <div className="Chapter-Multi-image-image"
-                             style={{
-                                 background: `url(${img_set_exclude_company2})`,
-                                 backgroundSize: 'contain',
-                                 backgroundRepeat: 'no-repeat'
-                             }}
-                        />
-                        <div className="Chapter-Multi-image-image"
-                             style={{
-                                 background: `url(${img_set_exclude_company3})`,
-                                 backgroundSize: 'contain',
-                                 backgroundRepeat: 'no-repeat'
-                             }}
-                        />
-                    </div>
+                    </MultiImageContainer>
 
-                    <div className="Chapter-body">
+                    <ChapterBody>
 
-                        <div className="Chapter-body-title-group">
+                        <ChapterTitleGroup>
                             <h1>設定排除公司</h1>
-                        </div>
+                        </ChapterTitleGroup>
 
-                        <p className="first-layer-no-list-style">範例：將關係企業『雲敬銀行』設定為排除公司。</p>
+                        <ChapterFirstLayerNoListStyle>
+                            範例：將關係企業『雲敬銀行』設定為排除公司。
+                        </ChapterFirstLayerNoListStyle>
 
                         <ul className="first-layer">
                             <li>
@@ -2170,7 +1958,7 @@ class General extends Component {
                             </li>
                             <li>成果。如圖三。若要多選，可重複步驟3。</li>
                         </ul>
-                    </div>
+                    </ChapterBody>
                 </Element>
 
                 <Element className="Chapter" name="set-skills-related" style={{flexDirection: 'column'}}>
@@ -2214,37 +2002,25 @@ class General extends Component {
                 </Element>
 
                 <Element className="Chapter" name="set-license">
-                    <div className="Chapter-Multi-image-container">
-                        <div className="Chapter-Multi-image-image"
-                             style={{
-                                 background: `url(${img_set_license1})`,
-                                 backgroundSize: 'contain',
-                                 backgroundRepeat: 'no-repeat'
-                             }}
+                    <MultiImageContainer>
+                        <MultiImage
+                            srcArray={[
+                                img_set_license1,
+                                img_set_license2,
+                                img_set_license3
+                            ]}
                         />
-                        <div className="Chapter-Multi-image-image"
-                             style={{
-                                 background: `url(${img_set_license2})`,
-                                 backgroundSize: 'contain',
-                                 backgroundRepeat: 'no-repeat'
-                             }}
-                        />
-                        <div className="Chapter-Multi-image-image"
-                             style={{
-                                 background: `url(${img_set_license3})`,
-                                 backgroundSize: 'contain',
-                                 backgroundRepeat: 'no-repeat'
-                             }}
-                        />
-                    </div>
+                    </MultiImageContainer>
 
-                    <div className="Chapter-body">
+                    <ChapterBody>
 
-                        <div className="Chapter-body-title-group">
+                        <ChapterTitleGroup>
                             <h1>設定證照</h1>
-                        </div>
+                        </ChapterTitleGroup>
 
-                        <p className="first-layer-no-list-style">範例：將TOEIC設定為必要證照。</p>
+                        <ChapterFirstLayerNoListStyle>
+                            範例：將TOEIC設定為必要證照。
+                        </ChapterFirstLayerNoListStyle>
 
                         <ul className="first-layer">
                             <li>
@@ -2264,27 +2040,23 @@ class General extends Component {
                             <li>選單會展開如圖二，選定範例中指定的證照『TOEIC』。選單內容不足，請電郵好聘support@talentonline.io。</li>
                             <li>成果。如圖三。若要多選，可重複步驟3-4。</li>
                         </ul>
-                    </div>
+                    </ChapterBody>
                 </Element>
 
                 <Element className="Chapter" name="set-expertise">
-                    <div className="Chapter-Multi-image-container">
-                        <div className="Chapter-Multi-image-image"
-                             style={{
-                                 background: `url(${img_set_expertise_and_computer_skills})`,
-                                 backgroundSize: 'contain',
-                                 backgroundRepeat: 'no-repeat'
-                             }}
-                        />
-                    </div>
+                    <MultiImageContainer>
+                        <MultiImage srcArray={[img_set_expertise_and_computer_skills]}/>
+                    </MultiImageContainer>
 
-                    <div className="Chapter-body">
+                    <ChapterBody>
 
-                        <div className="Chapter-body-title-group">
+                        <ChapterTitleGroup>
                             <h1>設定專長</h1>
-                        </div>
+                        </ChapterTitleGroup>
 
-                        <p className="first-layer-no-list-style">範例：將TOEIC設定為必要證照。</p>
+                        <ChapterFirstLayerNoListStyle>
+                            範例：將TOEIC設定為必要證照。
+                        </ChapterFirstLayerNoListStyle>
 
                         <div
                             style={{
@@ -2300,28 +2072,24 @@ class General extends Component {
                         >
                             video
                         </div>
-                    </div>
+                    </ChapterBody>
                 </Element>
 
                 <Element className="Chapter" name="set-computer-skills">
-                    <div className="Chapter-Multi-image-container">
-                        <div className="Chapter-Multi-image-image"
-                             style={{
-                                 background: `url(${img_set_expertise_and_computer_skills})`,
-                                 backgroundSize: 'contain',
-                                 backgroundRepeat: 'no-repeat'
-                             }}
-                        />
-                    </div>
+                    <MultiImageContainer>
+                        <MultiImage srcArray={[img_set_expertise_and_computer_skills]}/>
+                    </MultiImageContainer>
 
-                    <div className="Chapter-body">
 
-                        <div className="Chapter-body-title-group">
+                    <ChapterBody>
+
+                        <ChapterTitleGroup>
                             <h1>設定電腦技能</h1>
-                        </div>
+                        </ChapterTitleGroup>
 
-                        <p className="first-layer-no-list-style">範例：將TOEIC設定為必要證照。</p>
-
+                        <ChapterFirstLayerNoListStyle>
+                            範例：將TOEIC設定為必要證照。
+                        </ChapterFirstLayerNoListStyle>
                         <div
                             style={{
                                 backgroundColor: '#3ab2a6',
@@ -2336,62 +2104,32 @@ class General extends Component {
                         >
                             video
                         </div>
-                    </div>
+                    </ChapterBody>
                 </Element>
 
                 <Element className="Chapter" name="set-language-skills">
-                    <div className="Chapter-Multi-image-container">
-                        <div className="Chapter-Multi-image-image"
-                             style={{
-                                 background: `url(${img_set_language_skills1})`,
-                                 backgroundSize: 'contain',
-                                 backgroundRepeat: 'no-repeat'
-                             }}
+                    <MultiImageContainer>
+                        <MultiImage
+                            srcArray={[
+                                img_set_language_skills1,
+                                img_set_language_skills2,
+                                img_set_language_skills3,
+                                img_set_language_skills4,
+                                img_set_language_skills5,
+                                img_set_language_skills6,
+                            ]}
                         />
-                        <div className="Chapter-Multi-image-image"
-                             style={{
-                                 background: `url(${img_set_language_skills2})`,
-                                 backgroundSize: 'contain',
-                                 backgroundRepeat: 'no-repeat'
-                             }}
-                        />
-                        <div className="Chapter-Multi-image-image"
-                             style={{
-                                 background: `url(${img_set_language_skills3})`,
-                                 backgroundSize: 'contain',
-                                 backgroundRepeat: 'no-repeat'
-                             }}
-                        />
-                        <div className="Chapter-Multi-image-image"
-                             style={{
-                                 background: `url(${img_set_language_skills4})`,
-                                 backgroundSize: 'contain',
-                                 backgroundRepeat: 'no-repeat'
-                             }}
-                        />
-                        <div className="Chapter-Multi-image-image"
-                             style={{
-                                 background: `url(${img_set_language_skills5})`,
-                                 backgroundSize: 'contain',
-                                 backgroundRepeat: 'no-repeat'
-                             }}
-                        />
-                        <div className="Chapter-Multi-image-image"
-                             style={{
-                                 background: `url(${img_set_language_skills6})`,
-                                 backgroundSize: 'contain',
-                                 backgroundRepeat: 'no-repeat'
-                             }}
-                        />
-                    </div>
+                    </MultiImageContainer>
 
-                    <div className="Chapter-body">
+                    <ChapterBody>
 
-                        <div className="Chapter-body-title-group">
+                        <ChapterTitleGroup>
                             <h1>設定語言能力</h1>
-                        </div>
+                        </ChapterTitleGroup>
 
-                        <p className="first-layer-no-list-style">範例：將日文設定為必要語文能力，如下。</p>
+                        <ChapterFirstLayerNoListStyle>
+                            範例：將日文設定為必要語文能力，如下。
+                        </ChapterFirstLayerNoListStyle>
 
                         <div
                             style={{
@@ -2456,7 +2194,7 @@ class General extends Component {
                             <li>成果如圖六。</li>
                             <li>如要選多個語系，請重複步驟2-7，完成新增其他語系。</li>
                         </ul>
-                    </div>
+                    </ChapterBody>
                 </Element>
 
                 <Element className="Chapter" name="set-driving-license" style={{flexDirection: 'column'}}>
@@ -2466,42 +2204,27 @@ class General extends Component {
                 </Element>
 
                 <Element className="Chapter" name="lookup-job">
-                    <div className="Chapter-Multi-image-container">
-                        <div className="Chapter-Multi-image-image"
-                             style={{
-                                 background: `url(${img_lookup_job1})`,
-                                 backgroundSize: 'contain',
-                                 backgroundRepeat: 'no-repeat'
-                             }}
+                    <MultiImageContainer>
+                        <MultiImage
+                            srcArray={[
+                                img_lookup_job1,
+                                img_lookup_job2,
+                                img_lookup_job3
+                            ]}
                         />
-                        <div className="Chapter-Multi-image-image"
-                             style={{
-                                 background: `url(${img_lookup_job2})`,
-                                 backgroundSize: 'contain',
-                                 backgroundRepeat: 'no-repeat'
-                             }}
-                        />
-                        <div className="Chapter-Multi-image-image"
-                             style={{
-                                 background: `url(${img_lookup_job3})`,
-                                 backgroundSize: 'contain',
-                                 backgroundRepeat: 'no-repeat'
-                             }}
-                        />
-                    </div>
+                    </MultiImageContainer>
 
-                    <div className="Chapter-body">
-
-                        <div className="Chapter-body-title-group">
+                    <ChapterBody>
+                        <ChapterTitleGroup>
                             <h1>查詢職務</h1>
-                        </div>
+                        </ChapterTitleGroup>
 
-                        <p className="first-layer-no-list-style">
+                        <ChapterFirstLayerNoListStyle>
                             範例：依照職類『營運企劃』查詢職務
-                        </p>
-                        <p className="first-layer-no-list-style">
+                        </ChapterFirstLayerNoListStyle>
+                        <ChapterFirstLayerNoListStyle>
                             進入路徑：首頁->發射台->職缺管理-> 職務。如圖一。
-                        </p>
+                        </ChapterFirstLayerNoListStyle>
 
                         <ul className="first-layer">
                             <li>
@@ -2519,7 +2242,7 @@ class General extends Component {
                             <li>可以選擇資歷、員工類型、進行篩選。依照範例，在類別選擇『我的職缺』，按下『使用』鍵，即可顯示篩選結果。</li>
                             <li>成果如圖三</li>
                         </ul>
-                    </div>
+                    </ChapterBody>
                 </Element>
 
                 <Element className="Chapter" name="add-job-example" style={{flexDirection: 'column'}}>
@@ -2537,42 +2260,30 @@ class General extends Component {
                 </Element>
 
                 <Element className="Chapter" name="add-job">
-                    <div className="Chapter-Multi-image-container">
-                        <div className="Chapter-Multi-image-image"
-                             style={{
-                                 background: `url(${img_add_job1})`,
-                                 backgroundSize: 'contain',
-                                 backgroundRepeat: 'no-repeat'
-                             }}
-                        />
-                        <div className="Chapter-Multi-image-image"
-                             style={{
-                                 background: `url(${img_add_job2})`,
-                                 backgroundSize: 'contain',
-                                 backgroundRepeat: 'no-repeat'
-                             }}
-                        />
-                        <div className="Chapter-Multi-image-image"
-                             style={{
-                                 background: `url(${img_add_job3})`,
-                                 backgroundSize: 'contain',
-                                 backgroundRepeat: 'no-repeat'
-                             }}
-                        />
-                    </div>
 
-                    <div className="Chapter-body">
+                    <MultiImageContainer>
+                        <MultiImage
+                            srcArray={[
+                                img_add_job1,
+                                img_add_job2,
+                                img_add_job3
+                            ]}
+                        />
+                    </MultiImageContainer>
 
-                        <div className="Chapter-body-title-group">
+                    <ChapterBody>
+
+                        <ChapterTitleGroup>
                             <h1>新增職務</h1>
-                        </div>
+                        </ChapterTitleGroup>
 
-                        <p className="first-layer-no-list-style">
+                        <ChapterFirstLayerNoListStyle>
                             展示範例：新增售前工程師的職務。
-                        </p>
-                        <p className="first-layer-no-list-style">
+                        </ChapterFirstLayerNoListStyle>
+
+                        <ChapterFirstLayerNoListStyle>
                             進入路徑：首頁->發射台->職缺管理-> 職務。如圖一。
-                        </p>
+                        </ChapterFirstLayerNoListStyle>
 
                         <ul className="first-layer">
                             <li>參照查詢職務</li>
@@ -2589,49 +2300,35 @@ class General extends Component {
                             <li>按下『儲存』鍵。</li>
                             <li>成果如圖三。</li>
                         </ul>
-                    </div>
+                    </ChapterBody>
                 </Element>
 
                 <Element className="Chapter" name="lookup-req">
-                    <div className="Chapter-Multi-image-container">
-                        <div className="Chapter-Multi-image-image"
-                             style={{
-                                 background: `url(${img_lookup_req1})`,
-                                 backgroundSize: 'contain',
-                                 backgroundRepeat: 'no-repeat'
-                             }}
+                    <MultiImageContainer>
+                        <MultiImage
+                            srcArray={[
+                                img_lookup_req1,
+                                img_lookup_req2,
+                                img_lookup_req3
+                            ]}
                         />
-                        <div className="Chapter-Multi-image-image"
-                             style={{
-                                 background: `url(${img_lookup_req2})`,
-                                 backgroundSize: 'contain',
-                                 backgroundRepeat: 'no-repeat'
-                             }}
-                        />
-                        <div className="Chapter-Multi-image-image"
-                             style={{
-                                 background: `url(${img_lookup_req3})`,
-                                 backgroundSize: 'contain',
-                                 backgroundRepeat: 'no-repeat'
-                             }}
-                        />
-                    </div>
+                    </MultiImageContainer>
 
-                    <div className="Chapter-body">
+                    <ChapterBody>
 
-                        <div className="Chapter-body-title-group">
+                        <ChapterTitleGroup>
                             <h1>查詢職缺</h1>
-                        </div>
+                        </ChapterTitleGroup>
 
-                        <p className="first-layer-no-list-style">
+                        <ChapterFirstLayerNoListStyle>
                             範例：查詢我的職缺
-                        </p>
+                        </ChapterFirstLayerNoListStyle>
 
                         <ul className="first-layer">
                             <li>可以依照類別、招聘區域、工作據點、職類，或是輸入職缺名稱進行篩選。依照範例，在類別選擇『我的職缺』，按下『使用』鍵，即可顯示篩選結果。</li>
                             <li>成果如圖三</li>
                         </ul>
-                    </div>
+                    </ChapterBody>
                 </Element>
 
                 <Element className="Chapter" name="add-req-example" style={{flexDirection: 'column'}}>
@@ -2649,147 +2346,24 @@ class General extends Component {
                 </Element>
 
                 <Element className="Chapter" name="add-req">
-                    <div className="Chapter-Multi-image-container">
-                        <div className="Chapter-Multi-image-image"
-                             style={{
-                                 background: `url(${img_add_req1})`,
-                                 backgroundSize: 'contain',
-                                 backgroundRepeat: 'no-repeat'
-                             }}
+                    <MultiImageContainer>
+                        <MultiImage
+                            srcArray={[
+                                img_add_req1, img_add_req2, img_add_req3,
+                                img_add_req4, img_add_req5, img_add_req6,
+                                img_add_req7, img_add_req8, img_add_req9,
+                                img_add_req10, img_add_req11, img_add_req12,
+                                img_add_req13, img_add_req14, img_add_req15,
+                                img_add_req16, img_add_req17, img_add_req18, img_add_req19,
+                            ]}
                         />
-                        <div className="Chapter-Multi-image-image"
-                             style={{
-                                 background: `url(${img_add_req2})`,
-                                 backgroundSize: 'contain',
-                                 backgroundRepeat: 'no-repeat'
-                             }}
-                        />
-                        <div className="Chapter-Multi-image-image"
-                             style={{
-                                 background: `url(${img_add_req3})`,
-                                 backgroundSize: 'contain',
-                                 backgroundRepeat: 'no-repeat'
-                             }}
-                        />
-                        <div className="Chapter-Multi-image-image"
-                             style={{
-                                 background: `url(${img_add_req4})`,
-                                 backgroundSize: 'contain',
-                                 backgroundRepeat: 'no-repeat'
-                             }}
-                        />
-                        <div className="Chapter-Multi-image-image"
-                             style={{
-                                 background: `url(${img_add_req5})`,
-                                 backgroundSize: 'contain',
-                                 backgroundRepeat: 'no-repeat'
-                             }}
-                        />
-                        <div className="Chapter-Multi-image-image"
-                             style={{
-                                 background: `url(${img_add_req6})`,
-                                 backgroundSize: 'contain',
-                                 backgroundRepeat: 'no-repeat'
-                             }}
-                        />
-                        <div className="Chapter-Multi-image-image"
-                             style={{
-                                 background: `url(${img_add_req7})`,
-                                 backgroundSize: 'contain',
-                                 backgroundRepeat: 'no-repeat'
-                             }}
-                        />
-                        <div className="Chapter-Multi-image-image"
-                             style={{
-                                 background: `url(${img_add_req8})`,
-                                 backgroundSize: 'contain',
-                                 backgroundRepeat: 'no-repeat'
-                             }}
-                        />
-                        <div className="Chapter-Multi-image-image"
-                             style={{
-                                 background: `url(${img_add_req9})`,
-                                 backgroundSize: 'contain',
-                                 backgroundRepeat: 'no-repeat'
-                             }}
-                        />
-                        <div className="Chapter-Multi-image-image"
-                             style={{
-                                 background: `url(${img_add_req10})`,
-                                 backgroundSize: 'contain',
-                                 backgroundRepeat: 'no-repeat'
-                             }}
-                        />
-                        <div className="Chapter-Multi-image-image"
-                             style={{
-                                 background: `url(${img_add_req11})`,
-                                 backgroundSize: 'contain',
-                                 backgroundRepeat: 'no-repeat'
-                             }}
-                        />
-                        <div className="Chapter-Multi-image-image"
-                             style={{
-                                 background: `url(${img_add_req12})`,
-                                 backgroundSize: 'contain',
-                                 backgroundRepeat: 'no-repeat'
-                             }}
-                        />
-                        <div className="Chapter-Multi-image-image"
-                             style={{
-                                 background: `url(${img_add_req13})`,
-                                 backgroundSize: 'contain',
-                                 backgroundRepeat: 'no-repeat'
-                             }}
-                        />
-                        <div className="Chapter-Multi-image-image"
-                             style={{
-                                 background: `url(${img_add_req14})`,
-                                 backgroundSize: 'contain',
-                                 backgroundRepeat: 'no-repeat'
-                             }}
-                        />
-                        <div className="Chapter-Multi-image-image"
-                             style={{
-                                 background: `url(${img_add_req15})`,
-                                 backgroundSize: 'contain',
-                                 backgroundRepeat: 'no-repeat'
-                             }}
-                        />
-                        <div className="Chapter-Multi-image-image"
-                             style={{
-                                 background: `url(${img_add_req16})`,
-                                 backgroundSize: 'contain',
-                                 backgroundRepeat: 'no-repeat'
-                             }}
-                        />
-                        <div className="Chapter-Multi-image-image"
-                             style={{
-                                 background: `url(${img_add_req17})`,
-                                 backgroundSize: 'contain',
-                                 backgroundRepeat: 'no-repeat'
-                             }}
-                        />
-                        <div className="Chapter-Multi-image-image"
-                             style={{
-                                 background: `url(${img_add_req18})`,
-                                 backgroundSize: 'contain',
-                                 backgroundRepeat: 'no-repeat'
-                             }}
-                        />
-                        <div className="Chapter-Multi-image-image"
-                             style={{
-                                 background: `url(${img_add_req19})`,
-                                 backgroundSize: 'contain',
-                                 backgroundRepeat: 'no-repeat'
-                             }}
-                        />
-                    </div>
+                    </MultiImageContainer>
 
-                    <div className="Chapter-body">
+                    <ChapterBody>
 
-                        <div className="Chapter-body-title-group">
+                        <ChapterTitleGroup>
                             <h1>新增職缺</h1>
-                        </div>
+                        </ChapterTitleGroup>
 
                         <ul className="first-layer">
                             <li>按下右上方『新增』按鈕，如圖三。</li>
@@ -2940,39 +2514,24 @@ class General extends Component {
                                 className="Text-underline">刊登職缺，如圖十五</span>。
                             </li>
                         </ul>
-                    </div>
+                    </ChapterBody>
                 </Element>
 
                 <Element className="Chapter" name="req-activation">
-                    <div className="Chapter-Multi-image-container">
-                        <div className="Chapter-Multi-image-image"
-                             style={{
-                                 background: `url(${img_req_activation1})`,
-                                 backgroundSize: 'contain',
-                                 backgroundRepeat: 'no-repeat'
-                             }}
+                    <MultiImageContainer>
+                        <MultiImage
+                            srcArray={[
+                                img_req_activation1,
+                                img_req_activation2,
+                                img_req_activation3
+                            ]}
                         />
-                        <div className="Chapter-Multi-image-image"
-                             style={{
-                                 background: `url(${img_req_activation2})`,
-                                 backgroundSize: 'contain',
-                                 backgroundRepeat: 'no-repeat'
-                             }}
-                        />
-                        <div className="Chapter-Multi-image-image"
-                             style={{
-                                 background: `url(${img_req_activation3})`,
-                                 backgroundSize: 'contain',
-                                 backgroundRepeat: 'no-repeat'
-                             }}
-                        />
-                    </div>
+                    </MultiImageContainer>
 
-                    <div className="Chapter-body">
-
-                        <div className="Chapter-body-title-group">
+                    <ChapterBody>
+                        <ChapterTitleGroup>
                             <h1>職缺生效</h1>
-                        </div>
+                        </ChapterTitleGroup>
 
                         <ul className="first-layer">
                             <li>
@@ -2991,32 +2550,24 @@ class General extends Component {
                             <li>如有任何修正，請按下儲存/生效按鈕，再行生效職缺。</li>
                             <li>如要刊登職缺，請參照<span className="Text-underline">刊登職缺</span>。</li>
                         </ul>
-                    </div>
+                    </ChapterBody>
                 </Element>
 
                 <Element className="Chapter" name="add-req-ad">
-                    <div className="Chapter-Multi-image-container">
-                        <div className="Chapter-Multi-image-image"
-                             style={{
-                                 background: `url(${img_add_req_ad1})`,
-                                 backgroundSize: 'contain',
-                                 backgroundRepeat: 'no-repeat'
-                             }}
+                    <MultiImageContainer>
+                        <MultiImage
+                            srcArray={[
+                                img_add_req_ad1,
+                                img_add_req_ad2
+                            ]}
                         />
-                        <div className="Chapter-Multi-image-image"
-                             style={{
-                                 background: `url(${img_add_req_ad2})`,
-                                 backgroundSize: 'contain',
-                                 backgroundRepeat: 'no-repeat'
-                             }}
-                        />
-                    </div>
+                    </MultiImageContainer>
 
-                    <div className="Chapter-body">
+                    <ChapterBody>
 
-                        <div className="Chapter-body-title-group">
+                        <ChapterTitleGroup>
                             <h1>刊登職缺廣告</h1>
-                        </div>
+                        </ChapterTitleGroup>
 
 
                         <ul className="first-layer">
@@ -3045,32 +2596,24 @@ class General extends Component {
                                 一鍵刊登按鈕。職缺即刻送往職缺管道，按其規定程序刊登。
                             </li>
                         </ul>
-                    </div>
+                    </ChapterBody>
                 </Element>
 
                 <Element className="Chapter" name="end-receive">
-                    <div className="Chapter-Multi-image-container">
-                        <div className="Chapter-Multi-image-image"
-                             style={{
-                                 background: `url(${img_end_receive1})`,
-                                 backgroundSize: 'contain',
-                                 backgroundRepeat: 'no-repeat'
-                             }}
+                    <MultiImageContainer>
+                        <MultiImage
+                            srcArray={[
+                                img_end_receive1,
+                                img_end_receive2
+                            ]}
                         />
-                        <div className="Chapter-Multi-image-image"
-                             style={{
-                                 background: `url(${img_end_receive2})`,
-                                 backgroundSize: 'contain',
-                                 backgroundRepeat: 'no-repeat'
-                             }}
-                        />
-                    </div>
+                    </MultiImageContainer>
 
-                    <div className="Chapter-body">
+                    <ChapterBody>
 
-                        <div className="Chapter-body-title-group">
+                        <ChapterTitleGroup>
                             <h1>截止收件</h1>
-                        </div>
+                        </ChapterTitleGroup>
 
                         <ul className="first-layer">
                             <li>
@@ -3087,32 +2630,24 @@ class General extends Component {
                             </li>
                             <li>會出現確定要截止收件？的畫面。按『確定』鍵。徵才廣告會提前下架，生效的職缺也無法再執行增加職缺功能。</li>
                         </ul>
-                    </div>
+                    </ChapterBody>
                 </Element>
 
                 <Element className="Chapter" name="update-req">
-                    <div className="Chapter-Multi-image-container">
-                        <div className="Chapter-Multi-image-image"
-                             style={{
-                                 background: `url(${img_update_req1})`,
-                                 backgroundSize: 'contain',
-                                 backgroundRepeat: 'no-repeat'
-                             }}
+                    <MultiImageContainer>
+                        <MultiImage
+                            srcArray={[
+                                img_update_req1,
+                                img_update_req2
+                            ]}
                         />
-                        <div className="Chapter-Multi-image-image"
-                             style={{
-                                 background: `url(${img_update_req2})`,
-                                 backgroundSize: 'contain',
-                                 backgroundRepeat: 'no-repeat'
-                             }}
-                        />
-                    </div>
+                    </MultiImageContainer>
 
-                    <div className="Chapter-body">
+                    <ChapterBody>
 
-                        <div className="Chapter-body-title-group">
+                        <ChapterTitleGroup>
                             <h1>更新刊登</h1>
-                        </div>
+                        </ChapterTitleGroup>
 
                         <ul className="first-layer">
                             <li>
@@ -3152,32 +2687,23 @@ class General extends Component {
                                 更新刊登按鈕。更新職缺即刻送往職缺管道，按其規定程序再行刊登。
                             </li>
                         </ul>
-                    </div>
+                    </ChapterBody>
                 </Element>
 
                 <Element className="Chapter" name="end-req">
-                    <div className="Chapter-Multi-image-container">
-                        <div className="Chapter-Multi-image-image"
-                             style={{
-                                 background: `url(${img_end_req1})`,
-                                 backgroundSize: 'contain',
-                                 backgroundRepeat: 'no-repeat'
-                             }}
+                    <MultiImageContainer>
+                        <MultiImage
+                            srcArray={[
+                                img_end_req1,
+                                img_end_req2
+                            ]}
                         />
-                        <div className="Chapter-Multi-image-image"
-                             style={{
-                                 background: `url(${img_end_req2})`,
-                                 backgroundSize: 'contain',
-                                 backgroundRepeat: 'no-repeat'
-                             }}
-                        />
-                    </div>
+                    </MultiImageContainer>
 
-                    <div className="Chapter-body">
-
-                        <div className="Chapter-body-title-group">
+                    <ChapterBody>
+                        <ChapterTitleGroup>
                             <h1>結束招聘</h1>
-                        </div>
+                        </ChapterTitleGroup>
 
                         <ul className="first-layer">
                             <li>
@@ -3194,8 +2720,129 @@ class General extends Component {
                             </li>
                             <li>出現確定招聘結束？畫面。如圖二，按下確定鍵。</li>
                         </ul>
+                    </ChapterBody>
+                </Element>
+
+                <Element className="Chapter" name="hired-onhold-notification-onhold" style={{flexDirection: 'column'}}>
+
+                    <ChapterCoverImage src={hired_onhold_notification_onhold_cover}/>
+
+                    <div style={{flexDirection: 'row', display: 'flex', marginTop: '2em'}}>
+
+                        <MultiImageContainer>
+                            <MultiImage
+                                srcArray={[
+                                    hired_onhold_notification_onhold1,
+                                    hired_onhold_notification_onhold2,
+                                ]}
+                            />
+                        </MultiImageContainer>
+                        <ChapterBody>
+
+                            <ChapterTitleGroup>
+                                <h1>錄取/備取作業</h1>
+                            </ChapterTitleGroup>
+
+                            <ChapterFirstLayerNoListStyle>
+                                進入路徑：首頁->發射台->錄取管理->錄取/備取作業
+                                <span className="Text-danger">如圖一</span>。
+                            </ChapterFirstLayerNoListStyle>
+
+                            <ul className="first-layer">
+                                <li>點選下三角形，選擇備取。</li>
+                                <li>點選特定備取人選。</li>
+                                <li>按下『編輯』圖示。</li>
+                                <li>按下決策或是右方下三角形。</li>
+                                <li>選擇『錄取』：備取轉錄取。</li>
+                                <li>選擇『拒絕』：備取轉拒絕。</li>
+                            </ul>
+                        </ChapterBody>
                     </div>
                 </Element>
+
+                <Element className="Chapter" name="hired-onhold-notification-hired" style={{flexDirection: 'column'}}>
+
+                    <ChapterCoverImage src={hired_onhold_notification_hired_cover}/>
+
+                    <div style={{flexDirection: 'row', display: 'flex', marginTop: '2em'}}>
+
+                        <MultiImageContainer>
+                            <MultiImage
+                                srcArray={[
+                                    hired_onhold_notification_hired1,
+                                    hired_onhold_notification_hired2,
+                                    hired_onhold_notification_hired3,
+                                    hired_onhold_notification_hired4,
+                                    hired_onhold_notification_hired5,
+                                    hired_onhold_notification_hired6,
+                                ]}
+                            />
+                        </MultiImageContainer>
+
+                        <ChapterBody>
+                            <ChapterTitleGroup>
+                                <h1>錄取/備取作業</h1>
+                            </ChapterTitleGroup>
+
+                            <ChapterFirstLayerNoListStyle>
+                                進入路徑：首頁->發射台->錄取管理->錄取/備取作業
+                                <span className="Text-danger">如圖一</span>。
+                            </ChapterFirstLayerNoListStyle>
+
+                            <ul className="first-layer">
+                                <li>點選下三角形，選擇備取。</li>
+                                <li>點選特定備取人選。</li>
+                                <li>按下『編輯』圖示。</li>
+                                <li>按下決策或是右方下三角形。</li>
+                                <li>選擇『錄取』：備取轉錄取。</li>
+                                <li>選擇『拒絕』：備取轉拒絕。</li>
+                            </ul>
+                        </ChapterBody>
+                    </div>
+                </Element>
+
+                <Element className="Chapter" name="to-report-list" style={{flexDirection: 'column'}}>
+
+                    <ChapterCoverImage src={img_to_report_list_cover}/>
+
+                    <div style={{flexDirection: 'row', display: 'flex', marginTop: '2em'}}>
+
+                        <MultiImageContainer>
+                            <MultiImage
+                                srcArray={[
+                                    img_to_report_list1,
+                                    img_to_report_list2
+                                ]}
+                            />
+                        </MultiImageContainer>
+
+                        <ChapterBody>
+                            <ChapterTitleGroup>
+                                <h1>錄取/備取作業</h1>
+                            </ChapterTitleGroup>
+
+                            <ChapterFirstLayerNoListStyle>
+                                進入路徑：首頁->發射台->錄取管理->待報到清單。
+                                <span className="Text-danger">如圖一</span>。
+                            </ChapterFirstLayerNoListStyle>
+
+                            <ul className="first-layer">
+                                <li>點選特定人選。</li>
+                                <li>按下編輯。</li>
+                                <li>如圖二。員工工號：輸入員工編號。</li>
+                                <li>到職日：預計到職日，可酌情修改。</li>
+                                <li>聘僱邀約狀態：接受。（唯獨狀態）</li>
+                                <li>決策日：人選接受聘僱邀約的日期。（唯獨狀態）</li>
+                                <li>電子郵件：提供3個選擇讓ＩＴ建立公司電郵。</li>
+                                <li>汽車車號：安排停車位。</li>
+                                <li>機車車號：安排停車位。</li>
+                                <li>點擊儲存草稿圖示。</li>
+                            </ul>
+                        </ChapterBody>
+                    </div>
+                </Element>
+
+
 
                 </body>
             </div>
