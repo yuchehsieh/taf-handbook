@@ -149,6 +149,56 @@ import hired_onhold_notification_hired6 from '../images/hired-onhlold-notificati
 import img_to_report_list_cover from '../images/to-report-list-cover.png';
 import img_to_report_list1 from '../images/to-report-list1.png';
 import img_to_report_list2 from '../images/to-report-list2.png';
+import img_recruiter_control_cover from '../images/recruiter-control-cover.png';
+import img_recruiter_control1 from '../images/recruiter-control1.png';
+import img_rc_search_screening_candidate_cover from '../images/rc-search-screening-candidate-cover.png';
+import img_rc_search_screening_candidate1 from '../images/rc-search-screening-candidate1.png';
+import img_rc_search_screening_candidate2 from '../images/rc-search-screening-candidate2.png';
+import img_rc_search_screening_candidate3 from '../images/rc-search-screening-candidate3.png';
+import img_rc_search_screening_candidate4 from '../images/rc-search-screening-candidate4.png';
+import img_rc_review_new_applicant_cover from '../images/rc-review-new-applicant-cover.png';
+import img_rc_review_new_applicant1 from '../images/rc-review-new-applicant1.png';
+import img_rc_review_applied_status_cover from '../images/rc-review-applied-status-cover.png';
+import img_rc_review_applied_status1 from '../images/rc-review-applied-status1.png';
+import img_rc_refer_req_cover from '../images/rc-refer-req-cover.png';
+import img_rc_refer_req1 from '../images/rc-refer-req1.png';
+import img_rc_add_phone_record_cover from '../images/rc-add-phone-record-cover.png';
+import img_rc_add_phone_record1 from '../images/rc-add-phone-record1.png';
+import img_rc_add_reference_check_cover from '../images/rc-add-reference-check-cover.png';
+import img_rc_add_reference_check1 from '../images/rc-add-reference-check1.png';
+import img_rc_success_change_applied_status_cover from '../images/rc-success-change-applied-status-cover.png';
+import img_rc_success_change_applied_status1 from '../images/rc-success-change-applied-status1.png';
+import img_rc_success_change_applied_status2 from '../images/rc-success-change-applied-status2.png';
+import img_rc_success_change_applied_status3 from '../images/rc-success-change-applied-status3.png';
+import img_rc_review_all_applied_status_cover from '../images/rc-review-all-applied-stauts-cover.png';
+import img_rc_review_all_applied_status1 from '../images/rc-review-all-applied-stauts1.png';
+import img_rc_review_basic_info_cover from '../images/rc-review-basic-info-cover.png';
+import img_rc_review_basic_info1 from '../images/rc-review-basic-info1.png';
+import img_rc_review_basic_info2 from '../images/rc-review-basic-info2.png';
+import img_rc_add_referer_cover from '../images/rc-add-referer-cover.png';
+import img_rc_add_referer1 from '../images/rc-add-referer1.png';
+import img_rc_add_referer2 from '../images/rc-add-referer2.png';
+import img_rc_add_emergency_contact_cover from '../images/rc-add-emergency-contact-cover.png';
+import img_rc_add_emergency_contact1 from '../images/rc-add-emergency-contact1.png';
+import img_rc_add_emergency_contact2 from '../images/rc-add-emergency-contact2.png';
+import img_rc_set_black_list_cover from '../images/rc-set-black-list-cover.png';
+import img_rc_set_black_list1 from '../images/rc-set-black-list1.png';
+import img_rc_set_black_list2 from '../images/rc-set-black-list2.png';
+import img_rc_set_confidential_cover from '../images/rc-set-confidential-cover.png';
+import img_rc_set_confidential1 from '../images/rc-set-confidential1.png';
+import img_rc_set_confidential2 from '../images/rc-set-confidential2.png';
+import img_rc_record_recruiting_cost_cover from '../images/rc-record-recruiting-cost-cover.png';
+import img_rc_record_recruiting_cost1 from '../images/rc-record-recruiting-cost1.png';
+import img_rc_record_recruiting_cost2 from '../images/rc-record-recruiting-cost2.png';
+import img_rc_record_recruiting_cost3 from '../images/rc-record-recruiting-cost3.png';
+import img_rc_record_recruiting_cost4 from '../images/rc-record-recruiting-cost4.png';
+import img_rc_review_workExp_cover from '../images/rc-review-workExp-cover.png';
+import img_rc_review_workExp1 from '../images/rc-review-workExp1.png';
+import img_rc_add_workExp_cover from '../images/rc-add-workExp-cover.png';
+import img_rc_add_workExp1 from '../images/rc-add-workExp1.png';
+import img_rc_add_workExp2 from '../images/rc-add-workExp2.png';
+import img_rc_review_educationExp_cover from '../images/rc-review-educationExp-cover.png';
+import img_rc_review_educationExp1 from '../images/rc-review-educationExp1.png';
 
 import icon_homepage from '../images/icon_homepage.png';
 import icon_arrow_down from '../images/icon_arrow_down.png';
@@ -168,13 +218,16 @@ import icon_save_activate from '../images/icon-save-activate.png';
 import icon_update_req1 from '../images/icon-update-req1.png';
 import icon_update_req2 from '../images/icon-update-req2.png';
 import icon_end_req from '../images/icon-end-req.png';
+import icon_add_text from '../images/icon-add-text.png';
+import icon_add_req from '../images/icon-add-req.png';
+import icon_switch from '../images/icon-switch.png';
 
 import video_login from '../images/video_login.mp4';
 import {routePath} from "../utils/constants";
 import {
     ChapterBody,
     ChapterCoverImage,
-    ChapterFirstLayerNoListStyle,
+    ChapterFirstLayerNoListStyle, ChapterSecondLayerNoListStyle,
     ChapterTitleGroup,
     MultiImage,
     MultiImageContainer
@@ -243,6 +296,24 @@ class General extends Component {
                     <div className="header-element">錄取/備取通知-備取</div>
                     <div className="header-element">錄取/備取通知-錄取</div>
                     <div className="header-element">待報到清單</div>
+                    <div className="header-element">招聘指揮台</div>
+                    <div className="header-element">招聘指揮台-查詢初選階段候選人</div>
+                    <div className="header-element">招聘指揮台-審閱新進履歷</div>
+                    <div className="header-element">招聘指揮台-審閱本次應徵狀態</div>
+                    <div className="header-element">招聘指揮台-轉薦職缺</div>
+                    <div className="header-element">招聘指揮台-新增通話紀錄</div>
+                    <div className="header-element">招聘指揮台-新增資歷查核</div>
+                    <div className="header-element">招聘指揮台-人才開發成功-修改應徵狀態</div>
+                    <div className="header-element">招聘指揮台-審閱所有應徵狀態</div>
+                    <div className="header-element">招聘指揮台-審閱基本資料</div>
+                    <div className="header-element">招聘指揮台-新增推薦人</div>
+                    <div className="header-element">招聘指揮台-新增緊急聯絡人</div>
+                    <div className="header-element">招聘指揮台-設定黑名單</div>
+                    <div className="header-element">招聘指揮台-設定機密履歷</div>
+                    <div className="header-element">招聘指揮台-紀錄招聘費用</div>
+                    <div className="header-element">招聘指揮台-審核工作經驗</div>
+                    <div className="header-element">招聘指揮台-新增工作經驗</div>
+                    <div className="header-element">招聘指揮台-審核教育經驗</div>
                 </header>
                 <header className="App-header" style={{position: 'fixed'}}>
                     <Link to="login-progress" className="header-element" smooth={true} duration={500}>
@@ -412,6 +483,60 @@ class General extends Component {
                     </Link>
                     <Link to="to-report-list" className="header-element" smooth={true} duration={500}>
                         待報到清單
+                    </Link>
+                    <Link to="recruiter-control" className="header-element" smooth={true} duration={500}>
+                        招聘指揮台
+                    </Link>
+                    <Link to="rc-search-screening-candidate" className="header-element" smooth={true} duration={500}>
+                        招聘指揮台-查詢初選階段候選人
+                    </Link>
+                    <Link to="rc-review-new-applicant" className="header-element" smooth={true} duration={500}>
+                        招聘指揮台-審閱新進履歷
+                    </Link>
+                    <Link to="rc-review-applied-status" className="header-element" smooth={true} duration={500}>
+                        招聘指揮台-審閱新進履歷
+                    </Link>
+                    <Link to="rc-refer-req" className="header-element" smooth={true} duration={500}>
+                        招聘指揮台-轉薦職缺
+                    </Link>
+                    <Link to="rc-refer-req" className="header-element" smooth={true} duration={500}>
+                        招聘指揮台-新增通話紀錄
+                    </Link>
+                    <Link to="rc-add-reference-check" className="header-element" smooth={true} duration={500}>
+                        招聘指揮台-新增資歷查核
+                    </Link>
+                    <Link to="rc-success-change-applied-status" className="header-element" smooth={true} duration={500}>
+                        招聘指揮台-人才開發成功-修改應徵狀態
+                    </Link>
+                    <Link to="rc-review-all-applied-status" className="header-element" smooth={true} duration={500}>
+                        招聘指揮台-審閱所有應徵狀態
+                    </Link>
+                    <Link to="rc-review-basic-info" className="header-element" smooth={true} duration={500}>
+                        招聘指揮台-審閱基本資料
+                    </Link>
+                    <Link to="rc-add-referer" className="header-element" smooth={true} duration={500}>
+                        招聘指揮台-新增推薦人
+                    </Link>
+                    <Link to="rc-add-emergency-contact" className="header-element" smooth={true} duration={500}>
+                        招聘指揮台-新增緊急聯絡人
+                    </Link>
+                    <Link to="rc-set-black-list" className="header-element" smooth={true} duration={500}>
+                        招聘指揮台-設定黑名單
+                    </Link>
+                    <Link to="rc-set-confidential" className="header-element" smooth={true} duration={500}>
+                        招聘指揮台-設定機密履歷
+                    </Link>
+                    <Link to="rc-record-recruiting-cost" className="header-element" smooth={true} duration={500}>
+                        招聘指揮台-紀錄招聘費用
+                    </Link>
+                    <Link to="rc-review-workExp" className="header-element" smooth={true} duration={500}>
+                        招聘指揮台-審核工作經驗
+                    </Link>
+                    <Link to="rc-add-workExp" className="header-element" smooth={true} duration={500}>
+                        招聘指揮台-新增工作經驗
+                    </Link>
+                    <Link to="rc-review-educationExp" className="header-element" smooth={true} duration={500}>
+                        招聘指揮台-審核教育經驗
                     </Link>
                 </header>
 
@@ -2842,6 +2967,909 @@ class General extends Component {
                     </div>
                 </Element>
 
+                <Element className="Chapter" name="recruiter-control" style={{flexDirection: 'column'}}>
+
+                    <ChapterCoverImage src={img_recruiter_control_cover}/>
+
+                    <div style={{flexDirection: 'row', display: 'flex', marginTop: '2em'}}>
+
+                        <MultiImageContainer>
+                            <MultiImage
+                                srcArray={[
+                                    img_recruiter_control1
+                                ]}
+                            />
+                        </MultiImageContainer>
+
+                        <ChapterBody>
+                            <ChapterTitleGroup>
+                                <h1>招聘指揮台</h1>
+                            </ChapterTitleGroup>
+
+                            <ChapterFirstLayerNoListStyle>
+                                進入路徑：首頁->選才管理->招聘指揮台
+                                <span className="Text-danger">如圖一</span>。
+                            </ChapterFirstLayerNoListStyle>
+
+                            <ul className="first-layer">
+                                <li>『初選候選人』：詳列所有正在進行初選的候選人名單。</li>
+                                <li>『決選候選人』：詳列所有進入決選階段的候選人名單。</li>
+                                <li>『資歷查核』：詳列用人主管要求查核資歷的候選人名單。點擊資歷查核，操作方式請參照資歷查核。</li>
+                                <li>『甄試管理』：
+                                    <ul className="second-layer">
+                                        <li>待安排/甄試約詢：所有送出甄試約詢的要求。</li>
+                                        <li>甄試邀約/已安排：所有已邀約的甄試安排。</li>
+                                        <li>甄試變更/待變更：所有要求變更甄試行程的要求。</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </ChapterBody>
+                    </div>
+                </Element>
+
+                <Element className="Chapter" name="rc-search-screening-candidate" style={{flexDirection: 'column'}}>
+
+                    <ChapterCoverImage src={img_rc_search_screening_candidate_cover}/>
+
+                    <div style={{flexDirection: 'row', display: 'flex', marginTop: '2em'}}>
+
+                        <MultiImageContainer>
+                            <MultiImage
+                                srcArray={[
+                                    img_rc_search_screening_candidate1,
+                                    img_rc_search_screening_candidate2,
+                                    img_rc_search_screening_candidate3,
+                                    img_rc_search_screening_candidate4,
+                                ]}
+                            />
+                        </MultiImageContainer>
+
+                        <ChapterBody>
+                            <ChapterTitleGroup>
+                                <h1>查詢初選階段候選人</h1>
+                            </ChapterTitleGroup>
+
+                            <ChapterFirstLayerNoListStyle>
+                                進入路徑：首頁->選才管理->招聘指揮台。
+                                <span className="Text-danger">如圖一</span>。
+                            </ChapterFirstLayerNoListStyle>
+
+                            <ul className="first-layer">
+                                <li>
+                                    點擊『初選候選人』或是右方
+                                    <span
+                                        style={{
+                                            background: `url(${icon_arrow_down}) 0% 0% / contain no-repeat`,
+                                            width: '2em',
+                                            height: '1.5em',
+                                            display: 'inline-flex'
+                                        }}
+                                    />
+                                    『下三角形』圖示，如圖一。有兩個選項，如圖二。
+                                    <ul className="second-layer">
+                                        <li>選擇初選候選人</li>
+                                        <li>選擇職缺</li>
+                                    </ul>
+                                </li>
+                                <li>選擇特定候選人，如圖三。</li>
+                                <li>點選編輯圖示，進行處理。</li>
+                            </ul>
+                        </ChapterBody>
+                    </div>
+                </Element>
+
+                <Element className="Chapter" name="rc-review-new-applicant" style={{flexDirection: 'column'}}>
+
+                    <ChapterCoverImage src={img_rc_review_new_applicant_cover}/>
+
+                    <div style={{flexDirection: 'row', display: 'flex', marginTop: '2em'}}>
+
+                        <MultiImageContainer>
+                            <MultiImage
+                                srcArray={[
+                                    img_rc_review_new_applicant1
+                                ]}
+                            />
+                        </MultiImageContainer>
+
+                        <ChapterBody>
+                            <ChapterTitleGroup>
+                                <h1>招聘指揮台-審閱新進履歷</h1>
+                            </ChapterTitleGroup>
+
+                            <ChapterFirstLayerNoListStyle>
+                                進入候選人檔案，如圖四。
+                            </ChapterFirstLayerNoListStyle>
+
+                            <ChapterFirstLayerNoListStyle>
+                                4. 詳列本次應徵紀錄。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                5. 詳列所有應徵紀錄。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                6-11. 詳列候選人履歷。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                12. 詳列後選人註記。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                13. 下達決策。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                14. 下達命令。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                15. 檢視文件格式唯獨履歷。
+                            </ChapterFirstLayerNoListStyle>
+                        </ChapterBody>
+                    </div>
+                </Element>
+
+                <Element className="Chapter" name="rc-review-applied-status" style={{flexDirection: 'column'}}>
+
+                    <ChapterCoverImage src={img_rc_review_applied_status_cover}/>
+
+                    <div style={{flexDirection: 'row', display: 'flex', marginTop: '2em'}}>
+
+                        <MultiImageContainer>
+                            <MultiImage
+                                srcArray={[
+                                    img_rc_review_applied_status1
+                                ]}
+                            />
+                        </MultiImageContainer>
+
+                        <ChapterBody>
+
+                            <ChapterFirstLayerNoListStyle>
+                                4. 本次應徵紀錄：點擊候選人人名頁面，詳列候選人應徵紀錄，如圖三 。
+                            </ChapterFirstLayerNoListStyle>
+
+                            <ChapterFirstLayerNoListStyle>
+                                a. 增加職缺：若要將人才加入正在徵才的特定職缺，請按
+                                <span
+                                    style={{
+                                        background: `url(${icon_add_req}) 0% 0% / contain no-repeat`,
+                                        width: '2em',
+                                        height: '1.5em',
+                                        display: 'inline-flex'
+                                    }}
+                                />
+                                圖示步驟，請參照『 收件匣-轉薦職缺』。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                b. 新增通話紀錄：若要紀錄與候選人的通話紀錄，請按
+                                <span
+                                    style={{
+                                        background: `url(${icon_add_text}) 0% 0% / contain no-repeat`,
+                                        width: '2em',
+                                        height: '1.5em',
+                                        display: 'inline-flex'
+                                    }}
+                                />
+                                圖示，相關步驟請參照『收件匣-通話紀錄』。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                c. 新增資歷查核紀錄：若要紀錄資歷查核的資料，請按圖示，相關步驟請參照『收件匣- 查核資歷』。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                d. 修改應徵狀態：修改應徵狀態，從非主動改成主動。
+                            </ChapterFirstLayerNoListStyle>
+                        </ChapterBody>
+                    </div>
+                </Element>
+
+                <Element className="Chapter" name="rc-refer-req" style={{flexDirection: 'column'}}>
+
+                    <ChapterCoverImage src={img_rc_refer_req_cover}/>
+
+                    <div style={{flexDirection: 'row', display: 'flex', marginTop: '2em'}}>
+
+                        <MultiImageContainer>
+                            <MultiImage
+                                srcArray={[
+                                    img_rc_refer_req1
+                                ]}
+                            />
+                        </MultiImageContainer>
+
+                        <ChapterBody>
+                            <ChapterFirstLayerNoListStyle>
+                                i. 會顯示『新增：職缺輸入畫面』，如圖六。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                ii. 選擇『職缺名稱』。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                iii. 按下『儲存』鍵。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                如果要繼續推薦其他職缺，請重複步驟a-iii。
+                            </ChapterFirstLayerNoListStyle>
+                        </ChapterBody>
+                    </div>
+                </Element>
+
+                <Element className="Chapter" name="rc-add-phone-record" style={{flexDirection: 'column'}}>
+
+                    <ChapterCoverImage src={img_rc_add_phone_record_cover}/>
+
+                    <div style={{flexDirection: 'row', display: 'flex', marginTop: '2em'}}>
+
+                        <MultiImageContainer>
+                            <MultiImage
+                                srcArray={[
+                                    img_rc_add_phone_record1
+                                ]}
+                            />
+                        </MultiImageContainer>
+
+                        <ChapterBody>
+                            <ChapterFirstLayerNoListStyle>
+                                i. 會顯示『新增：通話紀錄』輸入畫面，如圖六。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                ii. 選擇通話『類型』。選項不足，請參照<span className="Text-underline">新增通話類型</span>。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                iii. 選擇通話『目的』。 選項不足，請參照<span className="Text-underline">新增通話目的</span>。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                iv. 選擇通話『開始時間』 ，預設值：現在。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                v. 輸入『分鐘』，預設值：5分鐘。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                vi. 選擇『結果』。選項不足，請參照<span className="Text-underline">新增通話結果</span>。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                vii. 輸入『說明』
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                viii. 按下儲存鍵。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                如果要繼續新增其他通話紀錄，請重複步驟b-viii。
+                            </ChapterFirstLayerNoListStyle>
+                        </ChapterBody>
+                    </div>
+                </Element>
+
+                <Element className="Chapter" name="rc-add-reference-check" style={{flexDirection: 'column'}}>
+
+                    <ChapterCoverImage src={img_rc_add_reference_check_cover}/>
+
+                    <div style={{flexDirection: 'row', display: 'flex', marginTop: '2em'}}>
+
+                        <MultiImageContainer>
+                            <MultiImage
+                                srcArray={[
+                                    img_rc_add_reference_check1
+                                ]}
+                            />
+                        </MultiImageContainer>
+
+                        <ChapterBody>
+                            <ChapterFirstLayerNoListStyle>
+                                i. 會顯示『新增：資歷查核』輸入畫面，如圖六。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                ii. 選擇『查核日期』。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                iii. 輸入『查核人姓名』。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                iv. 輸入查核人『公司』。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                v. 輸入查核人『職位』。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                vi. 輸入查核人與候選人之間的『關係』。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                vii. 輸入『電子郵件』。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                viii. 輸入『結果』。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                ix. 按下儲存鍵。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                如果要繼續查核其他資歷，請重複步驟c-ix。
+                            </ChapterFirstLayerNoListStyle>
+                        </ChapterBody>
+                    </div>
+                </Element>
+
+                <Element className="Chapter" name="rc-success-change-applied-status" style={{flexDirection: 'column'}}>
+
+                    <ChapterCoverImage src={img_rc_success_change_applied_status_cover}/>
+
+                    <div style={{flexDirection: 'row', display: 'flex', marginTop: '2em'}}>
+
+                        <MultiImageContainer>
+                            <MultiImage
+                                srcArray={[
+                                    img_rc_success_change_applied_status1,
+                                    img_rc_success_change_applied_status2,
+                                    img_rc_success_change_applied_status3,
+                                ]}
+                            />
+                        </MultiImageContainer>
+
+                        <ChapterBody>
+                            <ChapterTitleGroup>
+                                <h1>人才開發-修改應徵狀態</h1>
+                            </ChapterTitleGroup>
+
+                            <ChapterFirstLayerNoListStyle>
+                                進入路徑：首頁->選才管理->招聘指揮台
+                                <span className="Text-danger">如圖一</span>。
+                            </ChapterFirstLayerNoListStyle>
+
+                            <ul className="first-layer">
+                                <li>
+                                    點擊
+                                    <span
+                                        style={{
+                                            background: `url(${icon_switch}) 0% 0% / contain no-repeat`,
+                                            width: '2em',
+                                            height: '1.5em',
+                                            display: 'inline-flex'
+                                        }}
+                                    />
+                                    轉換圖示。
+                                </li>
+                                <li>『非主動到主動應徵』視窗會彈跳出來。</li>
+                                <li>若要增加通話紀錄，請將開關撥向右方，操作方式請參照新增<span className="Text-underline">紀錄通話</span>。</li>
+                                <li>按確定鍵。</li>
+                                <li>成果如圖四。應徵狀態轉為主動。</li>
+                            </ul>
+                        </ChapterBody>
+                    </div>
+                </Element>
+
+                <Element className="Chapter" name="rc-review-all-applied-status" style={{flexDirection: 'column'}}>
+
+                    <ChapterCoverImage src={img_rc_review_all_applied_status_cover}/>
+
+                    <div style={{flexDirection: 'row', display: 'flex', marginTop: '2em'}}>
+
+                        <MultiImageContainer>
+                            <MultiImage
+                                srcArray={[
+                                    img_rc_review_all_applied_status1,
+                                ]}
+                            />
+                        </MultiImageContainer>
+
+                        <ChapterBody>
+                            <ChapterFirstLayerNoListStyle>
+                                5. 查詢所有應徵紀錄。：點擊應徵紀錄頁面，詳列候選人所有應徵紀錄，如圖六 。
+                            </ChapterFirstLayerNoListStyle>
+                        </ChapterBody>
+                    </div>
+                </Element>
+
+                <Element className="Chapter" name="rc-review-basic-info" style={{flexDirection: 'column'}}>
+
+                    <ChapterCoverImage src={img_rc_review_basic_info_cover}/>
+
+                    <div style={{flexDirection: 'row', display: 'flex', marginTop: '2em'}}>
+
+                        <MultiImageContainer>
+                            <MultiImage
+                                srcArray={[
+                                    img_rc_review_basic_info1,
+                                    img_rc_review_basic_info2,
+                                ]}
+                            />
+                        </MultiImageContainer>
+
+                        <ChapterBody>
+                            <ChapterFirstLayerNoListStyle>
+                                6. 點擊『個人基本資料』頁面，詳列個人基本資料，如圖八。
+                            </ChapterFirstLayerNoListStyle>
+
+                            <ChapterFirstLayerNoListStyle>
+                                a. 輸入『姓氏』。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                b. 輸入『名字』。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                c. 照片：
+                                <ChapterSecondLayerNoListStyle>
+                                    i. 上傳照片：點擊檔案圖示，參照<span className="Text-underline">上傳圖檔</span>。
+                                </ChapterSecondLayerNoListStyle>
+                                <ChapterSecondLayerNoListStyle>
+                                    ii. 下載照片：點擊下載圖示，參照下載圖檔。
+                                </ChapterSecondLayerNoListStyle>
+                                <ChapterSecondLayerNoListStyle>
+                                    iii. 刪除照片：點擊刪除圖示
+                                </ChapterSecondLayerNoListStyle>
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                d. 輸入『<span className="Text-danger">暱名</span>』。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                e. 輸入『護照英文名』
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                f. 輸入『電子郵件』
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                g. 輸入『主要聯絡電話』
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                h. 輸入『次要聯絡電話』
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                <span className="Text-danger">i. 輸入『聯絡時間/方式』</span>
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                j. 輸入住址
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                k. 輸入『身分證字號』
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                l. 輸入『性別』
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                m. 輸入『生日』
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                n. 輸入『身高』
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                o. 輸入『體重』
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                p. 輸入『婚姻狀態』
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                q. 輸入『兵役狀態』
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                r. 輸入『退伍時間』
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                s. 選擇『<span className="Text-danger">身份類別</span>』
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                t. 選擇『<span className="Text-danger">履歷來源</span>』
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                u. 新增推薦人：請參照『 招聘指揮台 』『新增推薦人』。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                v. 新增緊急聯絡人：請參照『 招聘指揮台 』『新增緊急聯絡人』。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                w. 黑名單：將候選人列入黑名單，請參照『 招聘指揮台 』『列入黑名單』。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                x. 機密候選人：將候選人列入 機密候選人。無法從查詢人才功能查詢到機密候選人。請參照『 招聘指揮台 』『列入機密候選人』。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                y. 費用管理：紀錄候選人可報銷的費用。請參照『 招聘指揮台 』『紀錄候選人報銷費用』。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                z. 儲存鍵：按『儲存鍵』會自動儲存變動過的個人基本資料。按v
+                                <span style={{
+                                    background: `url(${icon_add_text}) 0% 0% / contain no-repeat`,
+                                    width: '2em',
+                                    height: '1.5em',
+                                    display: 'inline-flex'
+                                }}/>按鈕新增的資料已經在彈跳視窗內儲存過了，即使不按此儲存鍵，資料仍會存在。
+                            </ChapterFirstLayerNoListStyle>
+                        </ChapterBody>
+                    </div>
+                </Element>
+
+                <Element className="Chapter" name="rc-add-referer" style={{flexDirection: 'column'}}>
+
+                    <ChapterCoverImage src={img_rc_add_referer_cover}/>
+
+                    <div style={{flexDirection: 'row', display: 'flex', marginTop: '2em'}}>
+
+                        <MultiImageContainer>
+                            <MultiImage
+                                srcArray={[
+                                    img_rc_add_referer1,
+                                    img_rc_add_referer2,
+                                ]}
+                            />
+                        </MultiImageContainer>
+
+                        <ChapterBody>
+                            <ChapterTitleGroup>
+                                <h1>新增推薦人</h1>
+                            </ChapterTitleGroup>
+
+                            <ChapterFirstLayerNoListStyle>
+                                進入路徑：首頁-> 發射台->選才管理->招聘指揮台。如圖一
+                            </ChapterFirstLayerNoListStyle>
+
+                            <ChapterFirstLayerNoListStyle>
+                                6. 點擊『個人基本資料』頁面，詳列個人基本資料，如圖一
+                            </ChapterFirstLayerNoListStyle>
+
+                            <ChapterFirstLayerNoListStyle>
+                                u. 推薦人：
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                i. 按<span style={{
+                                background: `url(${icon_add_text}) 0% 0% / contain no-repeat`,
+                                width: '2em',
+                                height: '1.5em',
+                                display: 'inline-flex'
+                            }}/> 圖示
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                ii. 新增：推薦人視窗會彈跳出來。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                iii. 姓名：輸入推薦人姓名。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                iv. 公司：輸入推薦人現行在職公司。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                v. 職位：輸入推薦人現行在職職位。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                vi. 關係：輸入推薦人與候選人關係。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                vii. 電子郵件：輸入推薦人電子郵件。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                viii. 電話：輸入推薦人電話。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                ix. 按『儲存』鍵。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                如果要繼續輸入其他推薦人，請重複步驟u-ix。
+                            </ChapterFirstLayerNoListStyle>
+                        </ChapterBody>
+                    </div>
+                </Element>
+
+                <Element className="Chapter" name="rc-add-emergency-contact" style={{flexDirection: 'column'}}>
+
+                    <ChapterCoverImage src={img_rc_add_emergency_contact_cover}/>
+
+                    <div style={{flexDirection: 'row', display: 'flex', marginTop: '2em'}}>
+
+                        <MultiImageContainer>
+                            <MultiImage
+                                srcArray={[
+                                    img_rc_add_emergency_contact1,
+                                    img_rc_add_emergency_contact2,
+                                ]}
+                            />
+                        </MultiImageContainer>
+
+                        <ChapterBody>
+                            <ChapterTitleGroup>
+                                <h1>新增緊急聯絡人</h1>
+                            </ChapterTitleGroup>
+
+                            <ChapterFirstLayerNoListStyle>
+                                進入路徑：首頁-> 發射台->選才管理->招聘指揮台。如圖一
+                            </ChapterFirstLayerNoListStyle>
+
+                            <ChapterFirstLayerNoListStyle>
+                                6. 點擊『個人基本資料』頁面，詳列個人基本資料，如圖一
+                            </ChapterFirstLayerNoListStyle>
+
+                            <ChapterFirstLayerNoListStyle>
+                                v. 緊急聯絡人：
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                i. 按<span style={{
+                                background: `url(${icon_add_text}) 0% 0% / contain no-repeat`,
+                                width: '2em',
+                                height: '1.5em',
+                                display: 'inline-flex'
+                            }}/> 圖示
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                ii. 『新增：面談緊急聯絡人』視窗會彈跳出來。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                iii. 輸入緊急聯絡人『名字』。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                iv. 輸輸入緊急聯絡人『姓氏』。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                v. 『主要聯絡電話』：輸入緊急聯絡人最常用電話。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                vi. 『次要聯絡電話』：輸入緊急聯絡人其他電話。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                vii. 住址：輸入緊急聯絡人現行住址含『國家』、『郵遞區號』、『城市』、『區域』、『街道』。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                viii. 輸入緊急聯絡人與候選人『關係』。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                ix. 按『儲存』鍵。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                如果要繼續輸入其他推薦人，請重複步驟v-ix。
+                            </ChapterFirstLayerNoListStyle>
+                        </ChapterBody>
+                    </div>
+                </Element>
+
+                <Element className="Chapter" name="rc-set-black-list" style={{flexDirection: 'column'}}>
+
+                    <ChapterCoverImage src={img_rc_set_black_list_cover}/>
+
+                    <div style={{flexDirection: 'row', display: 'flex', marginTop: '2em'}}>
+
+                        <MultiImageContainer>
+                            <MultiImage
+                                srcArray={[
+                                    img_rc_set_black_list1,
+                                    img_rc_set_black_list2,
+                                ]}
+                            />
+                        </MultiImageContainer>
+
+                        <ChapterBody>
+                            <ChapterFirstLayerNoListStyle>
+                                w.『列入黑名單』在個人基本資料頁面的下方。如圖三。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                勾選列入黑名單，會顯示輸入畫面，如圖四。
+                            </ChapterFirstLayerNoListStyle>
+
+                            <ChapterFirstLayerNoListStyle>
+                                i. 『黑名單期間（自）』：黑名單生效日期，系統會自動填入今日日期，若要修改日期，請點選右方行事曆圖示，酌情修改。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                ii. 『黑名單到期日（至）』是系統根據黑名單生效日期再加上貴組織設定的黑名單期限自動計算而成。若要修改，請參照建立組織，<span
+                                className="Text-underline">修改黑名單期限</span>（月份）
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                iii. 輸入將候選人設為黑名單的『原因』。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                iv. 按『儲存』鍵。
+                            </ChapterFirstLayerNoListStyle>
+                        </ChapterBody>
+                    </div>
+                </Element>
+
+                <Element className="Chapter" name="rc-set-confidential" style={{flexDirection: 'column'}}>
+
+                    <ChapterCoverImage src={img_rc_set_confidential_cover}/>
+
+                    <div style={{flexDirection: 'row', display: 'flex', marginTop: '2em'}}>
+
+                        <MultiImageContainer>
+                            <MultiImage
+                                srcArray={[
+                                    img_rc_set_confidential1,
+                                    img_rc_set_confidential2,
+                                ]}
+                            />
+                        </MultiImageContainer>
+
+                        <ChapterBody>
+                            <ChapterFirstLayerNoListStyle>
+                                x.『機密候選人』在個人基本資料頁面的下方。如圖三。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                勾選機密候選人，會顯示輸入畫面，如圖四。
+                            </ChapterFirstLayerNoListStyle>
+
+                            <ChapterFirstLayerNoListStyle>
+                                i. 輸入將候選人設為機密候選人的『原因』。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                ii. 按『儲存』鍵。
+                            </ChapterFirstLayerNoListStyle>
+                        </ChapterBody>
+                    </div>
+                </Element>
+
+                <Element className="Chapter" name="rc-record-recruiting-cost" style={{flexDirection: 'column'}}>
+
+                    <ChapterCoverImage src={img_rc_record_recruiting_cost_cover}/>
+
+                    <div style={{flexDirection: 'row', display: 'flex', marginTop: '2em'}}>
+
+                        <MultiImageContainer>
+                            <MultiImage
+                                srcArray={[
+                                    img_rc_record_recruiting_cost1,
+                                    img_rc_record_recruiting_cost2,
+                                    img_rc_record_recruiting_cost3,
+                                    img_rc_record_recruiting_cost4
+                                ]}
+                            />
+                        </MultiImageContainer>
+
+                        <ChapterBody>
+                            <ChapterFirstLayerNoListStyle>
+                                y.『費用管理』在個人基本資料頁面的下方。如圖三
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                y. 勾選 費用管理，如圖四。
+                            </ChapterFirstLayerNoListStyle>
+
+                            <ChapterFirstLayerNoListStyle>
+                                i. 點擊<span style={{
+                                background: `url(${icon_circle_add}) 0% 0% / contain no-repeat`,
+                                width: '2em',
+                                height: '1.5em',
+                                display: 'inline-flex'
+                            }}/>新增符號。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                ii. 會顯示『新增：費用管理』輸入畫面，如圖五。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                iii. 輸入費用發生『日期』。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                iv. 選擇特定費用項目，輸入『花費金額』。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                v. 選擇『貨幣』種類。若在同一天有多項費用，請重複步驟iv-v。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                vi. 按確定鍵。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                viii. 若有其他日期的費用，請重複步驟iii-vi。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                ix. 按下儲存鍵。
+                            </ChapterFirstLayerNoListStyle>
+                        </ChapterBody>
+                    </div>
+                </Element>
+
+                <Element className="Chapter" name="rc-review-workExp" style={{flexDirection: 'column'}}>
+
+                    <ChapterCoverImage src={img_rc_review_workExp_cover}/>
+
+                    <div style={{flexDirection: 'row', display: 'flex', marginTop: '2em'}}>
+
+                        <MultiImageContainer>
+                            <MultiImage
+                                srcArray={[
+                                    img_rc_review_workExp1,
+                                ]}
+                            />
+                        </MultiImageContainer>
+
+                        <ChapterBody>
+                            <ChapterFirstLayerNoListStyle>
+                                7. 點擊『工作經驗』頁面，詳列個人經歷，如圖九。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                j. 新增工作經驗、<span className="Text-success">編輯</span>工作經驗、<span
+                                className="Text-success">刪除</span>工作經驗
+                            </ChapterFirstLayerNoListStyle>
+                        </ChapterBody>
+                    </div>
+                </Element>
+
+                <Element className="Chapter" name="rc-add-workExp" style={{flexDirection: 'column'}}>
+
+                    <ChapterCoverImage src={img_rc_add_workExp_cover}/>
+
+                    <div style={{flexDirection: 'row', display: 'flex', marginTop: '2em'}}>
+
+                        <MultiImageContainer>
+                            <MultiImage
+                                srcArray={[
+                                    img_rc_add_workExp1,
+                                    img_rc_add_workExp2,
+                                ]}
+                            />
+                        </MultiImageContainer>
+
+                        <ChapterBody>
+                            <ChapterFirstLayerNoListStyle>
+                                i. 會顯示新增：工作經驗輸入畫面，如圖五。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                ii. 到職日
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                iii. 離職日
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                iv. 公司
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                v. 職務名稱
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                vi. 產業類別
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                vii. 全球人數
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                viii. 主管姓名/職稱
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                ix. 雇用類別
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                x. 在職中
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                xi. 工作地點：國家、城市
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                xii. 薪資：年底薪、年度津貼、總年薪、幣別
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                xiii. 工作內容
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                xiv. 離職原因
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                xv. 按下儲存鍵。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                xvi. 要繼續輸入其他工作經驗，請重複步驟j-vi。
+                            </ChapterFirstLayerNoListStyle>
+
+                            <ChapterFirstLayerNoListStyle>
+                                8. 點擊『教育』頁面，詳列個人學歷，如圖五。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                k. 新增學歷、<span className="Text-success">編輯學歷</span>、<span className="Text-success">刪除學歷</span>
+                            </ChapterFirstLayerNoListStyle>
+
+                        </ChapterBody>
+                    </div>
+                </Element>
+
+                <Element className="Chapter" name="rc-review-educationExp" style={{flexDirection: 'column'}}>
+
+                    <ChapterCoverImage src={img_rc_review_educationExp_cover}/>
+
+                    <div style={{flexDirection: 'row', display: 'flex', marginTop: '2em'}}>
+
+                        <MultiImageContainer>
+                            <MultiImage
+                                srcArray={[
+                                    img_rc_review_educationExp1,
+                                ]}
+                            />
+                        </MultiImageContainer>
+
+                        <ChapterBody>
+                            <ChapterFirstLayerNoListStyle>
+                                7. 點擊『工作經驗』頁面，詳列個人經歷，如圖九。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                j. 新增工作經驗、<span className="Text-success">編輯</span>工作經驗、<span className="Text-success">刪除</span>工作經驗
+                            </ChapterFirstLayerNoListStyle>
+                        </ChapterBody>
+                    </div>
+                </Element>
 
 
                 </body>
