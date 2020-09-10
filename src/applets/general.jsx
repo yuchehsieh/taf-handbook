@@ -199,6 +199,36 @@ import img_rc_add_workExp1 from '../images/rc-add-workExp1.png';
 import img_rc_add_workExp2 from '../images/rc-add-workExp2.png';
 import img_rc_review_educationExp_cover from '../images/rc-review-educationExp-cover.png';
 import img_rc_review_educationExp1 from '../images/rc-review-educationExp1.png';
+import img_rc_add_degree_cover from '../images/rc-add-degree-cover.png';
+import img_rc_add_degree1 from '../images/rc-add-degree1.png';
+import img_rc_review_skill_cover from '../images/rc-review-skill-cover.png';
+import img_rc_review_skill1 from '../images/rc-review-skill1.png';
+import img_rc_review_skill2 from '../images/rc-review-skill2.png';
+import img_rc_add_skill_cover from '../images/rc-add-skill-cover.png';
+import img_rc_add_skill1 from '../images/rc-add-skill1.png';
+import img_rc_add_skill2 from '../images/rc-add-skill2.png';
+import img_rc_add_training_record_cover from '../images/rc-add-training-record-cover.png';
+import img_rc_add_training_record1 from '../images/rc-add-training-record1.png';
+import img_rc_add_training_record2 from '../images/rc-add-training-record2.png';
+import img_rc_add_related_skill_cover from '../images/rc-add-related-skill-cover.png';
+import img_rc_add_related_skill1 from '../images/rc-add-related-skill1.png';
+import img_rc_add_related_skill2 from '../images/rc-add-related-skill2.png';
+import img_rc_add_language_skill_cover from '../images/rc-add-language-skill-cover.png';
+import img_rc_add_language_skill1 from '../images/rc-add-language-skill1.png';
+import img_rc_add_language_skill2 from '../images/rc-add-language-skill2.png';
+import img_rc_add_driving_license_cover from '../images/rc-add-driving-license-cover.png';
+import img_rc_add_driving_license1 from '../images/rc-add-driving-license1.png';
+import img_rc_add_driving_license2 from '../images/rc-add-driving-license2.png';
+import img_rc_add_driving_license3 from '../images/rc-add-driving-license3.png';
+import img_rc_add_attachment_cover from '../images/rc-add-attachment-cover.png';
+import img_rc_add_attachment1 from '../images/rc-add-attachment1.png';
+import img_rc_add_attachment2 from '../images/rc-add-attachment2.png';
+import img_rc_search_self_assessment_cover from '../images/rc-search-self-assessment-cover.png';
+import img_rc_search_self_assessment1 from '../images/rc-search-self-assessment1.png';
+import img_rc_search_note_cover from '../images/rc-search-note-cover.png';
+import img_rc_search_note1 from '../images/rc-search-note1.png';
+import img_rc_add_note_cover from '../images/rc-add-note-cover.png';
+import img_rc_add_note1 from '../images/rc-add-note1.png';
 
 import icon_homepage from '../images/icon_homepage.png';
 import icon_arrow_down from '../images/icon_arrow_down.png';
@@ -221,6 +251,7 @@ import icon_end_req from '../images/icon-end-req.png';
 import icon_add_text from '../images/icon-add-text.png';
 import icon_add_req from '../images/icon-add-req.png';
 import icon_switch from '../images/icon-switch.png';
+import icon_information from '../images/icon_infomation.png';
 
 import video_login from '../images/video_login.mp4';
 import {routePath} from "../utils/constants";
@@ -314,6 +345,17 @@ class General extends Component {
                     <div className="header-element">招聘指揮台-審核工作經驗</div>
                     <div className="header-element">招聘指揮台-新增工作經驗</div>
                     <div className="header-element">招聘指揮台-審核教育經驗</div>
+                    <div className="header-element">招聘指揮台-新增學歷</div>
+                    <div className="header-element">招聘指揮台-審核專業技能</div>
+                    <div className="header-element">招聘指揮台-新增專業技能</div>
+                    <div className="header-element">招聘指揮台-新增訓練紀錄</div>
+                    <div className="header-element">招聘指揮台-新增相關技能</div>
+                    <div className="header-element">招聘指揮台-新增語言能力</div>
+                    <div className="header-element">招聘指揮台-新增駕照</div>
+                    <div className="header-element">招聘指揮台-新增附件</div>
+                    <div className="header-element">招聘指揮台-查詢自我評量</div>
+                    <div className="header-element">招聘指揮台-查詢註記</div>
+                    <div className="header-element">招聘指揮台-新增註記</div>
                 </header>
                 <header className="App-header" style={{position: 'fixed'}}>
                     <Link to="login-progress" className="header-element" smooth={true} duration={500}>
@@ -537,6 +579,39 @@ class General extends Component {
                     </Link>
                     <Link to="rc-review-educationExp" className="header-element" smooth={true} duration={500}>
                         招聘指揮台-審核教育經驗
+                    </Link>
+                    <Link to="rc-add-degree" className="header-element" smooth={true} duration={500}>
+                        招聘指揮台-新增學歷
+                    </Link>
+                    <Link to="rc-review-skill" className="header-element" smooth={true} duration={500}>
+                        招聘指揮台-審核專業技能
+                    </Link>
+                    <Link to="rc-add-skill" className="header-element" smooth={true} duration={500}>
+                        招聘指揮台-新增專業技能
+                    </Link>
+                    <Link to="rc-add-training-record" className="header-element" smooth={true} duration={500}>
+                        招聘指揮台-新增訓練紀錄
+                    </Link>
+                    <Link to="rc-add-related-skill" className="header-element" smooth={true} duration={500}>
+                        招聘指揮台-新增相關技能
+                    </Link>
+                    <Link to="rc-add-language-skill" className="header-element" smooth={true} duration={500}>
+                        招聘指揮台-新增語言能力
+                    </Link>
+                    <Link to="rc-add-driving-license" className="header-element" smooth={true} duration={500}>
+                        招聘指揮台-新增駕照
+                    </Link>
+                    <Link to="rc-add-attachment" className="header-element" smooth={true} duration={500}>
+                        招聘指揮台-新增附件
+                    </Link>
+                    <Link to="rc-search-self-assessment" className="header-element" smooth={true} duration={500}>
+                        招聘指揮台-查詢自我評量
+                    </Link>
+                    <Link to="rc-search-note" className="header-element" smooth={true} duration={500}>
+                        招聘指揮台-查詢註記
+                    </Link>
+                    <Link to="rc-add-note" className="header-element" smooth={true} duration={500}>
+                        招聘指揮台-新增註記
                     </Link>
                 </header>
 
@@ -3839,7 +3914,8 @@ class General extends Component {
                                 8. 點擊『教育』頁面，詳列個人學歷，如圖五。
                             </ChapterFirstLayerNoListStyle>
                             <ChapterFirstLayerNoListStyle>
-                                k. 新增學歷、<span className="Text-success">編輯學歷</span>、<span className="Text-success">刪除學歷</span>
+                                k. 新增學歷、<span className="Text-success">編輯學歷</span>、<span
+                                className="Text-success">刪除學歷</span>
                             </ChapterFirstLayerNoListStyle>
 
                         </ChapterBody>
@@ -3865,11 +3941,490 @@ class General extends Component {
                                 7. 點擊『工作經驗』頁面，詳列個人經歷，如圖九。
                             </ChapterFirstLayerNoListStyle>
                             <ChapterFirstLayerNoListStyle>
-                                j. 新增工作經驗、<span className="Text-success">編輯</span>工作經驗、<span className="Text-success">刪除</span>工作經驗
+                                j. 新增工作經驗、<span className="Text-success">編輯</span>工作經驗、<span
+                                className="Text-success">刪除</span>工作經驗
                             </ChapterFirstLayerNoListStyle>
                         </ChapterBody>
                     </div>
                 </Element>
+
+                <Element className="Chapter" name="rc-add-degree" style={{flexDirection: 'column'}}>
+
+                    <ChapterCoverImage src={img_rc_add_degree_cover}/>
+
+                    <div style={{flexDirection: 'row', display: 'flex', marginTop: '2em'}}>
+
+                        <MultiImageContainer>
+                            <MultiImage
+                                srcArray={[
+                                    img_rc_add_degree1,
+                                ]}
+                            />
+                        </MultiImageContainer>
+
+                        <ChapterBody>
+                            <ChapterFirstLayerNoListStyle>
+                                i. 會顯示『新增：教育』輸入畫面，如圖五。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                ii. 選擇『學位』。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                iii. 選擇學校所在『國家』。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                iv. 選擇/輸入『學校』。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                v. 如果有科系，選擇/輸入『科系』。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                vi. 如果已經『畢業』，請勾選。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                vii. 如果是『最高學歷』，請勾選。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                viii. 選擇『入學日期』。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                ix. 選擇『畢業日期』。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                x. 選擇『成績（ＧＰＡ）』。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                xi. 如果有論文，輸入『論文題目』。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                xii. 如果有論文，輸入『論文指導教授』。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                xiii. 按下儲存鍵。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                xiv. 如果有其他學歷，請重複步驟k-xiii。
+                            </ChapterFirstLayerNoListStyle>
+                        </ChapterBody>
+                    </div>
+                </Element>
+
+                <Element className="Chapter" name="rc-review-skill" style={{flexDirection: 'column'}}>
+
+                    <ChapterCoverImage src={img_rc_review_skill_cover}/>
+
+                    <div style={{flexDirection: 'row', display: 'flex', marginTop: '2em'}}>
+
+                        <MultiImageContainer>
+                            <MultiImage
+                                srcArray={[
+                                    img_rc_review_skill1,
+                                    img_rc_review_skill2,
+                                ]}
+                            />
+                        </MultiImageContainer>
+
+                        <ChapterBody>
+                            <ChapterFirstLayerNoListStyle>
+                                9. 點擊『專業技能』頁面，詳列個人專業技能包括5個項次：專業成就、訓練紀錄、技能、語言能力、駕照，如圖十一。
+                                <span style={{
+                                    background: `url(${icon_information}) 0% 0% / contain no-repeat`,
+                                    width: '2em',
+                                    height: '1.5em',
+                                    display: 'inline-flex'
+                                }}/>圖示代表該項次有資料。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                l. 專業成就：參照<span className="Text-underline">新增專業成就</span>
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                m. 訓練紀錄：參照<span className="Text-underline">新增訓練紀錄</span>
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                n. 技能：參照<span className="Text-underline">新增技能</span>
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                o. 語言能力：參照<span className="Text-underline">新增語言能力</span>
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                p. 駕照：參照<span className="Text-underline">新增駕照</span>
+                            </ChapterFirstLayerNoListStyle>
+                        </ChapterBody>
+                    </div>
+                </Element>
+
+                <Element className="Chapter" name="rc-add-skill" style={{flexDirection: 'column'}}>
+
+                    <ChapterCoverImage src={img_rc_add_skill_cover}/>
+
+                    <div style={{flexDirection: 'row', display: 'flex', marginTop: '2em'}}>
+
+                        <MultiImageContainer>
+                            <MultiImage
+                                srcArray={[
+                                    img_rc_add_skill1,
+                                    img_rc_add_skill2,
+                                ]}
+                            />
+                        </MultiImageContainer>
+
+                        <ChapterBody>
+                            <ChapterFirstLayerNoListStyle>
+                                i. 點擊欄位，輸入表格會向下展開如圖十二。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                ii. 點擊<span style={{
+                                background: `url(${icon_add_text}) 0% 0% / contain no-repeat`,
+                                width: '2em',
+                                height: '1.5em',
+                                display: 'inline-flex'
+                            }}/>
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                iii. 『新增：專業成就視窗』會彈跳出來。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                iv. 選擇『專業成就種類』。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                v. 『敘述』：輸入專業成就內容。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                vi. 按儲存鍵。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                vii. 如果有其他專業成就，請重複步驟ii-vi。
+                            </ChapterFirstLayerNoListStyle>
+                        </ChapterBody>
+                    </div>
+                </Element>
+
+                <Element className="Chapter" name="rc-add-training-record" style={{flexDirection: 'column'}}>
+
+                    <ChapterCoverImage src={img_rc_add_training_record_cover}/>
+
+                    <div style={{flexDirection: 'row', display: 'flex', marginTop: '2em'}}>
+
+                        <MultiImageContainer>
+                            <MultiImage
+                                srcArray={[
+                                    img_rc_add_training_record1,
+                                    img_rc_add_training_record2,
+                                ]}
+                            />
+                        </MultiImageContainer>
+
+                        <ChapterBody>
+                            <ChapterFirstLayerNoListStyle>
+                                i. 點擊欄位，輸入表格會向下展開如圖十二。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                ii. 點擊<span style={{
+                                background: `url(${icon_add_text}) 0% 0% / contain no-repeat`,
+                                width: '2em',
+                                height: '1.5em',
+                                display: 'inline-flex'
+                            }}/>
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                iii. 『新增：訓練紀錄』視窗會彈跳出來。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                iv. 輸入『訓練名稱』。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                v. 輸入『訓練機構』。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                vi. 按儲存鍵。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                vii. 如果有其他相關訓練，請重複步驟ii-vi。
+                            </ChapterFirstLayerNoListStyle>
+                        </ChapterBody>
+                    </div>
+                </Element>
+
+                <Element className="Chapter" name="rc-add-related-skill" style={{flexDirection: 'column'}}>
+
+                    <ChapterCoverImage src={img_rc_add_related_skill_cover}/>
+
+                    <div style={{flexDirection: 'row', display: 'flex', marginTop: '2em'}}>
+
+                        <MultiImageContainer>
+                            <MultiImage
+                                srcArray={[
+                                    img_rc_add_related_skill1,
+                                    img_rc_add_related_skill2
+                                ]}
+                            />
+                        </MultiImageContainer>
+
+                        <ChapterBody>
+                            <ChapterFirstLayerNoListStyle>
+                                i. 點擊欄位，輸入表格會向下展開如圖十二。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                ii. 點擊<span style={{
+                                background: `url(${icon_add_text}) 0% 0% / contain no-repeat`,
+                                width: '2em',
+                                height: '1.5em',
+                                display: 'inline-flex'
+                            }}/>
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                iii. 『新增：相關技能』視窗會彈跳出來。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                iv. 選擇類別（可分為證照、專長、電腦技能）三類。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                v. 選擇紀錄。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                vi. 按儲存鍵。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                vii. 如果有其他相關訓練，請重複步驟ii-vi。
+                            </ChapterFirstLayerNoListStyle>
+                        </ChapterBody>
+                    </div>
+                </Element>
+
+                <Element className="Chapter" name="rc-add-language-skill" style={{flexDirection: 'column'}}>
+
+                    <ChapterCoverImage src={img_rc_add_language_skill_cover}/>
+
+                    <div style={{flexDirection: 'row', display: 'flex', marginTop: '2em'}}>
+
+                        <MultiImageContainer>
+                            <MultiImage
+                                srcArray={[
+                                    img_rc_add_language_skill1,
+                                    img_rc_add_language_skill2
+                                ]}
+                            />
+                        </MultiImageContainer>
+
+                        <ChapterBody>
+                            <ChapterFirstLayerNoListStyle>
+                                i. 點擊欄位，輸入表格會向下展開如圖十二。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                ii. 點擊<span style={{
+                                background: `url(${icon_add_text}) 0% 0% / contain no-repeat`,
+                                width: '2em',
+                                height: '1.5em',
+                                display: 'inline-flex'
+                            }}/>
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                iii. 『新增：語言能力』視窗會彈跳出來。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                iv. 選擇語系，如果語系不足，請電郵support@talentonline.io
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                v. 『聽』：選擇能力等級。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                vi. 『說』：選擇能力等級。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                vii. 『讀』：選擇能力等級。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                viii. 『寫』：選擇能力等級。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                ix. 按『儲存』鍵。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                x. 如果有其他語言能力，請重複步驟ii-ix。
+                            </ChapterFirstLayerNoListStyle>
+                        </ChapterBody>
+                    </div>
+                </Element>
+
+                <Element className="Chapter" name="rc-add-driving-license" style={{flexDirection: 'column'}}>
+
+                    <ChapterCoverImage src={img_rc_add_driving_license_cover}/>
+
+                    <div style={{flexDirection: 'row', display: 'flex', marginTop: '2em'}}>
+
+                        <MultiImageContainer>
+                            <MultiImage
+                                srcArray={[
+                                    img_rc_add_driving_license1,
+                                    img_rc_add_driving_license2,
+                                    img_rc_add_driving_license3,
+                                ]}
+                            />
+                        </MultiImageContainer>
+
+                        <ChapterBody>
+                            <ChapterFirstLayerNoListStyle>
+                                i. 點擊欄位，輸入表格會向下展開如圖十二。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                ii. 點擊<span style={{
+                                background: `url(${icon_add_text}) 0% 0% / contain no-repeat`,
+                                width: '2em',
+                                height: '1.5em',
+                                display: 'inline-flex'
+                            }}/>
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                iii. 『新增：駕照』視窗會彈跳出來。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                iv. 選擇『駕照類別』。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                v. 選擇『車輛類別』。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                vi. 按『儲存』鍵。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                vii. 如果有其他語言能力，請重複步驟ii-ix。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                viii. 本系統尚未支援准許駕駛規則。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                10. 點擊『附件』頁面，詳列候選人所有附件，如圖十三。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                q. 新增附件、<span className="Text-success">刪除附件</span>
+                            </ChapterFirstLayerNoListStyle>
+                        </ChapterBody>
+                    </div>
+                </Element>
+
+                <Element className="Chapter" name="rc-add-attachment" style={{flexDirection: 'column'}}>
+
+                    <ChapterCoverImage src={img_rc_add_attachment_cover}/>
+
+                    <div style={{flexDirection: 'row', display: 'flex', marginTop: '2em'}}>
+
+                        <MultiImageContainer>
+                            <MultiImage
+                                srcArray={[
+                                    img_rc_add_attachment1,
+                                    img_rc_add_attachment2,
+                                ]}
+                            />
+                        </MultiImageContainer>
+
+                        <ChapterBody>
+                            <ChapterFirstLayerNoListStyle>
+                                10. 點擊『附件』頁面，詳列候選人相關附件，如圖九。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                j. 新增附件
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                i. 會顯示『新增：附件』彈跳視窗畫面，如圖五。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                ii. 『附件類別』：選擇類別。選單不足請電郵support@talentonline.io
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                iii. 『上傳者』：選擇檔案提供人員。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                iv. 按『儲存』鍵。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                v. 如果有其他語言能力，請重複步驟q-v。
+                            </ChapterFirstLayerNoListStyle>
+                        </ChapterBody>
+                    </div>
+                </Element>
+
+                <Element className="Chapter" name="rc-search-self-assessment" style={{flexDirection: 'column'}}>
+
+                    <ChapterCoverImage src={img_rc_search_self_assessment_cover}/>
+
+                    <div style={{flexDirection: 'row', display: 'flex', marginTop: '2em'}}>
+
+                        <MultiImageContainer>
+                            <MultiImage
+                                srcArray={[
+                                    img_rc_search_self_assessment1
+                                ]}
+                            />
+                        </MultiImageContainer>
+
+                        <ChapterBody>
+                            <ChapterFirstLayerNoListStyle>
+                                11. 點擊『自我評估』頁面，蒐集候選人對雇主提問的自我評估，如圖十四。題目不足請電郵support@talentonline.io
+                            </ChapterFirstLayerNoListStyle>
+                        </ChapterBody>
+                    </div>
+                </Element>
+
+                <Element className="Chapter" name="rc-search-note" style={{flexDirection: 'column'}}>
+
+                    <ChapterCoverImage src={img_rc_search_note_cover}/>
+
+                    <div style={{flexDirection: 'row', display: 'flex', marginTop: '2em'}}>
+
+                        <MultiImageContainer>
+                            <MultiImage
+                                srcArray={[
+                                    img_rc_search_note1
+                                ]}
+                            />
+                        </MultiImageContainer>
+
+                        <ChapterBody>
+                            <ChapterFirstLayerNoListStyle>
+                                12. 點擊『註記』頁面，詳列招聘團隊對候選人的註記，如圖十。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                r. 新增註記：參照招聘指揮台<span className="Text-underline">新增註記</span>
+                            </ChapterFirstLayerNoListStyle>
+                        </ChapterBody>
+                    </div>
+                </Element>
+
+                <Element className="Chapter" name="rc-add-note" style={{flexDirection: 'column'}}>
+
+                    <ChapterCoverImage src={img_rc_add_note_cover}/>
+
+                    <div style={{flexDirection: 'row', display: 'flex', marginTop: '2em'}}>
+
+                        <MultiImageContainer>
+                            <MultiImage
+                                srcArray={[
+                                    img_rc_add_note1,
+                                ]}
+                            />
+                        </MultiImageContainer>
+
+                        <ChapterBody>
+                            <ChapterFirstLayerNoListStyle>
+                                i. 會顯示『新增：附件』彈跳視窗畫面，如圖五。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                ii. 『類別』：選擇類別，有14種選擇，選單不足請電郵support@talentonline.io
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                iii. 『敘述』：輸入註記內容。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                iv. 按選單不足請電郵support@talentonline.io 『儲存』鍵。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                v. 如果有其他註記，請重複步驟n-iv。
+                            </ChapterFirstLayerNoListStyle>
+                        </ChapterBody>
+                    </div>
+                </Element>
+
+
 
 
                 </body>
