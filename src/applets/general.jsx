@@ -229,6 +229,10 @@ import img_rc_search_note_cover from '../images/rc-search-note-cover.png';
 import img_rc_search_note1 from '../images/rc-search-note1.png';
 import img_rc_add_note_cover from '../images/rc-add-note-cover.png';
 import img_rc_add_note1 from '../images/rc-add-note1.png';
+import img_decision_part1_cover from '../images/decision-part1-cover.png';
+import img_decision_part1_1 from '../images/decision-part1-1.png';
+import img_decision_part2_cover from '../images/decision-part2-cover.png';
+import img_decision_part2_1 from '../images/decision-part2-1.png';
 
 import icon_homepage from '../images/icon_homepage.png';
 import icon_arrow_down from '../images/icon_arrow_down.png';
@@ -356,6 +360,8 @@ class General extends Component {
                     <div className="header-element">招聘指揮台-查詢自我評量</div>
                     <div className="header-element">招聘指揮台-查詢註記</div>
                     <div className="header-element">招聘指揮台-新增註記</div>
+                    <div className="header-element">裁示（一）</div>
+                    <div className="header-element">裁示（二）</div>
                 </header>
                 <header className="App-header" style={{position: 'fixed'}}>
                     <Link to="login-progress" className="header-element" smooth={true} duration={500}>
@@ -612,6 +618,12 @@ class General extends Component {
                     </Link>
                     <Link to="rc-add-note" className="header-element" smooth={true} duration={500}>
                         招聘指揮台-新增註記
+                    </Link>
+                    <Link to="decision-part1" className="header-element" smooth={true} duration={500}>
+                        裁示（一）
+                    </Link>
+                    <Link to="decision-part2" className="header-element" smooth={true} duration={500}>
+                        裁示（二）
                     </Link>
                 </header>
 
@@ -4424,7 +4436,79 @@ class General extends Component {
                     </div>
                 </Element>
 
+                <Element className="Chapter" name="decision-part1" style={{flexDirection: 'column'}}>
 
+                    <ChapterCoverImage src={img_decision_part1_cover}/>
+
+                    <div style={{flexDirection: 'row', display: 'flex', marginTop: '2em'}}>
+
+                        <MultiImageContainer>
+                            <MultiImage
+                                srcArray={[
+                                    img_decision_part1_1,
+                                ]}
+                            />
+                        </MultiImageContainer>
+
+                        <ChapterBody>
+                            <ChapterFirstLayerNoListStyle>
+                                13. 點擊『決策』，會有下拉選單顯示，共有五種選擇。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterSecondLayerNoListStyle>
+                                a. 錄取：錄取候選人
+                            </ChapterSecondLayerNoListStyle>
+                            <ChapterSecondLayerNoListStyle>
+                                b. 分派：候選人通過初選，分派到決選。
+                            </ChapterSecondLayerNoListStyle>
+                            <ChapterSecondLayerNoListStyle>
+                                c. 備取：備取候選人
+                            </ChapterSecondLayerNoListStyle>
+                            <ChapterSecondLayerNoListStyle>
+                                d. 拒絕：拒絕候選人
+                            </ChapterSecondLayerNoListStyle>
+                            <ChapterSecondLayerNoListStyle>
+                                e. 撤回：應初選候選人要求撤回應徵
+                            </ChapterSecondLayerNoListStyle>
+                        </ChapterBody>
+                    </div>
+                </Element>
+
+                <Element className="Chapter" name="decision-part2" style={{flexDirection: 'column'}}>
+
+                    <ChapterCoverImage src={img_decision_part2_cover}/>
+
+                    <div style={{flexDirection: 'row', display: 'flex', marginTop: '2em'}}>
+
+                        <MultiImageContainer>
+                            <MultiImage
+                                srcArray={[
+                                    img_decision_part2_1,
+                                ]}
+                            />
+                        </MultiImageContainer>
+
+                        <ChapterBody>
+                            <ChapterFirstLayerNoListStyle>
+                                14. 點擊『決策』，會有下拉選單顯示，共有五種選擇。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterSecondLayerNoListStyle>
+                                a. 寄發補件通知：候選人履歷資料不足，寄發通知要求補件。
+                            </ChapterSecondLayerNoListStyle>
+                            <ChapterSecondLayerNoListStyle>
+                                b. 約詢甄試：寄出約詢甄試通知。
+                            </ChapterSecondLayerNoListStyle>
+                            <ChapterSecondLayerNoListStyle>
+                                c. 增加職缺：轉薦其他職缺。
+                            </ChapterSecondLayerNoListStyle>
+                            <ChapterSecondLayerNoListStyle>
+                                d. 查核資歷：在初選階段進行資歷查核。
+                            </ChapterSecondLayerNoListStyle>
+                            <ChapterSecondLayerNoListStyle>
+                                e. 紀錄通話：紀錄與候選人通話內容。
+                            </ChapterSecondLayerNoListStyle>
+                        </ChapterBody>
+                    </div>
+                </Element>
 
 
                 </body>
