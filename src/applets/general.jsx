@@ -290,6 +290,30 @@ import img_rc_arrange_interview9 from '../images/rc-arrange-interview9.png';
 import img_rc_arrange_interview10 from '../images/rc-arrange-interview10.png';
 import img_rc_arrange_interview11 from '../images/rc-arrange-interview11.png';
 import img_rc_arrange_interview12 from '../images/rc-arrange-interview12.png';
+import img_rc_reject_interview_change_cover from '../images/rc-reject-interview-change-cover.png';
+import img_rc_reject_interview_change1 from '../images/rc-reject-interview-change1.png';
+import img_rc_reject_interview_change2 from '../images/rc-reject-interview-change2.png';
+import img_rc_reject_interview_change3 from '../images/rc-reject-interview-change3.png';
+import img_rc_reject_interview_change4 from '../images/rc-reject-interview-change4.png';
+import img_rc_reject_interview_change5 from '../images/rc-reject-interview-change5.png';
+import img_rc_accept_interview_change_cover from '../images/rc-accept-interview-change-cover.png';
+import img_rc_accept_interview_change1 from '../images/rc-accept-interview-change1.png';
+import img_rc_accept_interview_change2 from '../images/rc-accept-interview-change2.png';
+import img_rc_accept_interview_change3 from '../images/rc-accept-interview-change3.png';
+import img_rc_accept_interview_change4 from '../images/rc-accept-interview-change4.png';
+import img_rc_accept_interview_change5 from '../images/rc-accept-interview-change5.png';
+import img_rc_accept_interview_change6 from '../images/rc-accept-interview-change6.png';
+import img_rc_accept_interview_change7 from '../images/rc-accept-interview-change7.png';
+import img_rc_accept_interview_change8 from '../images/rc-accept-interview-change8.png';
+import img_rc_accept_interview_change9 from '../images/rc-accept-interview-change9.png';
+import img_rc_accept_interview_change10 from '../images/rc-accept-interview-change10.png';
+import img_rc_accept_interview_change11 from '../images/rc-accept-interview-change11.png';
+import img_rc_accept_interview_change12 from '../images/rc-accept-interview-change12.png';
+import img_rc_change_interview_cover from '../images/rc-change-interview-cover.png';
+import img_rc_change_interview1 from '../images/rc-change-interview1.png';
+import img_rc_change_interview2 from '../images/rc-change-interview2.png';
+import img_rc_change_interview3 from '../images/rc-change-interview3.png';
+
 
 import icon_homepage from '../images/icon_homepage.png';
 import icon_arrow_down from '../images/icon_arrow_down.png';
@@ -432,6 +456,9 @@ class General extends Component {
                     <div className="header-element">招聘指揮台-執行決選候選人撤回應徵要求</div>
                     <div className="header-element">招聘指揮台-執行用人主管資歷查核要求</div>
                     <div className="header-element">招聘指揮台-安排面試</div>
+                    <div className="header-element">招聘指揮台-不同意甄試變更要求</div>
+                    <div className="header-element">招聘指揮台-同意甄試變更要求且重新安排</div>
+                    <div className="header-element">招聘指揮台-變更面談</div>
                 </header>
                 <header className="App-header" style={{position: 'fixed'}}>
                     <Link to="login-progress" className="header-element" smooth={true} duration={500}>
@@ -731,6 +758,15 @@ class General extends Component {
                     </Link>
                     <Link to="rc-arrange-interview" className="header-element" smooth={true} duration={500}>
                         招聘指揮台-安排面試
+                    </Link>
+                    <Link to="rc-reject-interview-change" className="header-element" smooth={true} duration={500}>
+                        招聘指揮台-不同意甄試變更要求
+                    </Link>
+                    <Link to="rc-accept-interview-change" className="header-element" smooth={true} duration={500}>
+                        招聘指揮台-同意甄試變更要求且重新安排
+                    </Link>
+                    <Link to="rc-change-interview" className="header-element" smooth={true} duration={500}>
+                        招聘指揮台-變更面談
                     </Link>
                 </header>
 
@@ -5066,13 +5102,6 @@ class General extends Component {
                                     如果要繼續查核其他資歷，請重複步驟4-ix。
                                 </ChapterSecondLayerNoListStyle>
                                 <li>如圖五。按『提交』鍵</li>
-                                {/*<li>『甄試管理』：*/}
-                                {/*    <ul className="second-layer">*/}
-                                {/*        <li>待安排/甄試約詢：所有送出甄試約詢的要求。</li>*/}
-                                {/*        <li>甄試邀約/已安排：所有已邀約的甄試安排。</li>*/}
-                                {/*        <li>甄試變更/待變更：所有要求變更甄試行程的要求。</li>*/}
-                                {/*    </ul>*/}
-                                {/*</li>*/}
                             </ul>
                         </ChapterBody>
                     </div>
@@ -5147,7 +5176,7 @@ class General extends Component {
                                 <li>
                                     點擊<span style={{
                                     background: `url(${icon_interviewer_available_time}) 0% 0% / contain no-repeat`,
-                                    width: '2em',
+                                    width: '8em',
                                     height: '1.5em',
                                     display: 'inline-flex'
                                 }}/>，表格會向下展開，顯示『面試人員姓名，且/或面試人員回覆的可供面試時間。
@@ -5209,17 +5238,184 @@ class General extends Component {
                                 <li>邀請函會自動寄給面試人員與候選人。</li>
                             </ol>
 
+                        </ChapterBody>
+                    </div>
+                </Element>
 
-                            {/*<ul className="first-layer">*/}
-                            {/*    <li>如圖五。按『提交』鍵</li>*/}
-                            {/*<li>『甄試管理』：*/}
-                            {/*    <ul className="second-layer">*/}
-                            {/*        <li>待安排/甄試約詢：所有送出甄試約詢的要求。</li>*/}
-                            {/*        <li>甄試邀約/已安排：所有已邀約的甄試安排。</li>*/}
-                            {/*        <li>甄試變更/待變更：所有要求變更甄試行程的要求。</li>*/}
-                            {/*    </ul>*/}
-                            {/*</li>*/}
-                            {/*</ul>*/}
+                <Element className="Chapter" name="rc-reject-interview-change" style={{flexDirection: 'column'}}>
+
+                    <ChapterCoverImage src={img_rc_reject_interview_change_cover}/>
+
+                    <div style={{flexDirection: 'row', display: 'flex', marginTop: '2em'}}>
+
+                        <MultiImageContainer>
+                            <MultiImage
+                                srcArray={[
+                                    img_rc_reject_interview_change1,
+                                    img_rc_reject_interview_change2,
+                                    img_rc_reject_interview_change3,
+                                    img_rc_reject_interview_change4,
+                                    img_rc_reject_interview_change5
+                                ]}
+                            />
+                        </MultiImageContainer>
+
+                        <ChapterBody>
+                            <ChapterTitleGroup>
+                                <h1>招聘指揮台–甄試安排/變更</h1>
+                            </ChapterTitleGroup>
+
+                            <ChapterFirstLayerNoListStyle>
+                                進入路徑：首頁->選才管理->招聘指揮台
+                                <span className="Text-danger">如圖一</span>。
+                            </ChapterFirstLayerNoListStyle>
+
+                            <ol className="first-layer">
+                                <li>點擊『甄試安排/變更』</li>
+                                <li>選擇『所有待安排甄試』</li>
+                                <li>如圖二。點選特定候選人</li>
+                                <li>點擊『決策』欄位空白處或是右方下三角形。</li>
+                                <li>選擇『不同意』</li>
+                                <li>按『提交』鍵。</li>
+                            </ol>
+
+                        </ChapterBody>
+                    </div>
+                </Element>
+
+                <Element className="Chapter" name="rc-accept-interview-change" style={{flexDirection: 'column'}}>
+
+                    <ChapterCoverImage src={img_rc_accept_interview_change_cover}/>
+
+                    <div style={{flexDirection: 'row', display: 'flex', marginTop: '2em'}}>
+
+                        <MultiImageContainer>
+                            <MultiImage
+                                srcArray={[
+                                    img_rc_accept_interview_change1,
+                                    img_rc_accept_interview_change2,
+                                    img_rc_accept_interview_change3,
+                                    img_rc_accept_interview_change4,
+                                    img_rc_accept_interview_change5,
+                                    img_rc_accept_interview_change6,
+                                    img_rc_accept_interview_change7,
+                                    img_rc_accept_interview_change8,
+                                    img_rc_accept_interview_change9,
+                                    img_rc_accept_interview_change10,
+                                    img_rc_accept_interview_change11,
+                                    img_rc_accept_interview_change12,
+                                ]}
+                            />
+                        </MultiImageContainer>
+
+                        <ChapterBody>
+                            <ChapterTitleGroup>
+                                <h1>招聘指揮台–甄試安排/變更</h1>
+                            </ChapterTitleGroup>
+
+                            <ChapterFirstLayerNoListStyle>
+                                進入路徑：首頁->選才管理->招聘指揮台
+                                <span className="Text-danger">如圖一</span>。
+                            </ChapterFirstLayerNoListStyle>
+
+                            <ol className="first-layer">
+                                <li>點擊甄試安排/變更。</li>
+                                <li>如圖二。點擊待變更甄試。</li>
+                                <li>點選特定候選人</li>
+                                <li>按編輯圖示。</li>
+                            </ol>
+
+                            <ol className="first-layer" start={6}>
+                                <li>選擇『同意』</li>
+                                <li>
+                                    點擊<span style={{
+                                    background: `url(${icon_circle_add}) 0% 0% / contain no-repeat`,
+                                    width: '2em',
+                                    height: '1.5em',
+                                    display: 'inline-flex'
+                                }}/>
+                                </li>
+                            </ol>
+
+                            <ChapterFirstLayerNoListStyle>
+                                <span className="Text-warn Text-bold">1 of 3 Options</span>
+                            </ChapterFirstLayerNoListStyle>
+                            <ol className="first-layer" start={1} style={{listStyle: "lower-roman"}}>
+                                <li>會顯示 『新增：甄試？行程』 輸入畫面，如圖四。</li>
+                                <li>如果要更換，選擇頂替的『面談人員』</li>
+                                <li>如果要更換，選擇更新的面談『開始時間』、將更新的面談長度輸入『分鐘』欄位。</li>
+                                <li>如果要更換，選擇更新的面試類別。選擇『現場面談』。</li>
+                                <li>如果要更換，選擇更新的辦公室。選單內容不足，請參照新增辦公室。如果要更換，選擇更新的會議室。選單內容不足，請參照新增會議室。輸入外場地點。</li>
+                                <li>輸入註記。</li>
+                                <li>按『確認』鍵。</li>
+                                <li>按『提交』鍵。</li>
+                                <li>新的邀請函會自動寄給面試人員與候選人。</li>
+                            </ol>
+
+                            <ChapterFirstLayerNoListStyle>
+                                <span className="Text-warn Text-bold">2 of 3 Options</span>
+                            </ChapterFirstLayerNoListStyle>
+                            <ol className="first-layer" start={4} style={{listStyle: "lower-roman"}}>
+                                <li>如果要更換，選擇更新的面試類別。選擇電話面談。</li>
+                                <li>註記：輸入電話面談的資料</li>
+                                <li>按『確認』鍵。</li>
+                                <li>按『提交』鍵。</li>
+                                <li>邀請函會自動寄給面試人員與候選人。</li>
+                            </ol>
+
+                            <ChapterFirstLayerNoListStyle>
+                                <span className="Text-warn Text-bold">3 of 3 Options</span>
+                            </ChapterFirstLayerNoListStyle>
+                            <ol className="first-layer" start={4} style={{listStyle: "lower-roman"}}>
+                                <li>如果要更換，選擇更新的面試類別。選擇『視訊面談』。</li>
+                                <li>輸入／貼上視訊面談資訊。</li>
+                                <li>輸入『註記』</li>
+                                <li>按『確認』鍵。</li>
+                                <li>按『提交』鍵。</li>
+                                <li>邀請函會自動寄給面試人員與候選人。</li>
+                            </ol>
+
+                        </ChapterBody>
+                    </div>
+                </Element>
+
+                <Element className="Chapter" name="rc-change-interview" style={{flexDirection: 'column'}}>
+
+                    <ChapterCoverImage src={img_rc_change_interview_cover}/>
+
+                    <div style={{flexDirection: 'row', display: 'flex', marginTop: '2em'}}>
+
+                        <MultiImageContainer>
+                            <MultiImage
+                                srcArray={[
+                                    img_rc_change_interview1,
+                                    img_rc_change_interview2,
+                                    img_rc_change_interview3
+                                ]}
+                            />
+                        </MultiImageContainer>
+
+                        <ChapterBody>
+
+                            <ChapterFirstLayerNoListStyle>
+                                進入路徑：首頁->選才管理->招聘指揮台
+                                <span className="Text-danger">如圖一</span>。
+                            </ChapterFirstLayerNoListStyle>
+
+                            <ol className="first-layer">
+                                <li>點擊甄試安排/變更。</li>
+                                <li>如圖二。點擊已安排的測驗。</li>
+                                <li>點選特定候選人</li>
+                                <li>按編輯圖示。</li>
+                                <li>『測驗人員』：點擊右方下三角形圖示。選擇頂替的測驗人員。</li>
+                                <li>『開始時間』：點擊右方行事曆圖示，選擇新的日期與時間。</li>
+                                <li>『結束時間』：點擊右方行事曆圖示，選擇新的日期與時間。</li>
+                                <li>『測驗項目』： 點擊右方下三角形圖示。選擇頂替的測驗項目。</li>
+                                <li>『辦公室』： 點擊右方下三角形圖示。選擇頂替的辦公室。</li>
+                                <li>『會議室』： 點擊右方下三角形圖示。選擇頂替的會議室。</li>
+                                <li>按『重新安排』鍵。</li>
+                            </ol>
+
                         </ChapterBody>
                     </div>
                 </Element>
