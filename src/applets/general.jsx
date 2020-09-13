@@ -233,6 +233,63 @@ import img_decision_part1_cover from '../images/decision-part1-cover.png';
 import img_decision_part1_1 from '../images/decision-part1-1.png';
 import img_decision_part2_cover from '../images/decision-part2-cover.png';
 import img_decision_part2_1 from '../images/decision-part2-1.png';
+import img_decision_hired_cover from '../images/decision-hired-cover.png';
+import img_decision_hired1 from '../images/decision-hired1.png';
+import img_decision_hired2 from '../images/decision-hired2.png';
+import img_decision_forward_cover from '../images/decision-forward-cover.png';
+import img_decision_forward1 from '../images/decision-forward1.png';
+import img_decision_forward2 from '../images/decision-forward2.png';
+import img_decision_onhold_cover from '../images/decision-onhold-cover.png';
+import img_decision_onhold1 from '../images/decision-onhold1.png';
+import img_decision_onhold2 from '../images/decision-onhold2.png';
+import img_decision_reject_cover from '../images/decision-reject-cover.png';
+import img_decision_reject1 from '../images/decision-reject1.png';
+import img_decision_reject2 from '../images/decision-reject2.png';
+import img_decision_drop_out_cover from '../images/decision-drop-out-cover.png';
+import img_decision_drop_out1 from '../images/decision-drop-out1.png';
+import img_decision_drop_out2 from '../images/decision-drop-out2.png';
+import img_decision_request_info_cover from '../images/decision-request-info-cover.png';
+import img_decision_request_info1 from '../images/decision-request-info1.png';
+import img_decision_request_info2 from '../images/decision-request-info2.png';
+import img_decision_send_interview_invite_cover from '../images/decision-send-interview-invite-cover.png';
+import img_decision_send_interview_invite1 from '../images/decision-send-interview-invite1.png';
+import img_decision_send_interview_invite2 from '../images/decision-send-interview-invite2.png';
+import img_decision_send_interview_invite3 from '../images/decision-send-interview-invite3.png';
+import img_decision_send_interview_invite4 from '../images/decision-send-interview-invite4.png';
+import img_decision_refer_other_req_cover from '../images/decision-refer-other-req-cover.png';
+import img_decision_refer_other_req1 from '../images/decision-refer-other-req1.png';
+import img_decision_refer_other_req2 from '../images/decision-refer-other-req2.png';
+import img_rc_cancel_selection_candidate_cover from '../images/rc-cancel-selection-candidate-cover.png';
+import img_rc_cancel_selection_candidate1 from '../images/rc-cancel-selection-candidate1.png';
+import img_rc_cancel_selection_candidate2 from '../images/rc-cancel-selection-candidate2.png';
+import img_rc_cancel_selection_candidate3 from '../images/rc-cancel-selection-candidate3.png';
+import img_rc_cancel_selection_candidate4 from '../images/rc-cancel-selection-candidate4.png';
+import img_rc_cancel_selection_candidate5 from '../images/rc-cancel-selection-candidate5.png';
+import img_rc_drop_out_selection_candidate_cover from '../images/rc-drop-out-selection-candidate-cover.png';
+import img_rc_drop_out_selection_candidate1 from '../images/rc-drop-out-selection-candidate1.png';
+import img_rc_drop_out_selection_candidate2 from '../images/rc-drop-out-selection-candidate2.png';
+import img_rc_drop_out_selection_candidate3 from '../images/rc-drop-out-selection-candidate3.png';
+import img_rc_drop_out_selection_candidate4 from '../images/rc-drop-out-selection-candidate4.png';
+import img_rc_drop_out_selection_candidate5 from '../images/rc-drop-out-selection-candidate5.png';
+import img_rc_hiring_manager_reference_check_cover from '../images/rc-hiring-manager-reference-check-cover.png';
+import img_rc_hiring_manager_reference_check1 from '../images/rc-hiring-manager-reference-check1.png';
+import img_rc_hiring_manager_reference_check2 from '../images/rc-hiring-manager-reference-check2.png';
+import img_rc_hiring_manager_reference_check3 from '../images/rc-hiring-manager-reference-check3.png';
+import img_rc_hiring_manager_reference_check4 from '../images/rc-hiring-manager-reference-check4.png';
+import img_rc_hiring_manager_reference_check5 from '../images/rc-hiring-manager-reference-check5.png';
+import img_rc_arrange_interview_cover from '../images/rc-arrange-interview-cover.png';
+import img_rc_arrange_interview1 from '../images/rc-arrange-interview1.png';
+import img_rc_arrange_interview2 from '../images/rc-arrange-interview2.png';
+import img_rc_arrange_interview3 from '../images/rc-arrange-interview3.png';
+import img_rc_arrange_interview4 from '../images/rc-arrange-interview4.png';
+import img_rc_arrange_interview5 from '../images/rc-arrange-interview5.png';
+import img_rc_arrange_interview6 from '../images/rc-arrange-interview6.png';
+import img_rc_arrange_interview7 from '../images/rc-arrange-interview7.png';
+import img_rc_arrange_interview8 from '../images/rc-arrange-interview8.png';
+import img_rc_arrange_interview9 from '../images/rc-arrange-interview9.png';
+import img_rc_arrange_interview10 from '../images/rc-arrange-interview10.png';
+import img_rc_arrange_interview11 from '../images/rc-arrange-interview11.png';
+import img_rc_arrange_interview12 from '../images/rc-arrange-interview12.png';
 
 import icon_homepage from '../images/icon_homepage.png';
 import icon_arrow_down from '../images/icon_arrow_down.png';
@@ -256,6 +313,7 @@ import icon_add_text from '../images/icon-add-text.png';
 import icon_add_req from '../images/icon-add-req.png';
 import icon_switch from '../images/icon-switch.png';
 import icon_information from '../images/icon_infomation.png';
+import icon_interviewer_available_time from '../images/icon_interviewer_available_time.png';
 
 import video_login from '../images/video_login.mp4';
 import {routePath} from "../utils/constants";
@@ -362,6 +420,18 @@ class General extends Component {
                     <div className="header-element">招聘指揮台-新增註記</div>
                     <div className="header-element">裁示（一）</div>
                     <div className="header-element">裁示（二）</div>
+                    <div className="header-element">裁示-決策-錄取</div>
+                    <div className="header-element">裁示-決策-分派</div>
+                    <div className="header-element">裁示-決策-備取</div>
+                    <div className="header-element">裁示-決策-拒絕</div>
+                    <div className="header-element">裁示-決策-撤回</div>
+                    <div className="header-element">裁示-命令-寄出補件通知</div>
+                    <div className="header-element">裁示-命令-寄出『約詢甄試』通知</div>
+                    <div className="header-element">裁示-命令-轉薦其他職缺</div>
+                    <div className="header-element">招聘指揮台-取消決選候選人的資格</div>
+                    <div className="header-element">招聘指揮台-執行決選候選人撤回應徵要求</div>
+                    <div className="header-element">招聘指揮台-執行用人主管資歷查核要求</div>
+                    <div className="header-element">招聘指揮台-安排面試</div>
                 </header>
                 <header className="App-header" style={{position: 'fixed'}}>
                     <Link to="login-progress" className="header-element" smooth={true} duration={500}>
@@ -624,6 +694,43 @@ class General extends Component {
                     </Link>
                     <Link to="decision-part2" className="header-element" smooth={true} duration={500}>
                         裁示（二）
+                    </Link>
+                    <Link to="decision-hired" className="header-element" smooth={true} duration={500}>
+                        裁示-決策-錄取
+                    </Link>
+                    <Link to="decision-forward" className="header-element" smooth={true} duration={500}>
+                        裁示-決策-分派
+                    </Link>
+                    <Link to="decision-onhold" className="header-element" smooth={true} duration={500}>
+                        裁示-決策-備取
+                    </Link>
+                    <Link to="decision-reject" className="header-element" smooth={true} duration={500}>
+                        裁示-決策-拒絕
+                    </Link>
+                    <Link to="decision-drop-out" className="header-element" smooth={true} duration={500}>
+                        裁示-決策-撤回
+                    </Link>
+                    <Link to="decision-request-info" className="header-element" smooth={true} duration={500}>
+                        裁示-命令-寄出補件通知
+                    </Link>
+                    <Link to="decision-send-interview-invite" className="header-element" smooth={true} duration={500}>
+                        裁示-命令-寄出『約詢甄試』通知
+                    </Link>
+                    <Link to="decision-refer-other-req" className="header-element" smooth={true} duration={500}>
+                        裁示-命令-轉薦其他職缺
+                    </Link>
+                    <Link to="rc-cancel-selection-candidate" className="header-element" smooth={true} duration={500}>
+                        招聘指揮台-取消決選候選人的資格
+                    </Link>
+                    <Link to="rc-drop-out-selection-candidate" className="header-element" smooth={true} duration={500}>
+                        招聘指揮台-執行決選候選人撤回應徵要求
+                    </Link>
+                    <Link to="rc-hiring-manager-reference-check" className="header-element" smooth={true}
+                          duration={500}>
+                        招聘指揮台-執行用人主管資歷查核要求
+                    </Link>
+                    <Link to="rc-arrange-interview" className="header-element" smooth={true} duration={500}>
+                        招聘指揮台-安排面試
                     </Link>
                 </header>
 
@@ -4454,21 +4561,21 @@ class General extends Component {
                             <ChapterFirstLayerNoListStyle>
                                 13. 點擊『決策』，會有下拉選單顯示，共有五種選擇。
                             </ChapterFirstLayerNoListStyle>
-                            <ChapterSecondLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
                                 a. 錄取：錄取候選人
-                            </ChapterSecondLayerNoListStyle>
-                            <ChapterSecondLayerNoListStyle>
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
                                 b. 分派：候選人通過初選，分派到決選。
-                            </ChapterSecondLayerNoListStyle>
-                            <ChapterSecondLayerNoListStyle>
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
                                 c. 備取：備取候選人
-                            </ChapterSecondLayerNoListStyle>
-                            <ChapterSecondLayerNoListStyle>
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
                                 d. 拒絕：拒絕候選人
-                            </ChapterSecondLayerNoListStyle>
-                            <ChapterSecondLayerNoListStyle>
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
                                 e. 撤回：應初選候選人要求撤回應徵
-                            </ChapterSecondLayerNoListStyle>
+                            </ChapterFirstLayerNoListStyle>
                         </ChapterBody>
                     </div>
                 </Element>
@@ -4491,25 +4598,631 @@ class General extends Component {
                             <ChapterFirstLayerNoListStyle>
                                 14. 點擊『決策』，會有下拉選單顯示，共有五種選擇。
                             </ChapterFirstLayerNoListStyle>
-                            <ChapterSecondLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
                                 a. 寄發補件通知：候選人履歷資料不足，寄發通知要求補件。
-                            </ChapterSecondLayerNoListStyle>
-                            <ChapterSecondLayerNoListStyle>
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
                                 b. 約詢甄試：寄出約詢甄試通知。
-                            </ChapterSecondLayerNoListStyle>
-                            <ChapterSecondLayerNoListStyle>
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
                                 c. 增加職缺：轉薦其他職缺。
-                            </ChapterSecondLayerNoListStyle>
-                            <ChapterSecondLayerNoListStyle>
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
                                 d. 查核資歷：在初選階段進行資歷查核。
-                            </ChapterSecondLayerNoListStyle>
-                            <ChapterSecondLayerNoListStyle>
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
                                 e. 紀錄通話：紀錄與候選人通話內容。
-                            </ChapterSecondLayerNoListStyle>
+                            </ChapterFirstLayerNoListStyle>
                         </ChapterBody>
                     </div>
                 </Element>
 
+                <Element className="Chapter" name="decision-hired" style={{flexDirection: 'column'}}>
+
+                    <ChapterCoverImage src={img_decision_hired_cover}/>
+
+                    <div style={{flexDirection: 'row', display: 'flex', marginTop: '2em'}}>
+
+                        <MultiImageContainer>
+                            <MultiImage
+                                srcArray={[
+                                    img_decision_hired1,
+                                    img_decision_hired2,
+                                ]}
+                            />
+                        </MultiImageContainer>
+
+                        <ChapterBody>
+                            <ChapterFirstLayerNoListStyle>
+                                13. 點擊『決策』。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                a. 在下拉選單選取『錄取』。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                i. 『錄取』視窗會談跳出來。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                ii. 按『確定』鍵。
+                            </ChapterFirstLayerNoListStyle>
+                        </ChapterBody>
+                    </div>
+                </Element>
+
+                <Element className="Chapter" name="decision-forward" style={{flexDirection: 'column'}}>
+
+                    <ChapterCoverImage src={img_decision_forward_cover}/>
+
+                    <div style={{flexDirection: 'row', display: 'flex', marginTop: '2em'}}>
+
+                        <MultiImageContainer>
+                            <MultiImage
+                                srcArray={[
+                                    img_decision_forward1,
+                                    img_decision_forward2,
+                                ]}
+                            />
+                        </MultiImageContainer>
+
+                        <ChapterBody>
+                            <ChapterFirstLayerNoListStyle>
+                                13. 點擊『決策』。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                b. 在下拉選單選取『分派』。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                i. 『分派』視窗會談跳出來。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                ii. 按『確定』鍵。
+                            </ChapterFirstLayerNoListStyle>
+                        </ChapterBody>
+                    </div>
+                </Element>
+
+                <Element className="Chapter" name="decision-onhold" style={{flexDirection: 'column'}}>
+
+                    <ChapterCoverImage src={img_decision_onhold_cover}/>
+
+                    <div style={{flexDirection: 'row', display: 'flex', marginTop: '2em'}}>
+
+                        <MultiImageContainer>
+                            <MultiImage
+                                srcArray={[
+                                    img_decision_onhold1,
+                                    img_decision_onhold2,
+                                ]}
+                            />
+                        </MultiImageContainer>
+
+                        <ChapterBody>
+                            <ChapterFirstLayerNoListStyle>
+                                13. 點擊『決策』。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                c. 在下拉選單選取『備取』。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                i. 『備取』視窗會談跳出來。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                ii. 按『確定』鍵。
+                            </ChapterFirstLayerNoListStyle>
+                        </ChapterBody>
+                    </div>
+                </Element>
+
+                <Element className="Chapter" name="decision-reject" style={{flexDirection: 'column'}}>
+
+                    <ChapterCoverImage src={img_decision_reject_cover}/>
+
+                    <div style={{flexDirection: 'row', display: 'flex', marginTop: '2em'}}>
+
+                        <MultiImageContainer>
+                            <MultiImage
+                                srcArray={[
+                                    img_decision_reject1,
+                                    img_decision_reject2,
+                                ]}
+                            />
+                        </MultiImageContainer>
+
+                        <ChapterBody>
+                            <ChapterFirstLayerNoListStyle>
+                                13. 點擊『決策』。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                d. 在下拉選單選取『拒絕』。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                i. 『拒絕』視窗會談跳出來。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                ii. 按『確定』鍵。
+                            </ChapterFirstLayerNoListStyle>
+                        </ChapterBody>
+                    </div>
+                </Element>
+
+                <Element className="Chapter" name="decision-drop-out" style={{flexDirection: 'column'}}>
+
+                    <ChapterCoverImage src={img_decision_drop_out_cover}/>
+
+                    <div style={{flexDirection: 'row', display: 'flex', marginTop: '2em'}}>
+
+                        <MultiImageContainer>
+                            <MultiImage
+                                srcArray={[
+                                    img_decision_drop_out1,
+                                    img_decision_drop_out2,
+                                ]}
+                            />
+                        </MultiImageContainer>
+
+                        <ChapterBody>
+                            <ChapterFirstLayerNoListStyle>
+                                13. 點擊『決策』。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                e. 在下拉選單選取『撤回』。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                i. 『撤回』視窗會談跳出來。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                ii. 按『撤回』鍵。
+                            </ChapterFirstLayerNoListStyle>
+                        </ChapterBody>
+                    </div>
+                </Element>
+
+                <Element className="Chapter" name="decision-request-info" style={{flexDirection: 'column'}}>
+
+                    <ChapterCoverImage src={img_decision_request_info_cover}/>
+
+                    <div style={{flexDirection: 'row', display: 'flex', marginTop: '2em'}}>
+
+                        <MultiImageContainer>
+                            <MultiImage
+                                srcArray={[
+                                    img_decision_request_info1,
+                                    img_decision_request_info2,
+                                ]}
+                            />
+                        </MultiImageContainer>
+
+                        <ChapterBody>
+                            <ChapterFirstLayerNoListStyle>
+                                14. 點擊『命令』。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                a. 在下拉選單選取『寄發補件通知』。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                i. 『寄發補件通知』視窗會談跳出來。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                ii. 酌情修改補件要求。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                iii. 按『確定』鍵。
+                            </ChapterFirstLayerNoListStyle>
+                        </ChapterBody>
+                    </div>
+                </Element>
+
+                <Element className="Chapter" name="decision-send-interview-invite" style={{flexDirection: 'column'}}>
+
+                    <ChapterCoverImage src={img_decision_send_interview_invite_cover}/>
+
+                    <div style={{flexDirection: 'row', display: 'flex', marginTop: '2em'}}>
+
+                        <MultiImageContainer>
+                            <MultiImage
+                                srcArray={[
+                                    img_decision_send_interview_invite1,
+                                    img_decision_send_interview_invite2,
+                                    img_decision_send_interview_invite3,
+                                    img_decision_send_interview_invite4,
+                                ]}
+                            />
+                        </MultiImageContainer>
+
+                        <ChapterBody>
+                            <ChapterFirstLayerNoListStyle>
+                                14. 點擊『命令』。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                b. 在下拉選單選取『約詢甄試』。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                i. 『約詢甄試』視窗會談跳出來。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                ii. 如果要進行測驗，請勾選。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                iii. 選擇測驗項目。選項不足，請參照新增測驗項目。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                iv. 選擇測驗人員。 選項不足，請參照新增帳號。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                v. 按<span style={{
+                                background: `url(${icon_circle_add}) 0% 0% / contain no-repeat`,
+                                width: '2em',
+                                height: '1.5em',
+                                display: 'inline-flex'
+                            }}/>圖示。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                vi. 如果有其他測驗，請重複步驟iii-v。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                vii. 如果要進行面試，請勾選。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                viii. 選擇面試人員。可多選。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                ix. 輸入 『甄試註記』。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                x. 按『確定』鍵。以上甄試會被群組為敏捷模式，所有活動結束後，才能下達下一階段的命令，決策則不在此限。
+                            </ChapterFirstLayerNoListStyle>
+                        </ChapterBody>
+                    </div>
+                </Element>
+
+                <Element className="Chapter" name="decision-refer-other-req" style={{flexDirection: 'column'}}>
+
+                    <ChapterCoverImage src={img_decision_refer_other_req_cover}/>
+
+                    <div style={{flexDirection: 'row', display: 'flex', marginTop: '2em'}}>
+
+                        <MultiImageContainer>
+                            <MultiImage
+                                srcArray={[
+                                    img_decision_refer_other_req1,
+                                    img_decision_refer_other_req2
+                                ]}
+                            />
+                        </MultiImageContainer>
+
+                        <ChapterBody>
+                            <ChapterFirstLayerNoListStyle>
+                                14. 點擊『命令』。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                b. 在下拉選單選取『增加職缺』。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                i. 『增加職缺』視窗會彈跳出來。 如圖六。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                ii. 選擇『職缺名稱』。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                iii. 按下『儲存』鍵。
+                            </ChapterFirstLayerNoListStyle>
+                            <ChapterFirstLayerNoListStyle>
+                                如果要繼續推薦其他職缺，請重複步驟 b-iii。
+                            </ChapterFirstLayerNoListStyle>
+                        </ChapterBody>
+                    </div>
+                </Element>
+
+                <Element className="Chapter" name="rc-cancel-selection-candidate" style={{flexDirection: 'column'}}>
+
+                    <ChapterCoverImage src={img_rc_cancel_selection_candidate_cover}/>
+
+                    <div style={{flexDirection: 'row', display: 'flex', marginTop: '2em'}}>
+
+                        <MultiImageContainer>
+                            <MultiImage
+                                srcArray={[
+                                    img_rc_cancel_selection_candidate1,
+                                    img_rc_cancel_selection_candidate2,
+                                    img_rc_cancel_selection_candidate3,
+                                    img_rc_cancel_selection_candidate4,
+                                    img_rc_cancel_selection_candidate5,
+                                ]}
+                            />
+                        </MultiImageContainer>
+
+                        <ChapterBody>
+                            <ChapterTitleGroup>
+                                <h1>招聘指揮台</h1>
+                            </ChapterTitleGroup>
+
+                            <ChapterFirstLayerNoListStyle>
+                                進入路徑：首頁->選才管理->招聘指揮台
+                                <span className="Text-danger">如圖一</span>。
+                            </ChapterFirstLayerNoListStyle>
+
+                            <ul className="first-layer">
+                                <li>點擊決選候選人。</li>
+                                <li>點選特定候選人</li>
+                                <li>按編輯圖示。</li>
+                                <li>點選決策欄位空白處，如圖三。</li>
+                                <li>出現選單，選擇取消。</li>
+                                <li>按提交鍵。</li>
+                            </ul>
+                        </ChapterBody>
+                    </div>
+                </Element>
+
+                <Element className="Chapter" name="rc-drop-out-selection-candidate" style={{flexDirection: 'column'}}>
+
+                    <ChapterCoverImage src={img_rc_drop_out_selection_candidate_cover}/>
+
+                    <div style={{flexDirection: 'row', display: 'flex', marginTop: '2em'}}>
+
+                        <MultiImageContainer>
+                            <MultiImage
+                                srcArray={[
+                                    img_rc_drop_out_selection_candidate1,
+                                    img_rc_drop_out_selection_candidate2,
+                                    img_rc_drop_out_selection_candidate3,
+                                    img_rc_drop_out_selection_candidate4,
+                                    img_rc_drop_out_selection_candidate5,
+                                ]}
+                            />
+                        </MultiImageContainer>
+
+                        <ChapterBody>
+                            <ChapterTitleGroup>
+                                <h1>招聘指揮台</h1>
+                            </ChapterTitleGroup>
+
+                            <ChapterFirstLayerNoListStyle>
+                                進入路徑：首頁->選才管理->招聘指揮台
+                                <span className="Text-danger">如圖一</span>。
+                            </ChapterFirstLayerNoListStyle>
+
+                            <ul className="first-layer">
+                                <li>點擊決選候選人。</li>
+                                <li>點選特定候選人</li>
+                                <li>按編輯圖示。</li>
+                                <li>點選決策欄位空白處，如圖三。</li>
+                                <li>出現選單，選擇撤回。</li>
+                                <li>按提交鍵。
+                                </li>
+                            </ul>
+                        </ChapterBody>
+                    </div>
+                </Element>
+
+                <Element className="Chapter" name="rc-hiring-manager-reference-check" style={{flexDirection: 'column'}}>
+
+                    <ChapterCoverImage src={img_rc_hiring_manager_reference_check_cover}/>
+
+                    <div style={{flexDirection: 'row', display: 'flex', marginTop: '2em'}}>
+
+                        <MultiImageContainer>
+                            <MultiImage
+                                srcArray={[
+                                    img_rc_hiring_manager_reference_check1,
+                                    img_rc_hiring_manager_reference_check2,
+                                    img_rc_hiring_manager_reference_check3,
+                                    img_rc_hiring_manager_reference_check4,
+                                    img_rc_hiring_manager_reference_check5,
+                                ]}
+                            />
+                        </MultiImageContainer>
+
+                        <ChapterBody>
+                            <ChapterTitleGroup>
+                                <h1>招聘指揮台-資歷查核</h1>
+                            </ChapterTitleGroup>
+
+                            <ChapterFirstLayerNoListStyle>
+                                進入路徑：首頁->選才管理->招聘指揮台->資歷查核
+                                <span className="Text-danger">如圖一</span>。
+                            </ChapterFirstLayerNoListStyle>
+
+                            <ul className="first-layer">
+                                <li>點擊資歷查核。</li>
+                                <li>如圖二。點選特定候選人</li>
+                                <li>按編輯圖示。</li>
+                                <li>
+                                    點擊新增<span style={{
+                                    background: `url(${icon_add_text}) 0% 0% / contain no-repeat`,
+                                    width: '2em',
+                                    height: '1.5em',
+                                    display: 'inline-flex'
+                                }}/>
+                                    。
+                                </li>
+                                <ChapterSecondLayerNoListStyle>
+                                    i. 會顯示『新增：資歷查核』輸入畫面，如圖四。
+                                </ChapterSecondLayerNoListStyle>
+                                <ChapterSecondLayerNoListStyle>
+                                    ii. 選擇『查核日期』。
+                                </ChapterSecondLayerNoListStyle>
+                                <ChapterSecondLayerNoListStyle>
+                                    iii. 選擇『查核人姓名』。
+                                </ChapterSecondLayerNoListStyle>
+                                <ChapterSecondLayerNoListStyle>
+                                    iv. 輸入『公司』。
+                                </ChapterSecondLayerNoListStyle>
+                                <ChapterSecondLayerNoListStyle>
+                                    v. 輸入『職位』。
+                                </ChapterSecondLayerNoListStyle>
+                                <ChapterSecondLayerNoListStyle>
+                                    vi. 輸入『關係』。
+                                </ChapterSecondLayerNoListStyle>
+                                <ChapterSecondLayerNoListStyle>
+                                    vii. 輸入『電子郵件』。
+                                </ChapterSecondLayerNoListStyle>
+                                <ChapterSecondLayerNoListStyle>
+                                    viii. 輸入『結果』。
+                                </ChapterSecondLayerNoListStyle>
+                                <ChapterSecondLayerNoListStyle>
+                                    ix. 按下儲存鍵。
+                                </ChapterSecondLayerNoListStyle>
+                                <ChapterSecondLayerNoListStyle>
+                                    如果要繼續查核其他資歷，請重複步驟4-ix。
+                                </ChapterSecondLayerNoListStyle>
+                                <li>如圖五。按『提交』鍵</li>
+                                {/*<li>『甄試管理』：*/}
+                                {/*    <ul className="second-layer">*/}
+                                {/*        <li>待安排/甄試約詢：所有送出甄試約詢的要求。</li>*/}
+                                {/*        <li>甄試邀約/已安排：所有已邀約的甄試安排。</li>*/}
+                                {/*        <li>甄試變更/待變更：所有要求變更甄試行程的要求。</li>*/}
+                                {/*    </ul>*/}
+                                {/*</li>*/}
+                            </ul>
+                        </ChapterBody>
+                    </div>
+                </Element>
+
+                <Element className="Chapter" name="rc-arrange-interview" style={{flexDirection: 'column'}}>
+
+                    <ChapterCoverImage src={img_rc_arrange_interview_cover}/>
+
+                    <div style={{flexDirection: 'row', display: 'flex', marginTop: '2em'}}>
+
+                        <MultiImageContainer>
+                            <MultiImage
+                                srcArray={[
+                                    img_rc_arrange_interview1,
+                                    img_rc_arrange_interview2,
+                                    img_rc_arrange_interview3,
+                                    img_rc_arrange_interview4,
+                                    img_rc_arrange_interview5,
+                                    img_rc_arrange_interview6,
+                                    img_rc_arrange_interview7,
+                                    img_rc_arrange_interview8,
+                                    img_rc_arrange_interview9,
+                                    img_rc_arrange_interview10,
+                                    img_rc_arrange_interview11,
+                                    img_rc_arrange_interview12,
+                                ]}
+                            />
+                        </MultiImageContainer>
+
+                        <ChapterBody>
+                            <ChapterTitleGroup>
+                                <h1>招聘指揮台–甄試安排/變更</h1>
+                            </ChapterTitleGroup>
+
+                            <ChapterFirstLayerNoListStyle>
+                                進入路徑：首頁->選才管理->招聘指揮台
+                                <span className="Text-danger">如圖一</span>。
+                            </ChapterFirstLayerNoListStyle>
+
+
+                            <ChapterFirstLayerNoListStyle>
+                                <span className="Text-warn Text-bold">1 of 3 Options</span>
+                            </ChapterFirstLayerNoListStyle>
+                            <ol className="first-layer">
+                                <li>點擊『甄試安排/變更』</li>
+                                <li>選擇『所有待安排甄試』</li>
+                                <li>如圖二。點選特定候選人</li>
+                                <li>按編輯圖示</li>
+                            </ol>
+
+                            <ChapterFirstLayerNoListStyle>
+                                <span className="Text-warn Text-bold">2 of 3 Options</span>
+                            </ChapterFirstLayerNoListStyle>
+                            <ol className="first-layer" start={2}>
+                                <li>選擇『初選待安排甄試』</li>
+                                <li>如圖二。點選特定候選人</li>
+                                <li>如圖二。點選特定候選人</li>
+                                <li>按編輯圖示</li>
+                            </ol>
+
+                            <ChapterFirstLayerNoListStyle>
+                                <span className="Text-warn Text-bold">3 of 3 Options</span>
+                            </ChapterFirstLayerNoListStyle>
+                            <ol className="first-layer" start={2}>
+                                <li>選擇『決選待安排甄試』</li>
+                                <li>如圖二。點選特定候選人</li>
+                                <li>按編輯圖示</li>
+                            </ol>
+
+                            <ol className="first-layer" start={5}>
+                                <li>
+                                    點擊<span style={{
+                                    background: `url(${icon_interviewer_available_time}) 0% 0% / contain no-repeat`,
+                                    width: '2em',
+                                    height: '1.5em',
+                                    display: 'inline-flex'
+                                }}/>，表格會向下展開，顯示『面試人員姓名，且/或面試人員回覆的可供面試時間。
+                                </li>
+                                <li>
+                                    招聘人員可點擊<span style={{
+                                    background: `url(${icon_circle_add}) 0% 0% / contain no-repeat`,
+                                    width: '2em',
+                                    height: '1.5em',
+                                    display: 'inline-flex'
+                                }}/>
+                                    代為輸入可供面試時間。
+                                </li>
+                                <li>
+                                    點擊<span style={{
+                                    background: `url(${icon_circle_add}) 0% 0% / contain no-repeat`,
+                                    width: '2em',
+                                    height: '1.5em',
+                                    display: 'inline-flex'
+                                }}/>，新增面談行程。
+                                </li>
+                            </ol>
+
+
+                            <ChapterFirstLayerNoListStyle>
+                                <span className="Text-warn Text-bold">1 of 3 Options</span>
+                            </ChapterFirstLayerNoListStyle>
+                            <ol className="first-layer" start={1} style={{listStyle: "lower-roman"}}>
+                                <li>會顯示 『新增：面談行程』 輸入畫面，如圖四。</li>
+                                <li>選擇『面談人員』</li>
+                                <li>選擇開始『面談時間』、將面談長度輸入『分鐘』欄位。</li>
+                                <li>選擇面試類別。選擇『現場面談』。</li>
+                                <li>選擇辦公室。選單內容不足，請參照新增辦公室。</li>
+                                <li>選擇會議室。選單內容不足，請參照新增會議室</li>
+                                <li>按下『確認』鍵。</li>
+                                <li>可重複步驟5-viii，安排多場面試。</li>
+                                <li>邀請函會自動寄給面試人員與候選人。</li>
+                            </ol>
+
+                            <ChapterFirstLayerNoListStyle>
+                                <span className="Text-warn Text-bold">2 of 3 Options</span>
+                            </ChapterFirstLayerNoListStyle>
+                            <ol className="first-layer" start={4} style={{listStyle: "lower-roman"}}>
+                                <li>選擇面試類別。選擇電話面談。</li>
+                                <li>註記：輸入電話面談的資料</li>
+                                <li>按下『確認』鍵。</li>
+                                <li>可重複步驟5-vi，安排多場面試。</li>
+                                <li>邀請函會自動寄給面試人員與候選人。</li>
+                            </ol>
+
+                            <ChapterFirstLayerNoListStyle>
+                                <span className="Text-warn Text-bold">3 of 3 Options</span>
+                            </ChapterFirstLayerNoListStyle>
+                            <ol className="first-layer" start={4} style={{listStyle: "lower-roman"}}>
+                                <li>選擇面試類別。選擇電話面談。</li>
+                                <li>註記：輸入電話面談的資料</li>
+                                <li>按下『確認』鍵。</li>
+                                <li>可重複步驟5-vi，安排多場面試。</li>
+                                <li>邀請函會自動寄給面試人員與候選人。</li>
+                            </ol>
+
+
+                            {/*<ul className="first-layer">*/}
+                            {/*    <li>如圖五。按『提交』鍵</li>*/}
+                            {/*<li>『甄試管理』：*/}
+                            {/*    <ul className="second-layer">*/}
+                            {/*        <li>待安排/甄試約詢：所有送出甄試約詢的要求。</li>*/}
+                            {/*        <li>甄試邀約/已安排：所有已邀約的甄試安排。</li>*/}
+                            {/*        <li>甄試變更/待變更：所有要求變更甄試行程的要求。</li>*/}
+                            {/*    </ul>*/}
+                            {/*</li>*/}
+                            {/*</ul>*/}
+                        </ChapterBody>
+                    </div>
+                </Element>
 
                 </body>
             </div>
